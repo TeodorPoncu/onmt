@@ -7,6 +7,16 @@ params:
   decay_step_duration: 8 # 1 decay step is 8 training steps.
   decay_type: noam_decay_v2
   decay_params:
-    model_dim: 512
+    model_dim: 256
     warmup_steps: 2000 # (= 16000 training steps).
   start_decay_steps: 0
+
+train:
+  batch_size: 64
+  batch_type: tokens
+  bucket_width: 1
+  save_checkpoints_steps: 5000
+  save_summary_steps: 50
+  train_steps: 1000000
+  maximum_features_length: 50
+  maximum_labels_length: 50

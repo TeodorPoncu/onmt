@@ -1,0 +1,1034 @@
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> , <col> , <col> from <table> order by <col> desc
+select <col> , <col> , <col> from <table> order by <col> desc
+select avg ( <col> ) , min ( <col> ) , max ( <col> ) from <table> where <col> = <ct>
+select avg ( <col> ) , min ( <col> ) , max ( <col> ) from <table> where <col> = <ct>
+select <col> , <col> from <table> order by <col> limit <ct>
+select <col> , <col> from <table> order by <col> limit <ct>
+select distinct <col> from <table> where <col> > <ct>
+select distinct <col> from <table> where <col> > <ct>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <col> from <table> where <col> > ( select avg ( <col> ) from <table> )
+select <col> from <table> where <col> > ( select avg ( <col> ) from <table> )
+select <col> , <col> from <table> where <col> between <ct> and <ct>
+select <col> , <col> from <table> where <col> between <ct> and <ct>
+select avg ( <col> ) , max ( <col> ) from <table>
+select avg ( <col> ) , max ( <col> ) from <table>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select count ( * ) from <table> where <col> = <ct> or <col> = <ct>
+select count ( * ) from <table> where <col> = <ct> or <col> = <ct>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > = <ct> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > = <ct> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> > <ct> intersect select <col> from <table> where <col> < <ct>
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> , <col> from <table> where <col> like <ct>
+select <col> , <col> from <table> where <col> like <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select count ( * ) from <table> where <col> > <ct>
+select count ( * ) from <table> where <col> > <ct>
+select <col> from <table> order by <col> limit <ct>
+select <col> from <table> order by <col> limit <ct>
+select max ( <col> ) , <col> from <table> group by <col>
+select max ( <col> ) , <col> from <table> group by <col>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> or <alias> . <col> = <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> or <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> , <col> from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> )
+select <col> , <col> from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> )
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> )
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> )
+select <col> , <col> from <table> order by <col> limit <ct>
+select <col> , <col> from <table> order by <col> limit <ct>
+select <col> , <col> from <table> where <col> > <ct>
+select <col> , <col> from <table> where <col> > <ct>
+select avg ( <col> ) , max ( <col> ) , <col> from <table> group by <col>
+select avg ( <col> ) , max ( <col> ) , <col> from <table> group by <col>
+select avg ( <col> ) , <col> from <table> group by <col>
+select avg ( <col> ) , <col> from <table> group by <col>
+select distinct <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select distinct <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select count ( * ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select avg ( <col> ) from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> )
+select avg ( <col> ) from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> )
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <alias> . <col> , <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <alias> . <col> , <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> asc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> asc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> < ( select avg ( <col> ) from <table> )
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> < ( select avg ( <col> ) from <table> )
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = ( select min ( <col> ) from <table> )
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = ( select min ( <col> ) from <table> )
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select count ( * ) , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select count ( * ) , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select avg ( <col> ) from <table> where <col> = <ct>
+select avg ( <col> ) from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct> and <col> = <ct> order by <col> asc limit <ct>
+select <col> from <table> where <col> = <ct> and <col> = <ct> order by <col> asc limit <ct>
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select count ( * ) from <table> where <col> > <ct>
+select count ( * ) from <table> where <col> > <ct>
+select avg ( <col> ) , <col> from <table> group by <col>
+select avg ( <col> ) , <col> from <table> group by <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select avg ( <col> ) from <table> where <col> < <ct>
+select avg ( <col> ) from <table> where <col> < <ct>
+select avg ( <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select avg ( <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select max ( <col> ) , <col> from <table> group by <col>
+select max ( <col> ) , <col> from <table> group by <col>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select count ( * ) from <table> where <col> > <ct>
+select count ( * ) from <table> where <col> > <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> or <alias> . <col> > <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> or <alias> . <col> > <ct>
+select distinct <alias> . <col> from <table> as <alias> where <alias> . <col> > <ct> and <alias> . <col> < <ct>
+select distinct <alias> . <col> from <table> as <alias> where <alias> . <col> > <ct> and <alias> . <col> < <ct>
+select <alias> . <col> from <table> as <alias> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> from <table> as <alias> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <alias> . <col> asc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <alias> . <col> asc limit <ct>
+select count ( * ) from <table> where <col> > ( select <col> from <table> order by <col> desc limit <ct> )
+select count ( * ) from <table> where <col> > ( select <col> from <table> order by <col> desc limit <ct> )
+select count ( * ) from <table> select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct> )
+select count ( * ) from <table> select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct> )
+select count ( * ) from <table> where <col> > <ct>
+select count ( * ) from <table> where <col> > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > ( select min ( <col> ) from <table> ) and <alias> . <col> < = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > ( select min ( <col> ) from <table> ) and <alias> . <col> < = <ct>
+select <col> from <table> where <col> = <ct> or <col> < <ct> order by <col> desc limit <ct>
+select <col> from <table> where <col> = <ct> or <col> < <ct> order by <col> desc limit <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> < <ct> and <alias> . <col> ! = <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> < <ct> and <alias> . <col> ! = <ct>
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct> intersect select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct> intersect select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct> union select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct> union select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> or <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> or <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> or <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> or <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) < <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) < <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> or <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> or <alias> . <col> = <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> union select <col> from <table> )
+select <col> from <table> where <col> not in ( select <col> from <table> union select <col> from <table> )
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> from <table> order by <col>
+select <col> from <table> order by <col>
+select count ( * ) , <col> from <table> group by <col>
+select count ( * ) , <col> from <table> group by <col>
+select <col> from <table> where <col> < <ct> group by <col> having count ( * ) > <ct>
+select <col> from <table> where <col> < <ct> group by <col> having count ( * ) > <ct>
+select count ( * ) , <col> from <table> group by <col>
+select count ( * ) , <col> from <table> group by <col>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select min ( <col> ) , max ( <col> ) from <table>
+select min ( <col> ) , max ( <col> ) from <table>
+select <col> , <col> , <col> from <table> order by <col> desc
+select <col> , <col> , <col> from <table> order by <col> desc
+select <col> from <table> where <col> > ( select avg ( <col> ) from <table> )
+select <col> from <table> where <col> > ( select avg ( <col> ) from <table> )
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select count ( * ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select count ( * ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select sum ( <col> ) from <table>
+select sum ( <col> ) from <table>
+select * from <table>
+select * from <table>
+select <col> from <table> where <col> < <ct> intersect select <col> from <table> where <col> > <ct>
+select <col> from <table> where <col> < <ct> intersect select <col> from <table> where <col> > <ct>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> , <col> , <col> from <table>
+select <col> , <col> , <col> from <table>
+select <col> , <col> from <table> where <col> like <ct>
+select <col> , <col> from <table> where <col> like <ct>
+select <col> , <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> , <col> from <table> where <col> = <ct>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> having count ( * ) > <ct>
+select <col> from <table> group by <col> having count ( * ) > <ct>
+select <col> from <table> except select <col> from <table>
+select <col> from <table> except select <col> from <table>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> , <col> , <col> from <table>
+select <col> , <col> , <col> from <table>
+select distinct <col> from <table>
+select distinct <col> from <table>
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> > <ct>
+select <col> , <col> from <table> where <col> > <ct>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> having count ( * ) < <ct>
+select <col> from <table> group by <col> having count ( * ) < <ct>
+select min ( <col> ) , <col> from <table>
+select min ( <col> ) , <col> from <table>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> except select <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <col> from <table> except select <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> , count ( * ) from <table> group by <col> order by <col>
+select <col> , count ( * ) from <table> group by <col> order by <col>
+select <alias> . <col> , <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <col> from <table> group by <col> having count ( * ) > = <ct>
+select <col> from <table> group by <col> having count ( * ) > = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * <col> asc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * <col> asc limit <ct>
+select <col> from <table> group by <col> having count ( * ) between <ct> and <ct>
+select <col> from <table> group by <col> having count ( * ) between <ct> and <ct>
+select <col> from <table> where <col> = <ct> intersect select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct> intersect select <col> from <table> where <col> = <ct>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> from <table> order by <col> asc
+select <col> from <table> order by <col> asc
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select <col> from <table> where <col> ! = <ct>
+select <col> from <table> where <col> ! = <ct>
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select <col> from <table> order by <col> asc limit <ct>
+select <col> from <table> order by <col> asc limit <ct>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> having count ( * ) > = <ct>
+select <col> from <table> group by <col> having count ( * ) > = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select count ( * ) from <table> where <col> < <ct>
+select <col> from <table> where <col> > <ct> order by <col> desc
+select avg ( <col> ) from <table> where <col> < = <ct>
+select <col> , <col> from <table> where <col> > <ct> order by <col> desc
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select avg ( <col> ) from <table> where <col> < <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> > ( select min ( <col> ) from <table> where <col> > <ct> )
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( <alias> . <col> ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select avg ( <col> ) , max ( <col> ) from <table>
+select sum ( <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> < <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select count ( * ) from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct> )
+select count ( * ) from <table> where <col> > <ct> or <col> < <ct>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select avg ( <col> ) , avg ( <col> ) from <table>
+select avg ( <col> ) , avg ( <col> ) from <table>
+select avg ( <col> ) from <table>
+select avg ( <col> ) from <table>
+select min ( <col> ) from <table>
+select min ( <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select <col> from <table> group by <col> having count ( * ) > <ct>
+select <col> from <table> group by <col> having count ( * ) > <ct>
+select <col> from <table> where <col> = <ct> intersect select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct> intersect select <col> from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct> or <col> = <ct>
+select count ( * ) from <table> where <col> = <ct> or <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> , <col> from <table> order by <col> limit <ct>
+select <col> , <col> from <table> order by <col> limit <ct>
+select <col> , <col> from <table> order by <col>
+select <col> , <col> from <table> order by <col>
+select <col> , <col> from <table> where <col> = <ct> order by <col>
+select <col> , <col> from <table> where <col> = <ct> order by <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> , <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> , <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> where <col> = <ct> order by <col> desc limit <ct>
+select <col> from <table> where <col> = <ct> order by <col> desc limit <ct>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select avg ( <col> ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select avg ( <col> ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select sum ( <col> ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select sum ( <col> ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select count ( * ) , <col> from <table> group by <col>
+select count ( * ) , <col> from <table> group by <col>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> having count ( * ) > <ct>
+select <col> from <table> group by <col> having count ( * ) > <ct>
+select sum ( <col> ) , <col> from <table> group by <col>
+select sum ( <col> ) , <col> from <table> group by <col>
+select count ( * ) , <col> from <table> group by <col>
+select count ( * ) , <col> from <table> group by <col>
+select distinct <col> , <col> from <table> order by <col> limit <ct>
+select distinct <col> , <col> from <table> order by <col> limit <ct>
+select count ( distinct <col> ) from <table> where <col> = <ct> and <col> = <ct>
+select count ( distinct <col> ) from <table> where <col> = <ct> and <col> = <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select count ( * ) , <col> from <table> group by <col>
+select count ( * ) , <col> from <table> group by <col>
+select count ( * ) from <table> where <col> = <ct>
+select <col> , <col> from <table> order by <col> desc
+select <col> , <col> from <table>
+select max ( <col> ) , min ( <col> ) from <table>
+select avg ( <col> ) from <table>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> , <col> from <table> where <col> ! = <ct>
+select distinct <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having sum ( <alias> . <col> ) > <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> where <col> = <ct> and <col> = <ct>
+select count ( distinct <col> ) from <table>
+select count ( * ) from <table> where <col> not in ( select <col> from <table> where <col> = <ct> )
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> , <col> , <col> from <table> except select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> where <col> like <ct>
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) < = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) < = <ct>
+select <col> from <table> order by <col> desc
+select <col> from <table> order by <col> desc
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> where <col> like <ct>
+select <col> from <table> where <col> like <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) = <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) = <ct>
+select distinct <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select distinct <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> , <alias> . <col> , count ( * ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> , <alias> . <col> , count ( * ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> except select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> except select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <col> from <table> where <col> = <ct> and <col> = <ct>
+select <col> from <table> where <col> = <ct> and <col> = <ct>
+select <col> , <col> , <col> from <table> order by <col> asc limit <ct>
+select <col> , <col> , <col> from <table> order by <col> asc limit <ct>
+select <col> , <col> , <col> from <table> order by <col> asc limit <ct>
+select <col> , <col> , <col> from <table> order by <col> asc limit <ct>
+select <col> from <table> where <col> ! = <ct>
+select <col> from <table> where <col> ! = <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select avg ( <col> ) from <table>
+select avg ( <col> ) from <table>
+select <col> , <col> from <table> order by <col> asc limit <ct>
+select <col> , <col> from <table> order by <col> asc limit <ct>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> from <table> order by <col> desc limit <ct>
+select <col> from <table> order by <col> desc limit <ct>
+select count ( * ) , <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select count ( * ) , <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * <col> asc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * <col> asc limit <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <col> = <ct> intersect select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <col> = <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <col> = <ct> intersect select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <col> = <ct>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select <col> from <table> order by <col> desc
+select <col> from <table> order by <col> desc
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> union select <col> from <table> where <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> union select <col> from <table> where <col> = <ct>
+select <col> from <table> order by <col>
+select <col> from <table> order by <col>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select <col> , <col> from <table> order by <col>
+select <col> , <col> from <table> order by <col>
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select <col> , count ( * ) from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> , count ( * ) from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select count ( distinct <col> ) , count ( distinct <col> ) from <table>
+select count ( distinct <col> ) , count ( distinct <col> ) from <table>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select <col> , count ( * ) from <table> group by <col> order by <col> ( * <col> asc limit <ct>
+select <col> , count ( * ) from <table> group by <col> order by <col> ( * <col> asc limit <ct>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> order by <col>
+select <col> from <table> order by <col>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select max ( <col> ) , min ( <col> ) from <table>
+select max ( <col> ) , min ( <col> ) from <table>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) , <col> from <table> group by <col>
+select count ( * ) , <col> from <table> group by <col>
+select <col> , <col> from <table> order by <col> limit <ct>
+select <col> , <col> from <table> order by <col> limit <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> , <col> from <table> where <col> ! = <ct>
+select <col> , <col> from <table> where <col> ! = <ct>
+select <col> from <table> group by <col> having count ( * ) > <ct>
+select <col> from <table> group by <col> having count ( * ) > <ct>
+select <col> from <table> except select <col> from <table> where <col> = <ct>
+select <col> from <table> except select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> where <col> = <ct> )
+select <col> from <table> where <col> not in ( select <col> from <table> where <col> = <ct> )
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> from <table> order by <col> desc
+select <col> from <table> order by <col> desc
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select avg ( <col> ) from <table>
+select avg ( <col> ) from <table>
+select <col> from <table> order by <col> desc limit <ct>
+select <col> from <table> order by <col> desc limit <ct>
+select max ( <col> ) from <table> where <col> < <ct>
+select max ( <col> ) from <table> where <col> < <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> asc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> asc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc limit <ct>
+select avg ( <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select avg ( <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> order by <alias> . <col> desc
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> having count ( * ) > = <ct>
+select <col> from <table> group by <col> having count ( * ) > = <ct>
+select <col> , <col> from <table> order by <col> asc
+select <col> , <col> from <table> order by <col> asc
+select <col> from <table> where <col> ! = <ct>
+select <col> from <table> where <col> ! = <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( * ) from <table>
+select <col> , <col> from <table> order by <col> desc
+select <col> , <col> , <col> from <table>
+select max ( <col> ) , min ( <col> ) from <table>
+select max ( <col> ) from <table> where <col> = <ct>
+select <col> from <table> where <col> ! = <ct>
+select distinct <col> , <col> from <table>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * <col> asc limit <ct>
+select count ( * ) from <table> where <col> = <ct> or <col> = <ct>
+select count ( * ) from <table> where <col> not in ( select <col> from <table> )
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> where <col> like <ct>
+select <col> from <table> where <col> > <ct>
+select <col> from <table> where <col> > <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select sum ( <col> ) from <table> where <col> = <ct>
+select sum ( <col> ) from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <col> desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <col> desc limit <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> from <table> where <col> = <ct>
+select avg ( <col> ) from <table> where <col> = <ct>
+select avg ( <col> ) from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct> order by <col> limit <ct>
+select <col> from <table> where <col> = <ct> order by <col> limit <ct>
+select sum ( <col> ) , max ( <col> ) from <table> where <col> = <ct>
+select sum ( <col> ) , max ( <col> ) from <table> where <col> = <ct>
+select avg ( <col> ) from <table> where <col> = <ct> and <col> = <ct>
+select avg ( <col> ) from <table> where <col> = <ct> and <col> = <ct>
+select sum ( <col> ) from <table> where <col> = <ct> or <col> = <ct>
+select sum ( <col> ) from <table> where <col> = <ct> or <col> = <ct>
+select sum ( <col> ) from <table> where <col> = <ct>
+select sum ( <col> ) from <table> where <col> = <ct>
+select avg ( <col> ) , sum ( <col> ) from <table> where <col> = <ct>
+select avg ( <col> ) , sum ( <col> ) from <table> where <col> = <ct>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table> where <col> = <ct>
+select count ( distinct <col> ) from <table> where <col> = <ct>
+select count ( <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select count ( * ) from <table> select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> )
+select count ( * ) from <table> select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> )
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( distinct <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( distinct <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> or <alias> . <col> = <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> or <alias> . <col> = <ct>
+select * from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <col> = <ct> union select * from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <col> = <ct>
+select * from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <col> = <ct> union select * from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> group by <alias> . <col> having count ( * ) = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> group by <alias> . <col> having count ( * ) = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <alias> . <col> desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> order by <alias> . <col> desc limit <ct>
+select <col> , <col> , <col> from <table> where <col> = <ct> order by <col> desc limit <ct>
+select <col> , <col> , <col> from <table> where <col> = <ct> order by <col> desc limit <ct>
+select avg ( <col> ) from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct> )
+select avg ( <col> ) from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct> )
+select sum ( <col> ) from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> )
+select sum ( <col> ) from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> )
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select count ( distinct <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <col> < <ct> and <alias> . <col> = <ct>
+select count ( distinct <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <col> < <ct> and <alias> . <col> = <ct>
+select <col> from <table> where <col> > ( select min ( <col> ) from <table> where <col> = <ct> )
+select <col> from <table> where <col> > ( select min ( <col> ) from <table> where <col> = <ct> )
+select <col> from <table> where <col> = <ct> and <col> < ( select max ( <col> ) from <table> where <col> = <ct> )
+select <col> from <table> where <col> = <ct> and <col> < ( select min ( <col> ) from <table> where <col> = <ct> )
+select <col> from <table> where <col> = <ct> and <col> > ( select max ( <col> ) from <table> where <col> = <ct> )
+select <col> from <table> where <col> = <ct> and <col> > ( select min ( <col> ) from <table> where <col> = <ct> )
+select <col> from <table> except select <col> from <table> where <col> = <ct>
+select <col> from <table> except select <col> from <table> where <col> = <ct>
+select distinct <col> from <table> where <col> ! = <ct>
+select distinct <col> from <table> where <col> ! = <ct>
+select <col> from <table> where <col> ! = <ct> except select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> ! = <ct> except select <col> from <table> where <col> = <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct> )
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct> )
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct> and <alias> . <col> = <ct> and <alias> . <col> = <ct>
+select <col> , <col> , <col> from <table> order by <col> limit <ct>
+select <col> , <col> , <col> from <table> order by <col> limit <ct>
+select <col> , <col> , <col> from <table> order by <col> desc limit <ct>
+select <col> , <col> , <col> from <table> order by <col> desc limit <ct>
+select count ( <alias> . <col> ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select count ( <alias> . <col> ) , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select count ( * ) , <col> from <table> where <col> > ( select avg ( <col> ) from <table> ) group by <col>
+select count ( * ) , <col> from <table> where <col> > ( select avg ( <col> ) from <table> ) group by <col>
+select sum ( <col> ) , <col> from <table> group by <col> having avg ( <col> ) > <ct>
+select sum ( <col> ) , <col> from <table> group by <col> having avg ( <col> ) > <ct>
+select sum ( <col> ) , avg ( <col> ) , <col> from <table> group by <col> having avg ( <col> ) < <ct>
+select sum ( <col> ) , avg ( <col> ) , <col> from <table> group by <col> having avg ( <col> ) < <ct>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select <col> , <col> from <table> order by <col> desc limit <ct>
+select <col> from <table> order by <col> desc limit <ct>
+select <col> from <table> order by <col> desc limit <ct>
+select <col> from <table> order by <col> asc limit <ct>
+select <col> from <table> order by <col> asc limit <ct>
+select count ( * ) from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct> and <col> = <ct>
+select <col> from <table> where <col> = <ct> and <col> = <ct>
+select sum ( <col> ) , avg ( <col> ) from <table> where <col> = <ct> and <col> > <ct>
+select sum ( <col> ) , avg ( <col> ) from <table> where <col> = <ct> and <col> > <ct>
+select <col> from <table> where <col> between <ct> and <ct>
+select <col> from <table> where <col> between <ct> and <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> , <col> , max ( <col> ) from <table> group by <col>
+select <col> , <col> , max ( <col> ) from <table> group by <col>
+select count ( * ) , max ( <col> ) from <table> where <col> = <ct> group by <col>
+select count ( * ) , max ( <col> ) from <table> where <col> = <ct> group by <col>
+select <col> , max ( <col> ) from <table> where <col> = <ct> group by <col>
+select <col> , max ( <col> ) from <table> where <col> = <ct> group by <col>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> from <table> order by <col> asc
+select <col> from <table> order by <col> asc
+select <col> from <table> where <col> ! = <ct>
+select <col> from <table> where <col> ! = <ct>
+select <col> from <table> order by <col> desc
+select <col> from <table> order by <col> desc
+select avg ( <col> ) from <table>
+select avg ( <col> ) from <table>
+select max ( <col> ) , min ( <col> ) from <table> where <col> ! = <ct>
+select max ( <col> ) , min ( <col> ) from <table> where <col> ! = <ct>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select <col> from <table> order by <col> desc
+select <col> from <table> order by <col> desc
+select <col> from <table> order by <col> desc limit <ct>
+select <col> from <table> order by <col> desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <col> > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <col> > <ct>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <col> from <table> group by <col> order by <col> ( * <col> asc
+select <col> from <table> group by <col> order by <col> ( * <col> asc
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> < <ct> intersect select <col> from <table> where <col> > <ct>
+select <col> from <table> where <col> < <ct> intersect select <col> from <table> where <col> > <ct>
+select count ( * ) from <table> where <col> = <ct> or <col> = <ct>
+select count ( * ) from <table> where <col> = <ct> or <col> = <ct>
+select <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select <col> from <table>
+select <col> from <table>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select <col> from <table> where <col> = <ct>
+select count ( * ) from <table> where <col> = <ct> or <col> = <ct>
+select count ( * ) from <table> where <col> = <ct> or <col> = <ct>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> having count ( * ) > = <ct>
+select <col> from <table> group by <col> having count ( * ) > = <ct>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <col> from <table> except select <col> from <table>
+select <col> from <table> except select <col> from <table>
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <col> from <table> except select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <col> from <table> intersect select <col> from <table>
+select <col> from <table> intersect select <col> from <table>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> intersect select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct> group by <alias> . <col> having count ( * ) > = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select count ( * ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select avg ( <col> ) from <table> where <col> in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> )
+select avg ( <col> ) from <table> where <col> in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> )
+select min ( <col> ) from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> )
+select min ( <col> ) from <table> where <col> not in ( select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> )
+select <col> from <table> intersect select <col> from <table>
+select <col> from <table> intersect select <col> from <table>
+select avg ( <col> ) from <table> where <col> in ( select <col> from <table> )
+select avg ( <col> ) from <table> where <col> in ( select <col> from <table> )
+select <col> , <col> , <col> from <table> where <col> = <ct> union select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <col> , <col> , <col> from <table> where <col> = <ct> union select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <col> from <table> where <col> not in ( select <col> from <table> group by <col> having sum ( <col> ) > <ct> )
+select <col> from <table> where <col> not in ( select <col> from <table> group by <col> having sum ( <col> ) > <ct> )
+select <col> from <table> union select <col> from <table> except select <col> from <table>
+select <col> from <table> union select <col> from <table> except select <col> from <table>
+select <col> , <col> , <col> from <table> except select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <col> , <col> , <col> from <table> except select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( * ) desc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( <col> <col> asc limit <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( <col> <col> asc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( <alias> . <col> ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> order by <col> ( <alias> . <col> ) desc limit <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > = <ct>
+select distinct <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> where <col> < ( select avg ( <col> ) from <table> )
+select distinct <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> where <col> < ( select avg ( <col> ) from <table> )
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = ( select <col> from <table> group by <col> order by <col> ( * <col> asc limit <ct> )
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = ( select <col> from <table> group by <col> order by <col> ( * <col> asc limit <ct> )
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select distinct <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select distinct <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = ( select max ( <col> ) from <table> )
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = ( select max ( <col> ) from <table> )
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select count ( distinct <col> ) from <table>
+select <col> , <col> , <col> , <col> from <table> where <col> like <ct>
+select <col> , <col> , <col> , <col> from <table> where <col> like <ct>
+select <col> , <col> , <col> from <table> where <col> like <ct>
+select <col> , <col> , <col> from <table> where <col> like <ct>
+select count ( * ) from <table> where <col> < ( select avg ( <col> ) from <table> )
+select count ( * ) from <table> where <col> < ( select avg ( <col> ) from <table> )
+select <col> from <table> order by <col> desc limit <ct>
+select <col> from <table> order by <col> desc limit <ct>
+select count ( * ) from <table> where <col> not in ( select <col> from <table> )
+select count ( * ) from <table> where <col> not in ( select <col> from <table> )
+select count ( * ) from <table> where <col> not in ( select <col> from <table> )
+select count ( * ) from <table> where <col> not in ( select <col> from <table> )
+select count ( * ) from <table> where <col> not in ( select <col> from <table> )
+select count ( * ) from <table> where <col> not in ( select <col> from <table> )
+select <col> , <col> , <col> from <table> where <col> = <ct>
+select <col> , <col> , <col> from <table> where <col> = <ct>
+select avg ( <col> ) from <table>
+select avg ( <col> ) from <table>
+select max ( <col> ) from <table>
+select max ( <col> ) from <table>
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select max ( <col> ) from <table>
+select max ( <col> ) from <table>
+select <col> , <col> , <col> from <table>
+select <col> , <col> , <col> from <table>
+select distinct <col> , <col> from <table>
+select distinct <col> , <col> from <table>
+select distinct <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select distinct <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select count ( * ) from <table>
+select count ( * ) from <table>
+select <col> from <table> order by <col> asc
+select <col> from <table> order by <col> asc
+select <col> , <col> from <table>
+select <col> , <col> from <table>
+select <col> from <table> where <col> ! = <ct>
+select <col> from <table> where <col> ! = <ct>
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select <col> from <table> where <col> = <ct> or <col> = <ct>
+select <col> from <table> order by <col> desc limit <ct>
+select <col> from <table> order by <col> desc limit <ct>
+select <col> , count ( * ) from <table> group by <col>
+select <col> , count ( * ) from <table> group by <col>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> from <table> group by <col> order by <col> ( * ) desc limit <ct>
+select <col> , max ( <col> ) from <table> group by <col>
+select <col> , max ( <col> ) from <table> group by <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select <alias> . <col> , <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select distinct <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col> having count ( * ) > <ct>
+select <alias> . <col> , sum ( <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <alias> . <col> , sum ( <alias> . <col> ) from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> not in ( select <col> from <table> )
+select <col> from <table> where <col> < <ct> intersect select <col> from <table> where <col> > <ct>
+select <col> from <table> where <col> < <ct> intersect select <col> from <table> where <col> > <ct>
+select count ( * ) from <table>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> where <alias> . <col> = <ct>
+select <alias> . <col> from <table> as <alias> join <table> as <alias> on <alias> . <col> = <alias> . <col> group by <alias> . <col>
+select <col> from <table> where <col> = <ct> union select <col> from <table> where <col> = <ct> and <col> > <ct>

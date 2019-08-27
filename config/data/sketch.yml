@@ -1,6 +1,8 @@
 model_dir: sketch/
 
 data:
+  source_tokenization: config/tokenization/aggressive.yml
+  target_tokenization: config/tokenization/aggressive.yml
   source_words_vocabulary: data/sketch/src-vocab.txt
   target_words_vocabulary: data/sketch/tgt-vocab.txt
   train_features_file: data/sketch/src-train.txt

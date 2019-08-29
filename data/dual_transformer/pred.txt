@@ -1,0 +1,1034 @@
+SELECT count ￭( ￭* ￭) FROM Person WHERE age < 30
+SELECT count ￭( ￭* ￭) FROM Person
+SELECT name FROM Person WHERE age < 30 GROUP BY age HAVING count ￭( ￭* ￭) < 30
+SELECT age , age FROM people WHERE age < (￭ SELECT min ￭(￭ age ￭) FROM people ￭) ORDER BY age ￭) DESC
+SELECT min ￭(￭ age ￭) , job FROM Person WHERE age < 30
+SELECT min ￭(￭ age ￭) , dept ￭_￭ name FROM student GROUP BY dept ￭_￭ name HAVING avg ￭(￭ age ￭) < (￭ SELECT min ￭(￭ age ￭) FROM person ￭)
+SELECT artist ￭_￭ name , gender FROM artist WHERE age < (￭ SELECT min ￭(￭ age ￭) FROM song WHERE languages = '￭ english ￭' ￭) ORDER BY age ￭) DESC LIMIT 1 ￭)
+SELECT T ￭1 ￭.￭ artist ￭_￭ name , T ￭1 ￭.￭ age FROM artist AS T ￭1 JOIN song AS T ￭2 ON T ￭1 ￭.￭ artist ￭_￭ name = T ￭2 ￭.￭ artist ￭_￭ name WHERE T ￭2 ￭.￭ Mar < T ￭2 ￭.￭ rating > 8 ORDER BY T ￭1 ￭.￭ attendance LIMIT 1
+SELECT DISTINCT T ￭2 ￭.￭ Major FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭1 ￭.￭ age < ￭= 25
+SELECT DISTINCT T ￭2 ￭.￭ Major FROM artist AS T ￭1 JOIN artist AS T ￭2 ON T ￭1 ￭.￭ artist ￭_￭ id = T ￭2 ￭.￭ artist ￭_￭ id WHERE T ￭1 ￭.￭ age < ￭= 30
+SELECT Country ￭_￭ name , COUNT ￭( ￭* ￭) FROM country WHERE age < 25 GROUP BY Country
+SELECT count ￭( ￭* ￭) , city ￭_￭ code FROM Person WHERE age < 40 GROUP BY city
+SELECT artist ￭_￭ name FROM artist WHERE age < (￭ SELECT avg ￭(￭ age ￭) FROM song WHERE languages = "￭ english ￭" ￭)
+SELECT artist ￭_￭ name FROM artist WHERE age < (￭ SELECT avg ￭(￭ age ￭) FROM song WHERE languages = "￭ english ￭" ￭)
+SELECT name FROM stadium WHERE capacity BETWEEN 100 AND 100
+SELECT address FROM enzyme WHERE capacity BETWEEN 100 AND 100 AND 100
+SELECT avg ￭(￭ student ￭_￭ capacity ￭) , sum ￭(￭ student ￭_￭ capacity ￭) FROM dorm WHERE student ￭_￭ capacity < (￭ SELECT max ￭(￭ student ￭_￭ capacity ￭)
+SELECT avg ￭(￭ capacity ￭) , min ￭(￭ capacity ￭) , dept ￭_￭ name FROM classroom WHERE capacity < 50
+SELECT t ￭1 ￭.￭ name , t ￭1 ￭.￭ capacity FROM stadium AS t ￭1 JOIN event AS t ￭2 ON t ￭1 ￭.￭ id = t ￭2 ￭.￭ stadium ￭_￭ id WHERE t ￭2 ￭.￭ capacity > 100 GROUP BY t ￭1 ￭.￭ stadium ￭_￭ id ORDER BY avg ￭(￭ capacity ￭) DESC LIMIT 1
+SELECT t ￭1 ￭.￭ name , t ￭1 ￭.￭ capacity FROM stadium AS t ￭1 JOIN event AS t ￭2 ON t ￭1 ￭.￭ id = t ￭2 ￭.￭ stadium ￭_￭ id GROUP BY t ￭2 ￭.￭ stadium ￭_￭ id HAVING avg ￭(￭ t ￭2 ￭.￭ capacity ￭) < 100 GROUP BY t ￭1 ￭.￭ name ￭_￭ capacity
+SELECT count ￭( ￭* ￭) FROM Reviewer AS T ￭1 JOIN Movie AS T ￭2 ON T ￭1 ￭.￭ rID = T ￭2 ￭.￭ rID WHERE T ￭1 ￭.￭ name = '￭ Bob ￭'
+SELECT count ￭( ￭* ￭) FROM architect WHERE id NOT IN ( SELECT architect ￭_￭ id FROM mill WHERE built ￭_￭ year < 1850 ) ￭;
+SELECT name , count ￭( ￭* ￭) FROM stadium WHERE Membership ￭_￭ card = '￭ Black ￭'
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ school ￭_￭ code FROM employee AS T ￭1 JOIN CLASS AS T ￭2 ON T ￭1 ￭.￭ EMP ￭_￭ NUM = T ￭2 ￭.￭ PROF ￭_￭ NUM WHERE T ￭1 ￭.￭ age < 20 GROUP BY T ￭1 ￭.￭ school ￭_￭ code
+SELECT t ￭1 ￭.￭ name , t ￭1 ￭.￭ capacity FROM stadium AS t ￭1 JOIN event AS t ￭2 ON t ￭1 ￭.￭ id = t ￭2 ￭.￭ stadium ￭_￭ id WHERE t ￭2 ￭.￭ capacity > 100 GROUP BY t ￭1 ￭.￭ stadium ￭_￭ id ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT t ￭1 ￭.￭ name , t ￭1 ￭.￭ capacity FROM stadium AS t ￭1 JOIN event AS t ￭2 ON t ￭1 ￭.￭ id = t ￭2 ￭.￭ stadium ￭_￭ id GROUP BY t ￭2 ￭.￭ stadium ￭_￭ id HAVING count ￭( ￭* ￭) < ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT YEAR FROM SECTION GROUP BY YEAR HAVING COUNT ￭( ￭* ￭) < ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT YEAR FROM SECTION GROUP BY YEAR HAVING COUNT ￭( ￭* ￭) < ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT name FROM stadium WHERE event ￭_￭ id NOT IN (￭ SELECT stadium ￭_￭ id FROM Participants ￭_￭ in ￭_￭ Events ￭)
+SELECT name FROM stadium WHERE capacity < (￭ SELECT min ￭(￭ capacity ￭) FROM event ￭)
+SELECT T ￭1 ￭.￭ country FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭2 ￭.￭ friend IN (￭ SELECT name FROM Person WHERE age < 40 ￭) INTERSECT SELECT T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭2 ￭.￭ friend IN (￭ SELECT name FROM Person WHERE age < 30 ￭)
+SELECT name FROM stadium WHERE capacity < 100
+SELECT name FROM stadium WHERE capacity < (￭ SELECT min ￭(￭ Membership ￭_￭ card ￭) FROM stadium ￭)
+SELECT T ￭2 ￭.￭ Name , COUNT ￭( ￭* ￭) FROM country AS T ￭1 JOIN publication AS T ￭2 ON T ￭1 ￭.￭ ArtistId = T ￭2 ￭.￭ ArtistId WHERE T ￭1 ￭.￭ age < ￭= 25
+SELECT count ￭( ￭* ￭) , age FROM player WHERE age < ￭= 3
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age FROM people AS T ￭1 JOIN people ￭_￭ in ￭_￭ Events AS T ￭2 ON T ￭1 ￭.￭ Phone ￭_￭ ID = T ￭2 ￭.￭ Phone ￭_￭ ID GROUP BY T ￭2 ￭.￭ name HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT DISTINCT name , count ￭( ￭* ￭) FROM Person WHERE age < 40 GROUP BY name
+SELECT Festival ￭_￭ Name FROM festival ￭_￭ detail WHERE YEAR > 2006
+SELECT T ￭1 ￭.￭ artist ￭_￭ name FROM artist AS T ￭1 JOIN song AS T ￭2 ON T ￭1 ￭.￭ artist ￭_￭ name = T ￭2 ￭.￭ artist ￭_￭ name WHERE T ￭2 ￭.￭ rating < 9
+SELECT T ￭2 ￭.￭ title , T ￭1 ￭.￭ rID , T ￭2 ￭.￭ stars FROM Rating AS T ￭1 JOIN Movie AS T ￭2 ON T ￭1 ￭.￭ mID = T ￭2 ￭.￭ mID WHERE T ￭1 ￭.￭ age < ￭= 25
+SELECT name , country ￭_￭ name FROM artist WHERE country LIKE " ￭%￭ love ￭% ￭"
+SELECT T ￭2 ￭.￭ name FROM game AS T ￭1 JOIN stadium AS T ￭2 ON T ￭1 ￭.￭ stadium ￭_￭ id = T ￭2 ￭.￭ id JOIN injury ￭_￭ accident AS T ￭3 ON T ￭1 ￭.￭ id = T ￭3 ￭.￭ game ￭_￭ id WHERE T ￭3 ￭.￭ year > 2014 INTERSECT SELECT T ￭1 ￭.￭ name FROM game AS T ￭1 JOIN stadium AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ stadium ￭_￭ id JOIN injury ￭_￭ accident AS T ￭3 ON T ￭1 ￭.￭ id = T ￭3 ￭.￭ game ￭_￭ id WHERE T ￭3 ￭.￭ year > 2014
+SELECT name , LOCATION FROM track WHERE capacity > 60000 INTERSECT SELECT LOCATION FROM stadium WHERE seating < 70000
+SELECT T ￭1 ￭.￭ name FROM stadium AS T ￭1 JOIN event AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ stadium ￭_￭ id GROUP BY T ￭2 ￭.￭ stadium ￭_￭ id HAVING count ￭( ￭* ￭) > 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT t ￭1 ￭.￭ name FROM stadium AS t ￭1 JOIN event AS t ￭2 ON t ￭1 ￭.￭ id = t ￭2 ￭.￭ stadium ￭_￭ id GROUP BY t ￭2 ￭.￭ stadium ￭_￭ id HAVING count ￭( ￭* ￭) > 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT count ￭( ￭* ￭) FROM people WHERE weight > 85
+SELECT count ￭( ￭* ￭) FROM Companies WHERE height > 85
+SELECT name FROM people WHERE age < (￭ SELECT min ￭(￭ age ￭) FROM people ￭) ORDER BY sex
+SELECT name FROM Person WHERE age < (￭ SELECT min ￭(￭ age ￭) FROM person WHERE job = '￭ engineer ￭' ￭)
+SELECT max ￭(￭ num ￭_￭ of ￭_￭ John F Kennedy International Airport ￭_￭ Name , min ￭(￭ Num ￭_￭ of ￭_￭ Factories ￭) FROM phone WHERE num ￭_￭ Type = "￭ John F 18
+SELECT max ￭(￭ weight ￭) , min ￭(￭ weight ￭) , sex FROM people GROUP BY sex
+SELECT count ￭( ￭* ￭) FROM student WHERE age < 25
+SELECT count ￭(￭ DISTINCT city ￭) FROM Person WHERE age < (￭ SELECT min ￭(￭ age ￭) FROM student ￭)
+SELECT count ￭( ￭* ￭) FROM student WHERE sex = "￭ F ￭" AND city ￭_￭ code = "￭ BAL ￭"
+SELECT count ￭( ￭* ￭) FROM weather WHERE max ￭_￭ of ￭_￭ county ￭_￭ county ￭_￭ county ￭_￭ count ￭( ￭* ￭) AND 25
+SELECT DISTINCT product ￭_￭ type ￭_￭ code FROM products
+SELECT count ￭( ￭* ￭) , crs ￭_￭ code FROM CLASS GROUP BY Carrier
+SELECT fname FROM Student WHERE age < 18 AND StuID = "￭ StuID StuID StuID StuID StuID StuID WHERE Has ￭_￭ allergy = "￭ Milk ￭" OR StuID < "￭ Cat ￭"
+SELECT fname FROM Student WHERE age < StuID IN ( SELECT DISTINCT StuID FROM Has ￭_￭ allergy WHERE Allergy = "￭ Milk ￭" OR StuID < "￭ Cat ￭" ￭)
+SELECT fname FROM Student WHERE age < StuID IN (￭ SELECT min ￭(￭ age ￭) FROM Has ￭_￭ allergy WHERE Allergy = "￭ Milk ￭" INTERSECT SELECT StuID FROM Has ￭_￭ allergy WHERE Allergy = "￭ Cat ￭" ￭)
+SELECT T ￭1 ￭.￭ customer ￭_￭ name FROM Customers AS T ￭1 JOIN Customer ￭_￭ Events AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id WHERE T ￭2 ￭.￭ date ￭_￭ order ￭_￭ placed > ￭= "￭ 2009 INTERSECT SELECT T ￭1 ￭.￭ customer ￭_￭ name FROM Customers AS T ￭1 JOIN Customer ￭_￭ orders AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id WHERE T ￭2 ￭.￭ order ￭_￭ id < ￭= 10
+SELECT fname , age FROM Student WHERE age < 18 AND StuID StuID StuID StuID StuID StuID StuID StuID StuID StuID StuID StuID StuID StuID StuID StuID StuID StuID NOT IN (￭ SELECT StuID FROM Has ￭_￭ allergy WHERE Allergy = "￭ Milk ￭" EXCEPT SELECT StuID WHERE age < 1000
+SELECT StuID FROM Student WHERE age < 20 EXCEPT SELECT StuID FROM Has ￭_￭ allergy WHERE Allergy ￭_￭ type ￭_￭ code = "￭ Milk ￭"
+SELECT StuID FROM Has ￭_￭ allergy WHERE Allergy ￭_￭ type ￭_￭ code = "￭ Cat ￭" EXCEPT SELECT StuID FROM Has ￭_￭ allergy WHERE Allergy ￭_￭ type ￭_￭ code = "￭ Cat ￭"
+SELECT StuID FROM Student EXCEPT SELECT StuID FROM Has ￭_￭ allergy WHERE age < 20
+SELECT fname , age FROM Student WHERE StuID IN (￭ SELECT StuID FROM Has ￭_￭ allergy WHERE Allergy = "￭ Milk ￭" EXCEPT SELECT StuID FROM Has ￭_￭ allergy WHERE Allergy = "￭ Cat ￭" ￭)
+SELECT fname FROM student WHERE age < 20 EXCEPT SELECT T ￭1 ￭.￭ stu ￭_￭ fname FROM student AS T ￭1 JOIN enroll AS T ￭2 ON T ￭1 ￭.￭ stu ￭_￭ num = T ￭2 ￭.￭ stu ￭_￭ num JOIN CLASS AS T ￭3 ON T ￭2 ￭.￭ class ￭_￭ code = T ￭3 ￭.￭ class ￭_￭ code JOIN course AS T ￭4 ON T ￭3 ￭.￭ crs ￭_￭ code = T ￭4 ￭.￭ crs ￭_￭ code WHERE T ￭4 ￭.￭ balance > 20 ￭:￭ 20 ￭:￭ 20
+SELECT name , sex FROM people WHERE min ￭(￭ age ￭) , sex FROM people WHERE Height > (￭ SELECT avg ￭(￭ age ￭) FROM people ￭) ORDER BY sex
+SELECT phone ￭_￭ number , Num ￭_￭ of ￭_￭ Vote FROM CLASS WHERE Num ￭_￭ of ￭_￭ Component > 10
+SELECT DISTINCT POSITION , nationality FROM people WHERE Age > 20 AND height < 20
+SELECT Num ￭_￭ of ￭_￭ Component , count ￭( ￭* ￭) FROM furniture WHERE Num ￭_￭ of ￭_￭ component > 80 GROUP BY pets ￭_￭ allowed ￭_￭ yn
+SELECT min ￭(￭ age ￭) , dept ￭_￭ name FROM student GROUP BY dept ￭_￭ code
+SELECT avg ￭(￭ num ￭_￭ of ￭_￭ component ￭) , crs ￭_￭ code FROM student GROUP BY dept ￭_￭ code
+SELECT avg ￭(￭ num ￭_￭ of ￭_￭ component ￭) , min ￭(￭ num ￭_￭ of ￭_￭ completion ￭) FROM furniture WHERE Num ￭_￭ of ￭_￭ transaction > 80
+SELECT avg ￭(￭ weight ￭) , min ￭(￭ weight ￭) , sex FROM people GROUP BY sex
+SELECT fname , age FROM student WHERE age < (￭ SELECT avg ￭(￭ age ￭) FROM student ￭)
+SELECT DISTINCT Fname , age FROM Student WHERE age < 18
+SELECT employee ￭_￭ id , first ￭_￭ name FROM Assessment ￭_￭ Notes WHERE stu ￭_￭ of ￭_￭ notes > 20
+SELECT employee ￭_￭ id , first ￭_￭ name FROM Assessment ￭_￭ Notes WHERE stu ￭_￭ of ￭_￭ notes > 80
+SELECT count ￭( ￭* ￭) , T ￭3 ￭.￭ address ￭_￭ id FROM CLASS AS T ￭1 JOIN enroll AS T ￭2 ON T ￭1 ￭.￭ class ￭_￭ code = T ￭2 ￭.￭ class ￭_￭ code JOIN course AS T ￭3 ON T ￭2 ￭.￭ crs ￭_￭ code = T ￭3 ￭.￭ Phone ￭_￭ ID GROUP BY T ￭3 ￭.￭ course ￭_￭ code
+SELECT count ￭( ￭* ￭) , dept ￭_￭ name FROM student GROUP BY dept ￭_￭ name
+SELECT fname , sex FROM student WHERE age > (￭ SELECT min ￭(￭ age ￭) FROM student WHERE sex = '￭ F ￭' GROUP BY StuID
+SELECT fname , sex FROM student WHERE min ￭(￭ age ￭) GROUP BY sex
+SELECT lname FROM Student WHERE age < (￭ SELECT avg ￭(￭ age ￭) FROM Student WHERE StuID IN ( SELECT T ￭2 ￭.￭ StuID FROM Has ￭_￭ allergy AS T ￭1 JOIN Allergy ￭_￭ Type AS T ￭2 ON T ￭1 ￭.￭ Allergy = T ￭2 ￭.￭ Allergy WHERE T ￭2 ￭.￭ allergytype = "￭ food ￭" INTERSECT SELECT StuID WHERE T ￭1 ￭.￭ age < 20
+SELECT T ￭1 ￭.￭ Name FROM Student AS T ￭1 JOIN Participates ￭_￭ in AS T ￭2 ON T ￭1 ￭.￭ StuID = T ￭2 ￭.￭ StuID WHERE T ￭2 ￭.￭ age < 3 OR T ￭2 ￭.￭ allergytype = "￭ Cat ￭"
+SELECT avg ￭(￭ age ￭) FROM Student WHERE StuID NOT IN ( SELECT T ￭1 ￭.￭ StuID FROM Has ￭_￭ allergy AS T ￭1 JOIN Allergy ￭_￭ Type AS T ￭2 ON T ￭1 ￭.￭ Allergy = T ￭2 ￭.￭ Allergy WHERE T ￭2 ￭.￭ age < 20 )
+SELECT avg ￭(￭ age ￭) FROM Student WHERE StuID NOT IN ( SELECT T ￭1 ￭.￭ StuID FROM Has ￭_￭ allergy AS T ￭1 JOIN Allergy ￭_￭ Type AS T ￭2 ON T ￭1 ￭.￭ Allergy = T ￭2 ￭.￭ Allergy WHERE T ￭2 ￭.￭ age < 20 )
+SELECT count ￭( ￭* ￭) FROM dorm ￭_￭ rank WHERE age < 25
+SELECT count ￭( ￭* ￭) FROM dorm ￭_￭ amenity WHERE age < (￭ SELECT avg ￭(￭ age ￭) FROM dorm ￭)
+SELECT Country ￭_￭ name , COUNT ￭( ￭* ￭) FROM people WHERE Height > 1 GROUP BY Country
+SELECT T ￭3 ￭.￭ product ￭_￭ name , count ￭( ￭* ￭) FROM orders AS T ￭1 JOIN order ￭_￭ items AS T ￭2 JOIN products AS T ￭3 ON T ￭1 ￭.￭ order ￭_￭ id = T ￭2 ￭.￭ order ￭_￭ id AND T ￭2 ￭.￭ product ￭_￭ id = T ￭3 ￭.￭ product ￭_￭ id AND T ￭1 ￭.￭ product ￭_￭ id = T ￭4 ￭.￭ product ￭_￭ id WHERE T ￭2 ￭.￭ age > ￭= 25 GROUP BY T ￭3 ￭.￭ product ￭_￭ id
+SELECT count ￭( ￭* ￭) FROM country WHERE age < 25
+SELECT count ￭( ￭* ￭) FROM country WHERE age < (￭ SELECT avg ￭(￭ age ￭) FROM people ￭)
+SELECT minister , took ￭_￭ office FROM party WHERE Age < ￭= 25
+SELECT first ￭_￭ name , last ￭_￭ name , COUNT ￭( ￭* ￭) FROM Customer ￭_￭ Payments WHERE Category > 2 ￭;
+SELECT DISTINCT T ￭2 ￭.￭ Hardware ￭_￭ Model ￭_￭ name FROM screen ￭_￭ mode AS T ￭1 JOIN phone AS T ￭2 ON T ￭1 ￭.￭ Graphics ￭_￭ mode = T ￭2 ￭.￭ screen ￭_￭ mode WHERE T ￭1 ￭.￭ Type = "￭ Graphics ￭" AND t ￭2 ￭.￭ Company ￭_￭ name = "￭ Nokia Corporation ￭" AND T ￭1 ￭.￭ Type = "￭ Text ￭" ￭;
+SELECT DISTINCT T ￭2 ￭.￭ Hardware ￭_￭ Model ￭_￭ name FROM screen ￭_￭ mode AS T ￭1 JOIN phone AS T ￭2 ON T ￭1 ￭.￭ Graphics ￭_￭ mode = T ￭2 ￭.￭ screen ￭_￭ mode WHERE T ￭1 ￭.￭ used ￭_￭ kb > (￭ SELECT min ￭(￭ age ￭) FROM screen ￭_￭ mode WHERE T ￭1 ￭.￭ age < 20 ￭)
+SELECT DISTINCT POSITION FROM player WHERE Age < ￭= 20
+SELECT DISTINCT T ￭2 ￭.￭ Hardware ￭_￭ Model ￭_￭ name FROM screen ￭_￭ mode AS T ￭1 JOIN phone AS T ￭2 ON T ￭1 ￭.￭ Graphics ￭_￭ mode = T ￭2 ￭.￭ screen ￭_￭ mode WHERE T ￭1 ￭.￭ Type = "￭ Graphics ￭" AND t ￭2 ￭.￭ Company ￭_￭ name = "￭ Nokia Corporation ￭" AND T ￭1 ￭.￭ Type = T ￭1 ￭.￭ Type = "￭ Text ￭" ￭;
+SELECT T ￭2 ￭.￭ title FROM item AS T ￭1 JOIN review AS T ￭2 ON T ￭1 ￭.￭ i ￭_￭ id = T ￭2 ￭.￭ i ￭_￭ id WHERE T ￭1 ￭.￭ age > 3
+SELECT Party ￭_￭ model FROM weather WHERE Party ￭_￭ Theme = "￭ Banking ￭" INTERSECT SELECT Party ￭_￭ model FROM elimination WHERE Eliminated ￭_￭ By = "￭ Birtle ￭"
+SELECT employee ￭_￭ name , last ￭_￭ name FROM employees WHERE hire ￭_￭ date < '￭ 2016 ￭-￭ 11 ￭-￭ 05 ￭' AND '￭ 2009 ￭-￭ 07 ￭-￭ 05 ￭'
+SELECT T ￭1 ￭.￭ Company FROM entrepreneur AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭2 ￭.￭ Height > 5600 ORDER BY T ￭2 ￭.￭ Price ASC LIMIT 1
+SELECT DISTINCT Carrier FROM pilot WHERE Age < ￭= 25
+SELECT DISTINCT POSITION FROM player WHERE salary < (￭ SELECT avg ￭(￭ salary ￭) FROM manager WHERE source ￭_￭ code = "￭ Debit ￭"
+SELECT Party ￭_￭ ID , COUNT ￭( ￭* ￭) FROM Party WHERE Location ￭_￭ ID = "￭ United States ￭" GROUP BY Party ￭_￭ ID
+SELECT Party ￭_￭ ID , COUNT ￭( ￭* ￭) FROM weather WHERE Party ￭_￭ ID = "￭ 100000 ￭"
+SELECT country FROM match ￭_￭ season WHERE age < 40 GROUP BY POSITION HAVING count ￭( ￭* ￭) < ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT Name FROM member WHERE Age < ￭= 25
+SELECT Denomination , COUNT ￭( ￭* ￭) FROM HOST WHERE Age < ￭= 25 GROUP BY Party
+SELECT first ￭_￭ name , last ￭_￭ name FROM chip ￭_￭ model WHERE used ￭_￭ kb > 220 AND asset ￭_￭ model < 10 ￭;
+SELECT first ￭_￭ name FROM employees WHERE salary < 6000
+SELECT first ￭_￭ name FROM Third ￭_￭ notification ￭_￭ of ￭_￭ loss WHERE Age < 46
+SELECT count ￭( ￭* ￭) FROM Lessons WHERE age < 100000
+SELECT T ￭1 ￭.￭ name FROM member AS T ￭1 JOIN Membership ￭_￭ card AS T ￭2 ON T ￭1 ￭.￭ branch ￭_￭ id = T ￭2 ￭.￭ branch ￭_￭ id WHERE T ￭2 ￭.￭ age < 100 GROUP BY T ￭2 ￭.￭ member ￭_￭ name HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT count ￭( ￭* ￭) FROM chip ￭_￭ model WHERE age < 25
+SELECT count ￭( ￭* ￭) FROM pilot WHERE Age < ￭= 25
+SELECT avg ￭(￭ duration ￭) , city ￭_￭ code FROM trip GROUP BY city ￭_￭ code
+SELECT customer ￭_￭ id , count ￭( ￭* ￭) FROM Customers ￭_￭ cards GROUP BY customer ￭_￭ id
+SELECT Song FROM phone WHERE age > 300
+SELECT Hispanic FROM city WHERE Age > 1990
+SELECT name , service ￭_￭ code FROM ship
+SELECT T ￭1 ￭.￭ Name , T ￭1 ￭.￭ Name FROM people AS T ￭1 JOIN perpetrator AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭2 ￭.￭ Height > 1 ￭.￭ 84
+SELECT Location ￭_￭ Name , Age FROM party WHERE Age < ￭= 25
+SELECT Country ￭_￭ name , COUNT ￭( ￭* ￭) FROM pilot WHERE Location ￭_￭ ID IN (￭ SELECT Winning ￭_￭ Pilot FROM Customer ￭_￭ locations GROUP BY POSITION HAVING COUNT ￭( ￭* ￭) < ￭= 1
+SELECT count ￭( ￭* ￭) FROM (￭ SELECT * FROM endowment ￭)
+SELECT count ￭(￭ DISTINCT name ￭) FROM projects WHERE age < (￭ SELECT avg ￭(￭ age ￭) FROM person WHERE job = '￭ engineer ￭' ￭)
+SELECT avg ￭(￭ weight ￭) , min ￭(￭ weight ￭) , sex FROM people GROUP BY sex
+SELECT avg ￭(￭ weight ￭) , min ￭(￭ weight ￭) , sex FROM people GROUP BY sex
+SELECT Party ￭_￭ ID FROM pilot WHERE Age < ￭= 3
+SELECT T ￭2 ￭.￭ Name FROM city AS T ￭1 JOIN country AS T ￭2 ON T ￭1 ￭.￭ country ￭_￭ id = T ￭2 ￭.￭ country ￭_￭ id GROUP BY T ￭2 ￭.￭ country ￭_￭ id HAVING count ￭( ￭* ￭) < ￭= 3
+SELECT max ￭(￭ salary ￭) , min ￭(￭ salary ￭) FROM instructor WHERE dept ￭_￭ name < 3
+SELECT name , height ￭_￭ feet FROM phone WHERE height ￭_￭ market ￭_￭ value < (￭ SELECT max ￭(￭ total ￭) FROM building ￭)
+SELECT DISTINCT acc ￭_￭ type FROM customer WHERE credit ￭_￭ score < 100
+SELECT Party ￭_￭ ID FROM festival ￭_￭ detail WHERE Age < 46
+SELECT avg ￭(￭ DISTINCT city ￭_￭ area ￭) FROM claims ￭_￭ documents WHERE invoice ￭_￭ status ￭_￭ code = "￭ working ￭" OR invoice ￭_￭ number < "￭ 4 ￭:￭ 13 ￭-￭ 03 ￭-￭ < 100
+SELECT avg ￭(￭ customer ￭_￭ id ￭) FROM Customers ￭_￭ cards WHERE card ￭_￭ type ￭_￭ code = "￭ Debit ￭"
+SELECT avg ￭(￭ RAM ￭_￭ MiB ￭) FROM chip ￭_￭ model WHERE Company ￭_￭ name = "￭ Nokia Corporation ￭" AND screen ￭_￭ mode ￭2 ￭.￭ Graphics ￭_￭ mode = "￭ Nokia Corporation ￭" ￭;
+SELECT min ￭(￭ DISTINCT name ￭) , name FROM projects
+SELECT max ￭(￭ Points ￭) , pPos FROM people GROUP BY POSITION
+SELECT max ￭(￭ age ￭) , min ￭(￭ age ￭) , dept ￭_￭ name FROM employee GROUP BY dept ￭_￭ code
+SELECT Model ￭_￭ name FROM chip ￭_￭ model WHERE Launch ￭_￭ year = 2002 GROUP BY RAM ￭_￭ MiB > 32 ￭;
+SELECT Model ￭_￭ name FROM chip ￭_￭ model WHERE Launch ￭_￭ year = 2002 GROUP BY RAM ￭_￭ MiB > 32 ￭;
+SELECT count ￭( ￭* ￭) FROM classroom WHERE duration < 50 GROUP BY languages
+SELECT count ￭( ￭* ￭) FROM classroom WHERE duration < 50 GROUP BY document ￭_￭ type ￭_￭ code
+SELECT count ￭(￭ DISTINCT Company ￭_￭ name ￭) FROM entrepreneur
+SELECT count ￭(￭ DISTINCT director ￭) FROM movie WHERE YEAR < ￭= 2005
+SELECT count ￭( ￭* ￭) FROM player AS T ￭1 JOIN tryout AS T ￭2 ON T ￭1 ￭.￭ pID = T ￭2 ￭.￭ pID WHERE T ￭1 ￭.￭ num ￭_￭ of ￭_￭ LNAME = '￭ Graztevski ￭'
+SELECT count ￭( ￭* ￭) FROM player WHERE sex = '￭ F ￭' AND age < 25
+SELECT t ￭1 ￭.￭ fname , t ￭1 ￭.￭ lname FROM authors AS t ￭1 JOIN authorship AS t ￭2 ON t ￭1 ￭.￭ authid = t ￭2 ￭.￭ authid JOIN papers AS t ￭3 ON t ￭2 ￭.￭ paperid = t ￭3 ￭.￭ paperid WHERE t ￭1 ￭.￭ Rate ￭_￭ of ￭_￭ component < 3 AND t ￭2 ￭.￭ < 3
+SELECT T ￭1 ￭.￭ account ￭_￭ id , T ￭1 ￭.￭ name FROM Customers AS T ￭1 JOIN Accounts AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id GROUP BY T ￭1 ￭.￭ account ￭_￭ id HAVING count ￭( ￭* ￭) > ￭= 3
+SELECT T ￭3 ￭.￭ forename , T ￭2 ￭.￭ surname FROM phone ￭_￭ market AS T ￭1 JOIN market AS T ￭2 ON T ￭1 ￭.￭ Market ￭_￭ ID = T ￭2 ￭.￭ Market ￭_￭ ID JOIN phone AS T ￭3 ON T ￭1 ￭.￭ Phone ￭_￭ ID = T ￭3 ￭.￭ Phone ￭_￭ ID WHERE T ￭2 ￭.￭ Age < 34
+SELECT Residence FROM player WHERE Age < ￭= 25 OR Age < ￭= 25
+SELECT T ￭2 ￭.￭ year FROM acceptance AS T ￭1 JOIN submission AS T ￭2 ON T ￭1 ￭.￭ Submission ￭_￭ ID = T ￭2 ￭.￭ Submission ￭_￭ ID WHERE T ￭2 ￭.￭ rating > 3000
+SELECT DISTINCT year FROM track WHERE year < 2010
+SELECT Party ￭_￭ model FROM weather WHERE Age < ￭= 25
+SELECT Party ￭_￭ model FROM weather WHERE Age < ￭= 25
+SELECT count ￭( ￭* ￭) FROM chip ￭_￭ model WHERE wifi = '￭ No ￭'
+SELECT count ￭( ￭* ￭) FROM Customers WHERE Membership ￭_￭ card = "￭ Black ￭" AND services < 10
+SELECT count ￭( ￭* ￭) FROM Lessons WHERE lesson ￭_￭ status ￭_￭ code IN ( SELECT Residence FROM Lessons WHERE Crime ￭_￭ county ￭_￭ Region ￭_￭ Code = "￭ Cancelled ￭" AND age < 100000
+SELECT T ￭1 ￭.￭ name FROM inst AS T ￭1 JOIN authorship AS T ￭2 ON T ￭1 ￭.￭ instid = T ￭2 ￭.￭ instid WHERE T ￭2 ￭.￭ name = '￭ 1986 ￭-￭ 03 ￭-￭ 15 ￭:￭ 33 ￭:￭ 18 ￭'
+SELECT count ￭( ￭* ￭) FROM address WHERE age < 46
+SELECT Country ￭_￭ name FROM pilot WHERE Age < ￭= 25
+SELECT count ￭( ￭* ￭) FROM furniture WHERE Num ￭_￭ of ￭_￭ component < 50
+SELECT count ￭( ￭* ￭) FROM furniture WHERE Num ￭_￭ of ￭_￭ component < 50
+SELECT T ￭2 ￭.￭ Winery FROM files AS T ￭1 JOIN status ￭_￭ county ￭_￭ public ￭_￭ safety AS T ￭2 ON T ￭1 ￭.￭ County ￭_￭ ID = T ￭2 ￭.￭ f ￭_￭ ID WHERE T ￭1 ￭.￭ White < 90 GROUP BY T ￭2 ￭.￭ Winery ￭_￭ ID HAVING COUNT ￭( ￭* ￭) < ￭= 4
+SELECT T ￭2 ￭.￭ Winery FROM GRAPES AS T ￭1 JOIN WINE AS T ￭2 ON T ￭1 ￭.￭ GRAPE = T ￭2 ￭.￭ GRAPE WHERE T ￭1 ￭.￭ Color = "￭ White ￭" GROUP BY T ￭2 ￭.￭ Winery ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT employee ￭_￭ id , first ￭_￭ name , last ￭_￭ name FROM employees WHERE salary < ( SELECT AVG (￭ salary ￭) FROM employees WHERE country ￭_￭ id = '￭ Black ￭' ￭) AND age < ￭= 3
+SELECT document ￭_￭ id FROM Documents WHERE document ￭_￭ id NOT IN ( SELECT document ￭_￭ id FROM Documents ￭_￭ with ￭_￭ expenses )
+SELECT max ￭(￭ T ￭1 ￭.￭ temperature ￭_￭ f ￭) FROM weather AS T ￭1 JOIN weather AS T ￭2 ON T ￭1 ￭.￭ zip ￭_￭ code = T ￭2 ￭.￭ zip ￭_￭ code WHERE T ￭2 ￭.￭ max ￭_￭ temperature ￭_￭ f < (￭ SELECT max ￭(￭ T ￭2 ￭.￭ amount ￭_￭ of ￭_￭ transaction ￭) FROM weather WHERE max ￭_￭ end ￭_￭ date < 8 OR max ￭_￭ number < 10
+SELECT max ￭(￭ T ￭1 ￭.￭ amount ￭_￭ of ￭_￭ transaction ￭) FROM Customer ￭_￭ Orders AS T ￭1 JOIN ORDER ￭_￭ ITEMS AS T ￭2 ON T ￭1 ￭.￭ Order ￭_￭ ID = T ￭2 ￭.￭ 3000
+SELECT DISTINCT T ￭1 ￭.￭ name FROM architect AS T ￭1 JOIN accelerator ￭_￭ compatible ￭_￭ browser AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ architect ￭_￭ id WHERE T ￭1 ￭.￭ length ￭_￭ meters > 80
+SELECT DISTINCT T ￭2 ￭.￭ name FROM products AS T ￭1 JOIN Manufacturers AS T ￭2 ON T ￭1 ￭.￭ manufacturer = T ￭2 ￭.￭ code GROUP BY T ￭2 ￭.￭ name HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT Name FROM pilot WHERE Age < ￭= 2
+SELECT Name FROM member WHERE Location ￭_￭ Name = "￭ < (￭ SELECT avg ￭(￭ Age ￭) FROM people ￭)
+SELECT email ￭_￭ address , phone ￭_￭ number FROM customers WHERE city ￭_￭ code = "￭ San Jose ￭" AND age < 3
+SELECT phone ￭_￭ number FROM employees WHERE salary < ￭= 3 AND last ￭_￭ name = 2001
+SELECT address ￭_￭ id , country ￭_￭ name FROM customers WHERE first ￭_￭ name = "￭ Carole ￭" AND last ￭_￭ name = "￭ 100000 ￭"
+SELECT first ￭_￭ name , last ￭_￭ name FROM customers WHERE customer ￭_￭ name = "￭ Nokia Corporation ￭" AND last ￭_￭ name = "￭ 2016 ￭" AND last ￭_￭ name = "￭ Text ￭" ￭;
+SELECT Country ￭_￭ name FROM country WHERE Capital < "￭ Dublin ￭"
+SELECT country FROM inst WHERE country = "￭ UK ￭" INTERSECT SELECT country FROM inst WHERE enr < 5000000
+SELECT dorm ￭_￭ name FROM dorm WHERE age < 20
+SELECT T ￭2 ￭.￭ Name FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭1 ￭.￭ age < ￭= 25
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age FROM airlines AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ alid WHERE T ￭2 ￭.￭ age > 40 GROUP BY T ￭1 ￭.￭ name HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age FROM airlines AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ alid WHERE T ￭2 ￭.￭ alid = '￭ F ￭' GROUP BY T ￭1 ￭.￭ name HAVING count ￭( ￭* ￭) > 2
+SELECT name , city ￭_￭ code FROM student WHERE city ￭_￭ code = "￭ BAL ￭"
+SELECT name , city ￭_￭ code FROM student WHERE city ￭_￭ code = "￭ BAL ￭"
+SELECT count ￭( ￭* ￭) FROM airlines WHERE salary < 50000
+SELECT count ￭( ￭* ￭) FROM Person
+SELECT count ￭( ￭* ￭) FROM airport WHERE id NOT IN (￭ SELECT country FROM airports ￭)
+SELECT count ￭( ￭* ￭) FROM dorm ￭_￭ amenity WHERE dormid < ￭= 2016
+SELECT count ￭( ￭* ￭) FROM Flight WHERE distance < (￭ SELECT avg ￭(￭ distance ￭) FROM Flight ￭)
+SELECT count ￭( ￭* ￭) FROM dorm ￭_￭ amenity WHERE dormid < ￭= 2016
+SELECT T ￭1 ￭.￭ name FROM airlines AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ alid GROUP BY T ￭1 ￭.￭ name HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT T ￭1 ￭.￭ name FROM airlines AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ alid GROUP BY T ￭1 ￭.￭ name HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT count ￭( ￭* ￭) FROM airlines WHERE alid > 40
+SELECT count ￭( ￭* ￭) FROM airlines WHERE alid = '￭ alid FROM airlines GROUP BY country
+SELECT name , city , country FROM airports WHERE elevation < 100
+SELECT city , GDP FROM city WHERE age < ￭= 25
+SELECT name FROM airports WHERE elevation > 20
+SELECT name FROM airports WHERE elevation > 20
+SELECT sum ￭(￭ Domestic ￭_￭ Passengers ￭) FROM airport WHERE Airport ￭_￭ Name = "￭ London Heathrow ￭"
+SELECT name FROM airport WHERE elevation < 100
+SELECT count ￭( ￭* ￭) FROM playlist ￭_￭ tracks WHERE country = "￭ Bangladesh ￭" AND playlists ￭-￭ count ￭( ￭* ￭) < 7
+SELECT count ￭( ￭* ￭) FROM Flight WHERE flno > 2000
+SELECT count ￭( ￭* ￭) FROM Flight WHERE HS < 1500
+SELECT category FROM performance WHERE Attendance < 2000 GROUP BY YEAR ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT sum ￭(￭ T ￭2 ￭.￭ room ￭) FROM Flight AS T ￭1 JOIN Aircraft AS T ￭2 ON T ￭1 ￭.￭ aid = T ￭2 ￭.￭ aid WHERE T ￭1 ￭.￭ year < 2010
+SELECT count ￭( ￭* ￭) FROM Flight WHERE flno > 2000
+SELECT count ￭( ￭* ￭) FROM Flight WHERE distance < ￭= 1000
+SELECT flno FROM Flight WHERE distance < 2000
+SELECT sum ￭(￭ T ￭1 ￭.￭ duration ￭) , max ￭(￭ T ￭2 ￭.￭ resolution ￭) FROM Flight AS T ￭1 JOIN Aircraft AS T ￭2 ON T ￭1 ￭.￭ aid = T ￭2 ￭.￭ aid WHERE T ￭2 ￭.￭ name = "￭ John F ￭" AND T ￭2 ￭.￭ name = "￭ love ￭"
+SELECT count ￭( ￭* ￭) FROM Flight WHERE flno > 2000
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ name FROM airlines AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ alid WHERE T ￭1 ￭.￭ age > 40 GROUP BY T ￭1 ￭.￭ name
+SELECT count ￭( ￭* ￭) FROM Flight
+SELECT count ￭( ￭* ￭) FROM performance WHERE Number ￭_￭ PHOTOS AS T ￭1 JOIN TOURIST ￭_￭ ATTRACTIONS AS T ￭2 ON T ￭1 ￭.￭ Tourist ￭_￭ Attraction ￭_￭ ID = T ￭2 ￭.￭ Tourist ￭_￭ Attraction ￭_￭ ID WHERE T ￭2 ￭.￭ Name = "￭ game ￭1 ￭"
+SELECT count ￭( ￭* ￭) FROM ship WHERE age < 46
+SELECT count ￭( ￭* ￭) FROM files WHERE duration < 3
+SELECT count ￭( ￭* ￭) FROM routes WHERE dst ￭_￭ apid IN (￭ SELECT apid FROM airports WHERE country = '￭ Canada ￭' ￭) AND src ￭_￭ apid IN (￭ SELECT apid FROM airports WHERE age < 50 ￭)
+SELECT sum ￭(￭ Domestic ￭_￭ Passengers ￭) FROM artist WHERE Name = "￭ United States ￭" OR Age < 46
+SELECT count ￭( ￭* ￭) FROM ship WHERE age < 46
+SELECT count ￭( ￭* ￭) , city ￭_￭ code FROM address GROUP BY city ￭_￭ code ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT name FROM Flight WHERE HS < 1500 GROUP BY zip ￭_￭ code ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT count ￭( ￭* ￭) , city ￭_￭ code FROM address GROUP BY city ￭_￭ code ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT name FROM furniture WHERE Num ￭_￭ of ￭_￭ Component > 10 ORDER BY Num ￭_￭ of ￭_￭ Factories < 10
+SELECT name FROM airports WHERE elevation > 100 GROUP BY name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT name FROM airports WHERE elevation > 100 GROUP BY name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT city ￭_￭ code FROM student WHERE height > 3 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT name FROM airports WHERE elevation > 100 GROUP BY name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ name FROM airlines AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ alid GROUP BY T ￭1 ￭.￭ name HAVING count ￭( ￭* ￭) > ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ name FROM airlines AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ alid GROUP BY T ￭1 ￭.￭ name HAVING count ￭( ￭* ￭) > ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age < 46 GROUP BY T ￭2 ￭.￭ name ￭_￭ address FROM airlines AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ alid WHERE T ￭2 ￭.￭ year > ￭= 2002 GROUP BY T ￭1 ￭.￭ country , T ￭1 ￭.￭ name , count ￭( ￭* ￭) < 30
+SELECT T ￭2 ￭.￭ name , T ￭2 ￭.￭ country FROM Flight AS T ￭1 JOIN Aircraft AS T ￭2 ON T ￭1 ￭.￭ aid = T ￭2 ￭.￭ aid GROUP BY T ￭1 ￭.￭ aid HAVING count ￭( ￭* ￭) > ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT flno FROM Flight WHERE distance < 2000
+SELECT flno FROM Flight WHERE distance < 50
+SELECT T ￭3 ￭.￭ name FROM train ￭_￭ station AS T ￭1 JOIN station AS T ￭2 ON T ￭1 ￭.￭ station ￭_￭ id = T ￭2 ￭.￭ station ￭_￭ id JOIN train AS T ￭3 ON T ￭3 ￭.￭ train ￭_￭ id = T ￭1 ￭.￭ train ￭_￭ id WHERE T ￭2 ￭.￭ season > 100
+SELECT flno FROM Flight WHERE origin = "￭ Los Angeles ￭" AND destination = "￭ Honolulu ￭"
+SELECT country FROM airport WHERE elevation < 100 INTERSECT SELECT country FROM airports WHERE elevation < 100
+SELECT flno FROM Flight WHERE distance < 2000
+SELECT name FROM train WHERE distance > 1000 EXCEPT SELECT T ￭1 ￭.￭ name FROM station AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ station ￭_￭ id WHERE T ￭2 ￭.￭ season > 100
+SELECT airlines FROM airlines WHERE salary > 100 EXCEPT SELECT T ￭1 ￭.￭ name FROM airlines AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ alid = T ￭2 ￭.￭ alid WHERE T ￭2 ￭.￭ alid = '￭ F ￭'
+SELECT country FROM airlines GROUP BY country HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT country FROM airlines WHERE elevation > 100 GROUP BY country HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT country FROM airport WHERE elevation > 100
+SELECT country FROM airlines WHERE elevation > 100 OR name = '￭ Iceland ￭'
+SELECT flno , location ￭_￭ Flight ￭_￭ Flight WHERE price BETWEEN 60
+SELECT flno FROM Flight WHERE distance < 2000
+SELECT T ￭2 ￭.￭ name FROM Flight AS T ￭1 JOIN flno AS T ￭2 ON T ￭1 ￭.￭ aid = T ￭2 ￭.￭ aid WHERE T ￭1 ￭.￭ flno < Flight ￭_￭ in = 99
+SELECT flno FROM 2000 ORDER BY price DESC LIMIT 1
+SELECT T ￭2 ￭.￭ name FROM Flight AS T ￭1 JOIN flno AS T ￭2 ON T ￭1 ￭.￭ aid = T ￭2 ￭.￭ aid WHERE T ￭1 ￭.￭ flno < Flight ￭_￭ in ￭_￭ location = 99
+SELECT flno , origin FROM Flight WHERE price < 2000
+SELECT flno FROM Flight WHERE distance > 2000
+SELECT flno FROM 2000 ORDER BY price DESC LIMIT 1
+SELECT flno FROM Flight WHERE distance < 2000
+SELECT flno , origin FROM Flight WHERE price < 2000
+SELECT count ￭( ￭* ￭) FROM Flight WHERE Number ￭_￭ cities < 300
+SELECT flno FROM Flight WHERE distance < 2000
+SELECT name , LOCATION FROM track WHERE track ￭_￭ id NOT IN (￭ SELECT track ￭_￭ id FROM race ￭)
+SELECT name FROM airport WHERE id NOT IN (￭ SELECT airport ￭_￭ id FROM takes WHERE salary > 100 ￭)
+SELECT count ￭( ￭* ￭) FROM Employee WHERE salary < (￭ SELECT avg ￭(￭ salary ￭) FROM Certificate ￭)
+SELECT count ￭( ￭* ￭) FROM Employee WHERE salary < (￭ SELECT avg ￭(￭ DISTINCT eid ￭) FROM Certificate ￭)
+SELECT first ￭_￭ name FROM employees WHERE last ￭_￭ name = "￭ Location ￭" ORDER BY department ￭_￭ name
+SELECT T ￭1 ￭.￭ Name , T ￭1 ￭.￭ Name FROM employee AS T ￭1 JOIN EMPLOYEE AS T ￭2 ON T ￭1 ￭.￭ SupportRepId = T ￭2 ￭.￭ EmployeeId GROUP BY T ￭1 ￭.￭ SupportRepId HAVING COUNT ￭( ￭* ￭) > ￭= 20 ORDER BY T ￭1 ￭.￭ Price
+SELECT T ￭2 ￭.￭ name , count ￭( ￭* ￭) FROM employees AS T ￭1 JOIN customers AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ friend WHERE T ￭1 ￭.￭ age > ￭= 20 GROUP BY T ￭2 ￭.￭ name
+SELECT count ￭( ￭* ￭) , T ￭2 ￭.￭ name FROM employees AS T ￭1 JOIN departments AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id GROUP BY T ￭3 ￭.￭ department ￭_￭ name HAVING count ￭(￭ T ￭1 ￭.￭ age ￭) > ￭= 2
+SELECT DISTINCT city FROM employees WHERE age < 30 AND age > 30
+SELECT city FROM employees WHERE age < ( SELECT min ￭(￭ age ￭) FROM Student ￭) AND Lname = "￭ apid WHERE age < 1850 ) ￭;
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ network ￭_￭ name , T ￭1 ￭.￭ services FROM manufacturer AS T ￭1 JOIN affected ￭_￭ region AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ service ￭_￭ id GROUP BY T ￭1 ￭.￭ station ￭_￭ id
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ network ￭_￭ name , T ￭1 ￭.￭ services FROM manufacturer AS T ￭1 JOIN phone ￭_￭ manufacte AS T ￭2 ON T ￭1 ￭.￭ manufacturer ￭_￭ id = T ￭2 ￭.￭ manufacturer ￭_￭ id WHERE T ￭2 ￭.￭ num ￭_￭ of ￭_￭ shops > 80
+SELECT T ￭2 ￭.￭ name , T ￭2 ￭.￭ area , T ￭1 ￭.￭ population FROM product AS T ￭1 JOIN address AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id WHERE T ￭1 ￭.￭ number ￭_￭ deaths > ￭= 10
+SELECT Shop ￭_￭ Name , LOCATION FROM shop WHERE Open ￭_￭ Year > 2012 ORDER BY Open ￭_￭ Year DESC LIMIT 1
+SELECT max ￭(￭ t ￭2 ￭.￭ price ￭_￭ in ￭_￭ euros ￭) , min ￭(￭ t ￭1 ￭.￭ price ￭_￭ in ￭_￭ euros ￭) FROM catalog ￭_￭ Bookings AS t ￭1 JOIN catalog ￭_￭ entry ￭_￭ id
+SELECT max ￭(￭ t ￭2 ￭.￭ price ￭_￭ in ￭_￭ euros ￭) , min ￭(￭ t ￭1 ￭.￭ price ￭_￭ in ￭_￭ euros ￭) FROM catalog ￭_￭ Bookings AS t ￭1 JOIN catalog ￭_￭ entry ￭_￭ id = t ￭2 ￭.￭ catalog ￭_￭ entry ￭_￭ id WHERE t ￭1 ￭.￭ catalog ￭_￭ level ￭_￭ name = "￭ 8 ￭"
+SELECT address , LOCATION FROM shop ORDER BY open ￭_￭ year DESC
+SELECT catalog ￭_￭ level ￭_￭ name , capacity FROM catalog ￭_￭ contents ORDER BY capacity DESC
+SELECT t ￭1 ￭.￭ catalog ￭_￭ entry ￭_￭ name FROM catalog ￭_￭ contents AS t ￭1 JOIN catalog ￭_￭ structure AS t ￭2 ON t ￭1 ￭.￭ catalog ￭_￭ level ￭_￭ number = t ￭2 ￭.￭ catalog ￭_￭ entry ￭_￭ id WHERE t ￭2 ￭.￭ bedroom ￭_￭ count > 2
+SELECT T ￭1 ￭.￭ product ￭_￭ name FROM product AS T ￭1 JOIN product ￭_￭ suppliers AS T ￭2 ON T ￭1 ￭.￭ product ￭_￭ id = T ￭2 ￭.￭ product ￭_￭ id WHERE T ￭1 ￭.￭ supplier ￭_￭ id = 2 AND T ￭2 ￭.￭ product ￭_￭ price < ￭= 2
+SELECT T ￭1 ￭.￭ name FROM Employee AS T ￭1 JOIN Certificate AS T ￭2 ON T ￭1 ￭.￭ eid = T ￭2 ￭.￭ eid GROUP BY T ￭1 ￭.￭ eid HAVING count ￭( ￭* ￭) < ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ cust ￭_￭ name FROM customer AS T ￭1 JOIN loan AS T ￭2 ON T ￭1 ￭.￭ cust ￭_￭ id = T ￭2 ￭.￭ cust ￭_￭ id WHERE loan ￭_￭ type = '￭ Mortgages ￭' GROUP BY T ￭1 ￭.￭ cust ￭_￭ name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT name FROM patient WHERE POSITION = (￭ SELECT min ￭(￭ salary ￭) FROM elimination GROUP BY StuID HAVING COUNT ￭( ￭* ￭) < 3
+SELECT T ￭2 ￭.￭ email ￭_￭ address FROM Addresses AS T ￭1 JOIN orders AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id WHERE T ￭1 ￭.￭ zip ￭_￭ code = "￭ NYC ￭" AND T ￭2 ￭.￭ date ￭_￭ of ￭_￭ transaction < "￭ Spring ￭"
+SELECT Name FROM employee WHERE Age < ￭= 25
+SELECT employee ￭_￭ name FROM Employees WHERE salary > 4 EXCEPT SELECT T ￭1 ￭.￭ name FROM Employee AS T ￭1 JOIN Invoice AS T ￭2 ON T ￭1 ￭.￭ CustomerId = T ￭2 ￭.￭ CustomerId WHERE T ￭2 ￭.￭ total < 20
+SELECT Shop ￭_￭ Name FROM shop WHERE Open ￭_￭ Year > 2012 GROUP BY Shop ￭_￭ Name HAVING COUNT ￭( ￭* ￭) < ￭= 2 ORDER BY COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭2 ￭.￭ address FROM city AS T ￭1 JOIN county ￭_￭ public ￭_￭ safety AS T ￭2 ON T ￭1 ￭.￭ County ￭_￭ ID = T ￭2 ￭.￭ County ￭_￭ ID GROUP BY T ￭1 ￭.￭ County ￭_￭ ID HAVING COUNT ￭( ￭* ￭) > ￭= 2 ORDER BY SUM ￭(￭ T ￭1 ￭.￭ quantity ￭) DESC LIMIT 1
+SELECT name FROM manufacturer WHERE num ￭_￭ of ￭_￭ shops > 20
+SELECT Shop ￭_￭ Name FROM shop WHERE Open ￭_￭ Year > 2012 AND Open ￭_￭ Year < 2008
+SELECT T ￭1 ￭.￭ first ￭_￭ name , T ￭1 ￭.￭ last ￭_￭ name , COUNT ￭( ￭* ￭) FROM employees AS T ￭1 JOIN departments AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id GROUP BY T ￭2 ￭.￭ id HAVING COUNT ￭( ￭* ￭) > ￭= 2
+SELECT count ￭( ￭* ￭) , sex FROM employee WHERE weight > 85 GROUP BY city ￭_￭ code
+SELECT sum ￭(￭ T ￭1 ￭.￭ salary ￭) FROM instructor AS T ￭1 JOIN team AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ i ￭_￭ id GROUP BY T ￭2 ￭.￭ name HAVING sum ￭(￭ T ￭1 ￭.￭ age ￭) < ￭= 10
+SELECT sum ￭(￭ T ￭1 ￭.￭ salary ￭) FROM instructor AS T ￭1 JOIN teaches AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ id WHERE T ￭2 ￭.￭ name = '￭ CProxy ￭' AND T ￭2 ￭.￭ of ￭_￭ transaction < 20
+SELECT * FROM people
+SELECT * FROM people
+SELECT district ￭_￭ name FROM district WHERE city ￭_￭ area > 3 INTERSECT SELECT document ￭_￭ id FROM district WHERE city ￭_￭ code = "￭ LA ￭"
+SELECT t ￭1 ￭.￭ product ￭_￭ name , t ￭1 ￭.￭ product ￭_￭ price FROM product AS t ￭1 JOIN Catalog ￭_￭ Contents ￭_￭ Additional ￭_￭ Attributes AS t ￭2 ON t ￭1 ￭.￭ catalog ￭_￭ entry ￭_￭ id = t ￭2 ￭.￭ catalog ￭_￭ entry ￭_￭ id WHERE t ￭2 ￭.￭ Mar < 3000 INTERSECT SELECT t ￭1 ￭.￭ product ￭_￭ name , t ￭1 ￭.￭ area ￭_￭ code FROM district AS t ￭1 JOIN hosting ￭_￭ district AS t ￭2 ON t ￭1 ￭.￭ city ￭_￭ id = t ￭2 ￭.￭ host ￭_￭ city
+SELECT count ￭(￭ DISTINCT District ￭) FROM station WHERE store ￭_￭ id < (￭ SELECT count ￭(￭ address ￭_￭ id ￭) FROM customer ￭_￭ season ￭)
+SELECT count ￭(￭ DISTINCT store ￭_￭ id ￭) FROM customer WHERE store ￭_￭ id < 100
+SELECT count ￭( ￭* ￭) FROM Documents WHERE document ￭_￭ type ￭_￭ code = '￭ CV ￭'
+SELECT count ￭( ￭* ￭) FROM accounts WHERE age < 25
+SELECT document ￭_￭ type ￭_￭ code , document ￭_￭ type ￭_￭ name FROM Ref ￭_￭ document ￭_￭ types GROUP BY document ￭_￭ type ￭_￭ code HAVING count ￭( ￭* ￭) > 2
+SELECT color ￭_￭ description , document ￭_￭ type ￭_￭ description FROM Ref ￭_￭ document ￭_￭ types
+SELECT document ￭_￭ name , document ￭_￭ id FROM Documents WHERE document ￭_￭ name LIKE " ￭%￭ CV ￭% ￭"
+SELECT document ￭_￭ name , document ￭_￭ id FROM Documents WHERE document ￭_￭ name LIKE " ￭%￭ TN ￭% ￭"
+SELECT document ￭_￭ id , document ￭_￭ name FROM Documents WHERE document ￭_￭ name = "￭ David CV ￭"
+SELECT document ￭_￭ name , document ￭_￭ type ￭_￭ description FROM Ref ￭_￭ document ￭_￭ types WHERE document ￭_￭ type ￭_￭ code = "￭ RV ￭"
+SELECT count ￭(￭ DISTINCT name ￭) FROM documents
+SELECT count ￭(￭ DISTINCT name ￭) FROM projects
+SELECT document ￭_￭ type ￭_￭ code FROM Documents WHERE document ￭_￭ type ￭_￭ code = "￭ WHERE document ￭_￭ type ￭_￭ code = "￭ Paper ￭" INTERSECT SELECT document ￭_￭ type ￭_￭ code FROM Documents JOIN Ref ￭_￭ Shipping ￭_￭ Agents ON Documents ￭.￭ shipping ￭_￭ agent ￭_￭ code = Ref ￭_￭ code WHERE Ref ￭_￭ Shipping ￭_￭ Agents ￭.￭ shipping ￭_￭ Agents ￭.￭ shipping ￭_￭ agent ￭_￭ code = "￭ USPS ￭" ￭;
+SELECT count ￭( ￭* ￭) FROM Documents WHERE document ￭_￭ name = "￭ WHERE document ￭_￭ name = "￭ BAL ￭"
+SELECT document ￭_￭ id FROM Documents GROUP BY document ￭_￭ id HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT count ￭( ￭* ￭) , project ￭_￭ id FROM products GROUP BY project ￭_￭ id HAVING count ￭( ￭* ￭) > 2
+SELECT document ￭_￭ id , document ￭_￭ name FROM Documents WHERE document ￭_￭ type ￭_￭ code = '￭ PUR ￭' AND share ￭_￭ count > 50
+SELECT document ￭_￭ id , document ￭_￭ name FROM Documents WHERE document ￭_￭ type ￭_￭ code = "￭ BK ￭" GROUP BY project ￭_￭ id HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT id FROM Documents GROUP BY id HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT last ￭_￭ name FROM staff WHERE product ￭_￭ id IN (￭ SELECT staff ￭_￭ id FROM Behavior ￭_￭ Incident ￭)
+SELECT employee ￭_￭ id FROM job ￭_￭ history GROUP BY employee ￭_￭ id HAVING COUNT ￭(￭ DISTINCT employee ￭_￭ id ￭) < ￭= 2
+SELECT StuID FROM Student EXCEPT SELECT id FROM Plays ￭_￭ games GROUP BY department ￭_￭ id HAVING count ￭(￭ employee ￭_￭ id ￭) > ￭= 2
+SELECT count ￭( ￭* ￭) FROM Documents WHERE age < (￭ SELECT avg ￭(￭ age ￭) FROM people ￭)
+SELECT count ￭( ￭* ￭) FROM accounts WHERE age < 25
+SELECT document ￭_￭ type ￭_￭ code , document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code FROM Ref ￭_￭ document ￭_￭ types GROUP BY document ￭_￭ type ￭_￭ code
+SELECT Product ￭_￭ Name , Product ￭_￭ Type ￭_￭ Code FROM Products WHERE Product ￭_￭ Price > 4500
+SELECT DISTINCT location ￭_￭ code FROM products AS location ￭_￭ code WHERE transaction ￭_￭ type ￭_￭ code = "￭ in ￭_￭ transaction ￭_￭ transaction ￭_￭ type ￭_￭ code = "￭ Product ￭_￭ transaction ￭_￭ id GROUP BY document ￭_￭ type ￭_￭ code
+SELECT DISTINCT transaction ￭_￭ type ￭_￭ code FROM payments
+SELECT document ￭_￭ id FROM Documents WHERE document ￭_￭ type ￭_￭ code ￭_￭ code ￭_￭ code = '￭ Good Credit Rating ￭'
+SELECT document ￭_￭ id FROM Documents WHERE document ￭_￭ type ￭_￭ code ￭_￭ code ￭_￭ code = "￭ < ￭"
+SELECT document ￭_￭ type ￭_￭ code FROM products WHERE document ￭_￭ type ￭_￭ code = '￭ PUR ￭' AND min ￭(￭ Documents ￭_￭ code = '￭ Tax ￭'
+SELECT count ￭( ￭* ￭) FROM Financial ￭_￭ transactions WHERE transaction ￭_￭ type ￭_￭ code = '￭ > (￭ SELECT count ￭( ￭* ￭) FROM Financial ￭_￭ transactions ￭)
+SELECT document ￭_￭ type ￭_￭ code , document ￭_￭ name FROM Apartment ￭_￭ Bookings WHERE transaction ￭_￭ type ￭_￭ code = "￭ PUR ￭" AND share ￭_￭ count > 50
+SELECT T ￭2 ￭.￭ allergytype , count ￭( ￭* ￭) FROM customer AS T ￭1 JOIN address AS T ￭2 ON T ￭1 ￭.￭ sex = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭1 ￭.￭ age > ￭= 20 GROUP BY T ￭1 ￭.￭ school ￭_￭ code
+SELECT Product ￭_￭ Type ￭_￭ Code , COUNT ￭( ￭* ￭) FROM Products GROUP BY Product ￭_￭ Type ￭_￭ Code
+SELECT TYPE , count ￭( ￭* ￭) FROM institution GROUP BY TYPE
+SELECT document ￭_￭ type ￭_￭ code FROM Documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT document ￭_￭ type ￭_￭ code FROM Documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT document ￭_￭ type ￭_￭ code FROM Documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code ORDER BY count ￭( ￭* ￭) ASC LIMIT 3
+SELECT document ￭_￭ type ￭_￭ code FROM Documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code HAVING count ￭( ￭* ￭) < ￭= 3
+SELECT T ￭2 ￭.￭ location ￭_￭ code , T ￭1 ￭.￭ Type ￭_￭ Code FROM Customer ￭_￭ Payments AS T ￭1 JOIN Customers AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id GROUP BY T ￭1 ￭.￭ customer ￭_￭ id HAVING count ￭( ￭* ￭) > 2 ￭;
+SELECT min ￭(￭ amount ￭_￭ of ￭_￭ transaction ￭) , product ￭_￭ type ￭_￭ code FROM products GROUP BY product ￭_￭ type ￭_￭ code
+SELECT document ￭_￭ type ￭_￭ code FROM Documents WHERE document ￭_￭ type ￭_￭ code ￭_￭ name = "￭ document ￭_￭ type ￭_￭ code ￭" AND document ￭_￭ type ￭_￭ code = "￭ document ￭_￭ id WHERE document ￭_￭ name = "￭ Paper ￭"
+SELECT document ￭_￭ type ￭_￭ code FROM Documents WHERE document ￭_￭ type ￭_￭ code ￭_￭ code = "￭ document ￭_￭ type ￭_￭ code ￭" AND document ￭_￭ type ￭_￭ code = "￭ document ￭_￭ status ￭_￭ code WHERE document ￭_￭ name = "￭ Paper ￭"
+SELECT document ￭_￭ name FROM documents WHERE document ￭_￭ type ￭_￭ code ￭_￭ code = "￭ David CV ￭"
+SELECT document ￭_￭ name FROM documents WHERE document ￭_￭ code = "￭ David CV ￭"
+SELECT document ￭_￭ type ￭_￭ code FROM Documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code WHERE Ref ￭_￭ Shipping ￭_￭ Agents ￭.￭ shipping ￭_￭ agent ￭_￭ code = "￭ PUR ￭"
+SELECT document ￭_￭ type ￭_￭ code , count ￭( ￭* ￭) FROM Documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code
+SELECT document ￭_￭ type ￭_￭ code FROM products GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT document ￭_￭ type ￭_￭ code FROM Documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ type ￭_￭ code document ￭_￭ code ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT customer ￭_￭ code FROM Customers EXCEPT SELECT T ￭1 ￭.￭ customer ￭_￭ name FROM customers AS T ￭1 JOIN Customer ￭_￭ Policies AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id
+SELECT policy ￭_￭ type ￭_￭ code FROM policies GROUP BY policy ￭_￭ type ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code FROM policies ￭_￭ Types GROUP BY policy ￭_￭ type ￭_￭ code HAVING count ￭(￭ DISTINCT detention ￭_￭ type ￭_￭ code ￭) > ￭= 2 EXCEPT SELECT t ￭1 ￭.￭ Service ￭_￭ Type ￭_￭ Code FROM Ref ￭_￭ Service ￭_￭ Types AS t ￭1 JOIN Fault ￭_￭ Type AS t ￭2 ON t ￭1 ￭.￭ Service ￭_￭ Type ￭_￭ Code = Ref ￭_￭ Type ￭_￭ Code WHERE Ref ￭_￭ Type ￭_￭ Code = '￭ SF ￭'
+SELECT document ￭_￭ type ￭_￭ code , document ￭_￭ type ￭_￭ code FROM products GROUP BY document ￭_￭ type ￭_￭ code ￭_￭ code ￭_￭ code product ￭_￭ type ￭_￭ code product ￭_￭ code HAVING count ￭(￭ DISTINCT product ￭_￭ price ￭) > ￭= 2
+SELECT document ￭_￭ type ￭_￭ code , document ￭_￭ type ￭_￭ name FROM Ref ￭_￭ document ￭_￭ types GROUP BY document ￭_￭ type ￭_￭ code
+SELECT document ￭_￭ type ￭_￭ code FROM Documents WHERE document ￭_￭ type ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code = '￭ PUR ￭'
+SELECT product ￭_￭ type ￭_￭ code FROM products WHERE product ￭_￭ type ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code = '￭ PUR ￭' AND min ￭(￭ age < 20
+SELECT product ￭_￭ type ￭_￭ code FROM products WHERE product ￭_￭ type ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code = '￭ PUR ￭'
+SELECT product ￭_￭ type ￭_￭ code FROM products WHERE product ￭_￭ type ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code ￭_￭ code = '￭ PUR ￭' AND min ￭(￭ age < 20
+SELECT DISTINCT product ￭_￭ type ￭_￭ code FROM products ￭_￭ Document ￭_￭ Types
+SELECT DISTINCT Description FROM Ref ￭_￭ Service ￭_￭ Types
+SELECT problem ￭_￭ id FROM products WHERE product ￭_￭ type ￭_￭ code = '￭ SALE ￭'
+SELECT problem ￭_￭ log ￭_￭ id FROM problems WHERE product ￭_￭ id = 11
+SELECT count ￭( ￭* ￭) FROM review
+SELECT count ￭( ￭* ￭) FROM accounts WHERE age < 25
+SELECT count ￭( ￭* ￭) FROM documents WHERE document ￭_￭ name = "￭ David CV ￭"
+SELECT count ￭( ￭* ￭) FROM Documents WHERE document ￭_￭ name = "￭ David CV ￭"
+SELECT text FROM tweets WHERE balance > 300 ORDER BY createdate
+SELECT Carrier FROM tweets WHERE tweets > ( SELECT Carrier FROM tweets )
+SELECT T ￭2 ￭.￭ catalog ￭_￭ entry ￭_￭ id , T ￭1 ￭.￭ document ￭_￭ name FROM Apartment ￭_￭ Bookings AS T ￭1 JOIN Apartments AS T ￭2 ON T ￭1 ￭.￭ catalog ￭_￭ entry ￭_￭ id = T ￭2 ￭.￭ catalog ￭_￭ entry ￭_￭ id WHERE T ￭1 ￭.￭ product ￭_￭ name = "￭ marketing ￭" AND T ￭2 ￭.￭ characteristic ￭_￭ id = 85 AND T ￭2 ￭.￭ overall ￭_￭ rating < 3
+SELECT T ￭1 ￭.￭ document ￭_￭ id , T ￭1 ￭.￭ document ￭_￭ name FROM Documents AS T ￭1 JOIN Documents ￭_￭ with ￭_￭ expenses AS T ￭2 ON T ￭1 ￭.￭ document ￭_￭ id = T ￭2 ￭.￭ document ￭_￭ id WHERE T ￭2 ￭.￭ height < price ￭_￭ in ￭_￭ Dollar < (￭ SELECT avg ￭(￭ age ￭) FROM products ￭)
+SELECT attribute ￭_￭ data ￭_￭ type FROM Apartments WHERE Total ￭_￭ Passengers > 2
+SELECT T ￭1 ￭.￭ catalog ￭_￭ entry ￭_￭ name FROM Catalog ￭_￭ Contents AS T ￭1 JOIN Catalog ￭_￭ Contents ￭_￭ Additional ￭_￭ Attributes AS T ￭2 ON T ￭1 ￭.￭ catalog ￭_￭ entry ￭_￭ id = T ￭2 ￭.￭ catalog ￭_￭ entry ￭_￭ id WHERE T ￭2 ￭.￭ founded > 1880 OR T ￭1 ￭.￭ attribute ￭_￭ value < ￭= '￭ Apartments ￭-￭ apt ￭_￭ type ￭_￭ code = "￭ PUR ￭"
+SELECT document ￭_￭ name , document ￭_￭ id FROM Documents WHERE document ￭_￭ id = 2 GROUP BY document ￭_￭ id HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT document ￭_￭ id , count ￭( ￭* ￭) FROM Documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ id HAVING count ￭( ￭* ￭) < 2 ORDER BY document ￭_￭ id ￭_￭ br ￭_￭ br WHERE Documents ￭.￭ document ￭_￭ id = 2
+SELECT document ￭_￭ name , access ￭_￭ count FROM documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ code HAVING count ￭( ￭* ￭) > 3
+SELECT T ￭1 ￭.￭ account ￭_￭ id , T ￭1 ￭.￭ account ￭_￭ name FROM Financial ￭_￭ transactions AS T ￭1 JOIN Accounts AS T ￭2 ON T ￭1 ￭.￭ account ￭_￭ id = T ￭2 ￭.￭ account ￭_￭ id GROUP BY T ￭1 ￭.￭ account ￭_￭ id
+SELECT document ￭_￭ id FROM Documents GROUP BY document ￭_￭ id HAVING count ￭( ￭* ￭) < 2
+SELECT document ￭_￭ id FROM Documents GROUP BY document ￭_￭ id HAVING count ￭( ￭* ￭) < 2
+SELECT document ￭_￭ name , document ￭_￭ id FROM Documents GROUP BY document ￭_￭ id HAVING count ￭( ￭* ￭) < 2
+SELECT document ￭_￭ name , document ￭_￭ id FROM Documents GROUP BY document ￭_￭ id HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT document ￭_￭ id FROM Documents GROUP BY document ￭_￭ type ￭_￭ code document ￭_￭ code document ￭_￭ id HAVING count ￭( ￭* ￭) < 2
+SELECT document ￭_￭ id FROM Documents GROUP BY document ￭_￭ id HAVING count ￭( ￭* ￭) < 2
+SELECT document ￭_￭ id FROM Documents WHERE document ￭_￭ id NOT IN (￭ SELECT document ￭_￭ id FROM Documents ￭_￭ with ￭_￭ expenses ￭)
+SELECT document ￭_￭ id FROM Documents GROUP BY document ￭_￭ id HAVING count ￭( ￭* ￭) > ￭= 2 AND document ￭_￭ id < ￭= 2
+SELECT T ￭1 ￭.￭ id , T ￭1 ￭.￭ score FROM department AS T ￭1 JOIN management AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id
+SELECT employee ￭_￭ id FROM professor WHERE source ￭_￭ system ￭_￭ code = '￭ Public ￭' ORDER BY salary DESC
+SELECT count ￭(￭ DISTINCT last ￭_￭ name ￭) FROM Teachers
+SELECT count ￭( ￭* ￭) FROM enzyme
+SELECT name FROM Teachers ORDER BY price ￭_￭ range ASC
+SELECT first ￭_￭ name FROM Teachers ORDER BY last ￭_￭ name ASC
+SELECT DISTINCT Hometown FROM people WHERE Age < ￭= 25
+SELECT name , age FROM people WHERE age < (￭ SELECT max ￭(￭ age ￭) FROM people ￭)
+SELECT T ￭2 ￭.￭ Name FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭1 ￭.￭ Total ￭_￭ Points > 57 ￭.￭ 5
+SELECT T ￭2 ￭.￭ Name FROM Grapes AS T ￭1 JOIN people ￭_￭ people AS T ￭2 ON T ￭1 ￭.￭ cmi ￭_￭ cross ￭_￭ ref ￭_￭ id = T ￭2 ￭.￭ cmi ￭_￭ cross ￭_￭ ref ￭_￭ id WHERE T ￭1 ￭.￭ age < ￭= 100
+SELECT Name FROM phone WHERE Age < ￭= 25
+SELECT Name FROM phone WHERE Age < ￭= 25
+SELECT T ￭2 ￭.￭ Name FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭2 ￭.￭ Age > ￭= 25 ORDER BY T ￭2 ￭.￭ Height < ￭= 10
+SELECT address FROM people WHERE age < (￭ SELECT min ￭(￭ age ￭) FROM person WHERE job = '￭ engineer ￭' ￭) AND first ￭_￭ name = '￭ MK ￭_￭ MAN ￭' ￭)
+SELECT DISTINCT T ￭2 ￭.￭ Hometown FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭1 ￭.￭ Total ￭_￭ Points > 57 ￭.￭ 5
+SELECT count ￭( ￭* ￭) , affiliation FROM Teachers GROUP BY teacher ￭_￭ id
+SELECT T ￭2 ￭.￭ Hometown FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID GROUP BY T ￭2 ￭.￭ Hometown HAVING COUNT ￭( ￭* ￭) > ￭= 2 ORDER BY COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭2 ￭.￭ Hometown FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID GROUP BY T ￭2 ￭.￭ Hometown HAVING COUNT ￭( ￭* ￭) > ￭= 2 ORDER BY COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭2 ￭.￭ Hometown FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID GROUP BY T ￭2 ￭.￭ Hometown HAVING COUNT ￭( ￭* ￭) > ￭= 2
+SELECT DISTINCT T ￭2 ￭.￭ product ￭_￭ name FROM orders AS T ￭1 JOIN product AS T ￭2 ON T ￭1 ￭.￭ product ￭_￭ id = T ￭2 ￭.￭ product ￭_￭ id WHERE T ￭1 ￭.￭ gpa > 3
+SELECT T ￭1 ￭.￭ first ￭_￭ name , T ￭1 ￭.￭ last ￭_￭ name FROM Courses AS T ￭1 JOIN Subjects AS T ￭2 ON T ￭1 ￭.￭ subject ￭_￭ id = T ￭2 ￭.￭ subject ￭_￭ id GROUP BY T ￭1 ￭.￭ subject ￭_￭ id HAVING COUNT ￭( ￭* ￭) > 2
+SELECT T ￭1 ￭.￭ Fname , T ￭1 ￭.￭ Lname FROM FACULTY AS T ￭1 JOIN MEMBER ￭_￭ OF AS T ￭2 ON T ￭1 ￭.￭ FacID = T ￭2 ￭.￭ FacID WHERE T ￭2 ￭.￭ stu ￭_￭ OF AS T ￭1 ￭.￭ stu ￭_￭ OF AS T ￭2 ON T ￭1 ￭.￭ FacID = T ￭2 ￭.￭ 3 GROUP BY T ￭1 ￭.￭ Fname , T ￭1 ￭.￭ author ￭_￭ id HAVING count ￭( ￭* ￭) > 3
+SELECT T ￭2 ￭.￭ roomName , T ￭1 ￭.￭ Rate FROM Reservations AS T ￭1 JOIN Rooms AS T ￭2 ON T ￭1 ￭.￭ Room = T ￭2 ￭.￭ RoomId GROUP BY T ￭1 ￭.￭ Room HAVING COUNT ￭( ￭* ￭) > ￭= 2 ORDER BY T ￭1 ￭.￭ range DESC
+SELECT T ￭2 ￭.￭ emp ￭_￭ fname , T ￭1 ￭.￭ stu ￭_￭ gpa FROM Assessment ￭_￭ Notes AS T ￭1 JOIN Teachers AS T ￭2 ON T ￭1 ￭.￭ teacher ￭_￭ id = T ￭2 ￭.￭ teacher ￭_￭ id WHERE T ￭1 ￭.￭ Color = "￭ Computer Science ￭" ORDER BY T ￭2 ￭.￭ emp ￭_￭ fname
+SELECT T ￭2 ￭.￭ name FROM advisor AS T ￭1 JOIN instructor AS T ￭2 ON T ￭1 ￭.￭ i ￭_￭ id = T ￭2 ￭.￭ id WHERE T ￭1 ￭.￭ age < ￭= 3
+SELECT T ￭2 ￭.￭ Name FROM debate ￭_￭ people AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Negative = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭1 ￭.￭ age > ￭= 20
+SELECT T ￭1 ￭.￭ title , T ￭1 ￭.￭ film ￭_￭ id FROM Projects AS T ￭1 JOIN Project ￭_￭ outcomes AS T ￭2 ON T ￭1 ￭.￭ project ￭_￭ id = T ￭2 ￭.￭ project ￭_￭ id GROUP BY T ￭1 ￭.￭ course ￭_￭ id HAVING count ￭( ￭* ￭) > 2
+SELECT T ￭1 ￭.￭ first ￭_￭ name , T ￭1 ￭.￭ last ￭_￭ name FROM Courses AS T ￭1 JOIN Subjects AS T ￭2 ON T ￭1 ￭.￭ subject ￭_￭ id = T ￭2 ￭.￭ subject ￭_￭ id GROUP BY T ￭1 ￭.￭ subject ￭_￭ id HAVING COUNT ￭( ￭* ￭) > 2
+SELECT DISTINCT T ￭2 ￭.￭ firstname FROM COURSE AS T ￭1 JOIN FACULTY AS T ￭2 ON T ￭1 ￭.￭ Instructor = T ￭2 ￭.￭ FacID WHERE T ￭1 ￭.￭ Color = "￭ White ￭" GROUP BY T ￭2 ￭.￭ building ￭_￭ id HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT T ￭2 ￭.￭ roomName FROM Reservations AS T ￭1 JOIN Rooms AS T ￭2 ON T ￭1 ￭.￭ Room = T ￭2 ￭.￭ RoomId GROUP BY T ￭1 ￭.￭ Room HAVING count ￭( ￭* ￭) > ￭= 2 ￭;
+SELECT DISTINCT name FROM Teachers EXCEPT SELECT T ￭1 ￭.￭ name FROM FACULTY AS T ￭1 JOIN FACULTY AS T ￭2 ON T ￭1 ￭.￭ teacher ￭_￭ id = T ￭2 ￭.￭ teacher ￭_￭ id WHERE T ￭2 ￭.￭ score < 5
+SELECT first ￭_￭ name FROM Teachers EXCEPT SELECT T ￭1 ￭.￭ last ￭_￭ name FROM Teachers AS T ￭1 JOIN Teachers AS T ￭2 ON T ￭1 ￭.￭ teacher ￭_￭ id = T ￭2 ￭.￭ teacher ￭_￭ id WHERE T ￭2 ￭.￭ founded > 1880
+SELECT count ￭( ￭* ￭) FROM Person WHERE age < 30
+SELECT t ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID WHERE T ￭2 ￭.￭ Price > 100 ORDER BY high ￭_￭ estimate DESC
+SELECT name FROM member WHERE Membership ￭_￭ card = '￭ Black ￭' EXCEPT SELECT Nationality FROM captain WHERE age < 30
+SELECT name FROM people WHERE home ￭_￭ city = '￭ Hartford ￭' AND age < 40
+SELECT name , course ￭_￭ id FROM furniture ORDER BY date ￭_￭ in ￭_￭ Dollar DESC LIMIT 1
+SELECT avg ￭(￭ price ￭) FROM people WHERE Number ￭_￭ cities < 300
+SELECT name , open ￭_￭ year FROM manufacturer WHERE num ￭_￭ of ￭_￭ platforms > ￭= 15 AND total ￭_￭ apid < ￭= 25
+SELECT name , open ￭_￭ year FROM furniture WHERE Num ￭_￭ of ￭_￭ Component > (￭ SELECT min ￭(￭ Price ￭) FROM furniture WHERE job ￭_￭ in ￭_￭ Dollar < (￭ SELECT min ￭(￭ date ￭_￭ complaint ￭_￭ raised < 100 ￭)
+SELECT name , age FROM Person WHERE age < 40 GROUP BY name HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT T ￭2 ￭.￭ name , T ￭2 ￭.￭ location FROM operate ￭_￭ company AS T ￭1 JOIN flight AS t ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ company ￭_￭ id WHERE T ￭1 ￭.￭ founded > 1880 GROUP BY T ￭1 ￭.￭ building ￭_￭ id ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ student ￭_￭ id , T ￭2 ￭.￭ name FROM Assessment ￭_￭ Notes AS T ￭1 JOIN Students AS T ￭2 ON T ￭1 ￭.￭ student ￭_￭ id = T ￭2 ￭.￭ student ￭_￭ id WHERE T ￭1 ￭.￭ student ￭_￭ id > ( SELECT max ￭(￭ date ￭_￭ problem ￭_￭ reported ￭) FROM products ￭) ORDER BY T ￭3 ￭.￭ Event ￭_￭ Attendance ￭) DESC LIMIT 1
+SELECT name FROM web ￭_￭ client ￭_￭ accelerator WHERE id NOT IN (￭ SELECT accelerator ￭_￭ id FROM accelerator ￭_￭ compatible ￭_￭ browser ￭)
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name GROUP BY T ￭2 ￭.￭ name HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT T ￭1 ￭.￭ customer ￭_￭ name , T ￭1 ￭.￭ customer ￭_￭ address FROM customers AS T ￭1 JOIN customer ￭_￭ orders AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id WHERE T ￭2 ￭.￭ order ￭_￭ status ￭_￭ code = "￭ Credit ￭" GROUP BY T ￭2 ￭.￭ customer ￭_￭ name
+SELECT count ￭(￭ DISTINCT ticket ￭_￭ price ￭) FROM exhibition WHERE ticket ￭_￭ price < 10
+SELECT T ￭1 ￭.￭ name FROM browser AS T ￭1 JOIN status AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ station ￭_￭ id WHERE T ￭2 ￭.￭ bikes ￭_￭ available < 7 INTERSECT SELECT name FROM web ￭_￭ available WHERE YEAR < 7
+SELECT count ￭( ￭* ￭) FROM Visitors WHERE Num ￭_￭ ID IN ( SELECT Tourist ￭_￭ ID FROM Visits ￭_￭ Restaurant JOIN Restaurant ON Visits ￭_￭ Restaurant ￭.￭ ResID = Restaurant ￭.￭ ResID WHERE age > 40 ￭)
+SELECT count ￭( ￭* ￭) FROM Financial ￭_￭ transactions WHERE transaction ￭_￭ amount < 2000 OR invoice ￭_￭ count ￭( ￭* ￭) < ￭= 100
+SELECT count ￭( ￭* ￭) FROM Person WHERE age < (￭ SELECT max ￭(￭ age ￭) FROM person ￭)
+SELECT count ￭( ￭* ￭) FROM player WHERE age < 18
+SELECT count ￭( ￭* ￭) FROM Person WHERE age < (￭ SELECT max ￭(￭ age ￭) FROM person ￭)
+SELECT count ￭( ￭* ￭) FROM accounts WHERE age < 25
+SELECT employee ￭_￭ name , first ￭_￭ name , last ￭_￭ name FROM Employees WHERE salary < ( SELECT avg ￭(￭ age ￭) FROM people WHERE preferred ￭_￭ foot = "￭ M ￭" AND age < 20
+SELECT DISTINCT T ￭3 ￭.￭ EMP ￭_￭ FNAME , T ￭1 ￭.￭ LName FROM STUDENT AS T ￭1 JOIN VOTING ￭_￭ RECORD AS T ￭2 ON T ￭1 ￭.￭ StuID = T ￭2 ￭.￭ VICE ￭_￭ President ￭_￭ VOTE WHERE T ￭1 ￭.￭ age < 20
+SELECT min ￭(￭ age ￭) , job FROM Person WHERE age < (￭ SELECT avg ￭(￭ age ￭) FROM person WHERE job = '￭ engineer ￭' ￭)
+SELECT avg ￭(￭ age ￭) , job FROM Person WHERE age < 30 GROUP BY job
+SELECT min ￭(￭ rank ￭) FROM captain WHERE age < (￭ SELECT min ￭(￭ age ￭) FROM captain WHERE job = '￭ male ￭' )
+SELECT min ￭(￭ rank ￭) FROM review WHERE sex = '￭ F ￭'
+SELECT min ￭(￭ rank ￭) FROM review WHERE rank > (￭ SELECT rank FROM review ￭) ORDER BY rank DESC LIMIT 1 ￭)
+SELECT DISTINCT T ￭2 ￭.￭ player ￭_￭ name FROM Fname AS T ￭1 JOIN FACULTY AS T ￭2 ON T ￭1 ￭.￭ player ￭_￭ id = T ￭2 ￭.￭ player ￭_￭ api ￭_￭ id WHERE T ￭1 ￭.￭ age < (￭ SELECT max ￭(￭ age ￭) FROM Player ￭_￭ Attributes ￭)
+SELECT count ￭(￭ DISTINCT name ￭) FROM department WHERE country ￭_￭ name = "￭ < "￭ USA ￭"
+SELECT count ￭(￭ DISTINCT POSITION ￭) FROM player WHERE points < 20
+SELECT DISTINCT name FROM instructor WHERE name = "￭ warm ￭"
+SELECT count ￭(￭ DISTINCT name ￭) FROM projects
+SELECT name FROM Person WHERE age > 40
+SELECT name FROM Person WHERE age > 40
+SELECT T ￭2 ￭.￭ StuID FROM Faculty AS T ￭1 JOIN Student AS T ￭2 ON T ￭1 ￭.￭ FacID = T ￭2 ￭.￭ advisor WHERE T ￭1 ￭.￭ rank = "￭ Professor ￭" INTERSECT SELECT T ￭2 ￭.￭ StuID FROM Sportsinfo AS T ￭1 JOIN Bootup Baltimore ￭"
+SELECT T ￭1 ￭.￭ name FROM player AS T ￭1 JOIN player ￭_￭ college AS T ￭2 ON T ￭1 ￭.￭ player ￭_￭ id = T ￭2 ￭.￭ player ￭_￭ id WHERE T ￭2 ￭.￭ balance < On Road < 100000
+SELECT count ￭( ￭* ￭) FROM home ￭_￭ game WHERE age > 40 GROUP BY T ￭1 ￭.￭ StuID
+SELECT count ￭( ￭* ￭) FROM MATCH WHERE home ￭_￭ city = "￭ Massively multiplayer online game ￭"
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ area , T ￭1 ￭.￭ birth ￭_￭ place FROM employee AS T ￭1 JOIN match ￭_￭ season AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭2 ￭.￭ preferred ￭_￭ foot = "￭ M ￭" INTERSECT SELECT T ￭1 ￭.￭ Country ￭_￭ name , T ￭1 ￭.￭ preferred ￭_￭ foot FROM employee AS T ￭1 JOIN CLASS AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭2 ￭.￭ salary < ￭= 18
+SELECT DISTINCT T ￭1 ￭.￭ name , T ￭1 ￭.￭ area , T ￭1 ￭.￭ name FROM employee AS T ￭1 JOIN player ￭_￭ award AS T ￭2 ON T ￭1 ￭.￭ player ￭_￭ id = T ￭2 ￭.￭ player ￭_￭ id WHERE T ￭2 ￭.￭ salary > 100000 INTERSECT SELECT T ￭1 ￭.￭ T ￭1 ￭.￭ T ￭1 ￭.￭ T ￭1 ￭.￭ Country ￭_￭ name , T ￭1 ￭.￭ area , T ￭2 ￭.￭ player ￭_￭ name FROM player AS T ￭1 JOIN manager ￭_￭ season AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ player ￭_￭ id WHERE T ￭2 ￭.￭ salary < ￭= 10
+SELECT customer ￭_￭ id , customer ￭_￭ name FROM customers WHERE customer ￭_￭ address < 100 GROUP BY customer ￭_￭ id HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT customer ￭_￭ name , customer ￭_￭ address FROM customers WHERE age < (￭ SELECT max ￭(￭ age ￭) FROM customers ￭)
+SELECT fname , lname FROM employee WHERE age < 20 ORDER BY lname ￭_￭ name
+SELECT fname , lname FROM people WHERE age < (￭ SELECT min ￭(￭ age ￭) FROM people ￭) ORDER BY lname ￭_￭ name ￭_￭ of ￭_￭ birth ￭_￭ birth ￭_￭ Name
+SELECT fname , lname FROM employee WHERE age < 20 ORDER BY lname DESC
+SELECT fname , lname FROM employee WHERE Membership ￭_￭ card = '￭ PROF ￭' ORDER BY potential DESC
+SELECT T ￭1 ￭.￭ customer ￭_￭ name , T ￭1 ￭.￭ customer ￭_￭ id FROM customers AS T ￭1 JOIN customer ￭_￭ orders AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id WHERE T ￭2 ￭.￭ order ￭_￭ status ￭_￭ code = "￭ Credit ￭" GROUP BY T ￭1 ￭.￭ customer ￭_￭ id HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT T ￭1 ￭.￭ Name , T ￭1 ￭.￭ birth ￭_￭ place FROM people AS T ￭1 JOIN employee AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭2 ￭.￭ age < ￭= 180 GROUP BY T ￭1 ￭.￭ Country ￭_￭ name , T ￭1 ￭.￭ Country ￭_￭ name , T ￭1 ￭.￭ country ￭_￭ name FROM country ￭_￭ country ￭_￭ country ￭_￭ in AS T ￭1 JOIN Guests AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country ￭_￭ id WHERE T ￭2 ￭.￭ friend < ￭= 10
+SELECT YEAR FROM SECTION GROUP BY YEAR HAVING COUNT ￭( ￭* ￭) < ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT YEAR FROM SECTION GROUP BY YEAR HAVING count ￭( ￭* ￭) < ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age FROM player AS T ￭1 JOIN affected ￭_￭ region AS T ￭2 ON T ￭1 ￭.￭ player ￭_￭ id = T ￭2 ￭.￭ player ￭_￭ id GROUP BY T ￭1 ￭.￭ player ￭_￭ id HAVING count ￭( ￭* ￭) < ￭= 2 ORDER BY T ￭1 ￭.￭ Points DESC LIMIT 1
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age FROM player AS T ￭1 JOIN player ￭_￭ coach AS T ￭2 ON T ￭1 ￭.￭ Club ￭_￭ ID = T ￭2 ￭.￭ Club ￭_￭ ID WHERE T ￭2 ￭.￭ balance > ￭= 85 GROUP BY T ￭1 ￭.￭ name ￭_￭ in ￭_￭ Round < ￭= 85
+SELECT POSITION , Points FROM player WHERE Points > 20 ORDER BY Points DESC LIMIT 1
+SELECT POSITION FROM player GROUP BY name HAVING COUNT ￭( ￭* ￭) < ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT name , POSITION FROM pilot ORDER BY Age DESC LIMIT 1
+SELECT roomName , RoomId FROM Rooms WHERE basePrice < 160 ORDER BY basePrice DESC LIMIT 1 ￭;
+SELECT T ￭2 ￭.￭ Name , avg ￭(￭ T ￭1 ￭.￭ Num ￭_￭ of ￭_￭ stock ￭) FROM phone ￭_￭ market AS T ￭1 JOIN market AS T ￭2 ON T ￭1 ￭.￭ Phone ￭_￭ ID = T ￭2 ￭.￭ Phone ￭_￭ ID WHERE T ￭1 ￭.￭ Num ￭_￭ of ￭_￭ transaction < ￭= "￭ 2016 ￭-￭ Affirmative GROUP BY T ￭2 ￭.￭ Name HAVING avg ￭(￭ T ￭2 ￭.￭ Num ￭_￭ of ￭_￭ completion
+SELECT T ￭1 ￭.￭ first ￭_￭ name , T ￭1 ￭.￭ last ￭_￭ name FROM customer AS T ￭1 JOIN rental AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id GROUP BY T ￭2 ￭.￭ customer ￭_￭ id HAVING count ￭( ￭* ￭) > 1
+SELECT T ￭3 ￭.￭ Name , sum ￭(￭ T ￭2 ￭.￭ Num ￭_￭ of ￭_￭ Factories ￭) FROM phone ￭_￭ market AS T ￭1 JOIN phone AS T ￭2 ON T ￭1 ￭.￭ Phone ￭_￭ ID = T ￭2 ￭.￭ Phone ￭_￭ ID JOIN technician AS T ￭3 ON T ￭1 ￭.￭ Phone ￭_￭ ID = T ￭3 ￭.￭ Phone ￭_￭ ID WHERE T ￭2 ￭.￭ Age < ￭= 20
+SELECT T ￭3 ￭.￭ Name FROM phone ￭_￭ market AS T ￭1 JOIN market AS T ￭2 ON T ￭1 ￭.￭ Market ￭_￭ ID = T ￭2 ￭.￭ Market ￭_￭ ID JOIN phone AS T ￭3 ON T ￭1 ￭.￭ Phone ￭_￭ ID = T ￭3 ￭.￭ Phone ￭_￭ ID WHERE T ￭2 ￭.￭ Num ￭_￭ of ￭_￭ stock ￭) > 20
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ name FROM employee AS T ￭1 JOIN savings AS T ￭2 ON T ￭1 ￭.￭ custid = T ￭2 ￭.￭ custid GROUP BY T ￭1 ￭.￭ name HAVING T ￭1 ￭.￭ age < (￭ SELECT count ￭( ￭* ￭) > 1 ￭)
+SELECT Country ￭_￭ name , COUNT ￭( ￭* ￭) FROM country WHERE age < 25 GROUP BY Country ￭_￭ name
+SELECT T ￭1 ￭.￭ Country ￭_￭ name FROM country AS T ￭1 JOIN match ￭_￭ season AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭2 ￭.￭ allergytype = "￭ food ￭" GROUP BY T ￭1 ￭.￭ Country ￭_￭ name HAVING count ￭( ￭* ￭) > ￭= 1
+SELECT T ￭2 ￭.￭ location ￭_￭ name FROM country AS T ￭1 JOIN country AS T ￭2 ON T ￭1 ￭.￭ country ￭_￭ id = T ￭2 ￭.￭ country ￭_￭ id WHERE T ￭1 ￭.￭ age < ￭= 23 GROUP BY T ￭1 ￭.￭ location ￭_￭ code ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT Country ￭_￭ name FROM country WHERE Age < 46 GROUP BY POSITION HAVING COUNT ￭( ￭* ￭) < ￭= 2
+SELECT Name FROM country WHERE Languages = "￭ German ￭"
+SELECT sum ￭(￭ T ￭2 ￭.￭ Num ￭_￭ of ￭_￭ stock ￭) FROM phone ￭_￭ market AS T ￭1 JOIN market AS T ￭2 ON T ￭1 ￭.￭ Phone ￭_￭ ID = T ￭2 ￭.￭ Phone ￭_￭ ID WHERE T ￭1 ￭.￭ Num ￭_￭ of ￭_￭ stock > ￭= 2000 GROUP BY T ￭2 ￭.￭ Name
+SELECT sum ￭(￭ market ￭_￭ value ￭) , T ￭1 ￭.￭ name FROM phone AS T ￭1 JOIN market AS T ￭2 ON T ￭1 ￭.￭ Phone ￭_￭ ID = T ￭2 ￭.￭ Phone ￭_￭ ID WHERE T ￭2 ￭.￭ Height > 1 ￭.￭ 85
+SELECT count ￭( ￭* ￭) , sex FROM student WHERE age > 40 GROUP BY StuID
+SELECT count ￭( ￭* ￭) , Competition FROM MATCH GROUP BY Competition
+SELECT name , age FROM Person WHERE age < 40 GROUP BY rank HAVING count ￭( ￭* ￭) < 3
+SELECT name , age FROM Person WHERE age < 30 GROUP BY rank HAVING count ￭( ￭* ￭) > 3
+SELECT DISTINCT classroom , count ￭(￭ DISTINCT director ￭) FROM Movie WHERE enr < 1850 GROUP BY organisation ￭_￭ id ￭;
+SELECT count ￭( ￭* ￭) FROM Projects WHERE enr < 15000 AND YEAR < 2000
+SELECT Fname , Lname , Age FROM people WHERE Age < ￭= 20 ORDER BY Height DESC LIMIT 1
+SELECT Fname , Lname , Age FROM people WHERE Height > ￭= 20 ORDER BY Height < 20
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ name FROM employee AS T ￭1 JOIN player ￭_￭ coach AS T ￭2 ON T ￭1 ￭.￭ Club ￭_￭ ID = T ￭2 ￭.￭ Club ￭_￭ ID WHERE T ￭2 ￭.￭ name ￭_￭ "￭ Brittany Harris ￭" GROUP BY T ￭2 ￭.￭ name
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ name FROM employee AS T ￭1 JOIN player ￭_￭ coach AS T ￭2 ON T ￭1 ￭.￭ Club ￭_￭ ID = T ￭2 ￭.￭ Club ￭_￭ ID GROUP BY T ￭1 ￭.￭ name
+SELECT count ￭( ￭* ￭) FROM ship WHERE Tonnage > 6000
+SELECT name , year ￭_￭ join FROM artist WHERE age < ￭= 100 ORDER BY name
+SELECT T ￭1 ￭.￭ employee ￭_￭ name , T ￭1 ￭.￭ date ￭_￭ of ￭_￭ birth FROM Maintenance ￭_￭ builder AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ candidate ￭_￭ id = T ￭2 ￭.￭ people ￭_￭ id WHERE T ￭2 ￭.￭ Weeks ￭_￭ on ￭_￭ Top > 2
+SELECT min ￭(￭ num ￭_￭ of ￭_￭ stock ￭) , max ￭(￭ salary ￭) FROM bank
+SELECT T ￭1 ￭.￭ season , T ￭2 ￭.￭ name FROM game AS T ￭1 JOIN injury ￭_￭ accident AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ game ￭_￭ id WHERE T ￭1 ￭.￭ season > 2010
+SELECT season , name FROM game WHERE Membership ￭_￭ card = '￭ Black ￭'
+SELECT name , name FROM instructor WHERE id NOT IN (￭ SELECT id FROM teaches ￭)
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ trade ￭_￭ name FROM medicine AS T ￭1 JOIN medicine ￭_￭ Required ￭_￭ To ￭_￭ Fix AS T ￭2 ON T ￭1 ￭.￭ part ￭_￭ id = T ￭2 ￭.￭ part ￭_￭ id WHERE T ￭2 ￭.￭ Teachers AS T ￭2 ￭.￭ Brand = "￭ X ￭"
+SELECT name , address FROM people WHERE age < (￭ SELECT min ￭(￭ Membership ￭_￭ card ￭) FROM people GROUP BY first ￭_￭ name HAVING 10
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age FROM ship AS T ￭1 JOIN captain AS T ￭2 ON T ￭1 ￭.￭ ship ￭_￭ id = T ￭2 ￭.￭ ship ￭_￭ id GROUP BY T ￭2 ￭.￭ ship ￭_￭ id HAVING count ￭( ￭* ￭) > 2 ORDER BY T ￭2 ￭.￭ age DESC LIMIT 1
+SELECT DISTINCT T ￭1 ￭.￭ customer ￭_￭ name FROM customers AS T ￭1 JOIN orders AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id WHERE T ￭2 ￭.￭ date ￭_￭ order ￭_￭ placed > ￭= "￭ 2009 ￭-￭ 01 ￭-￭ 01 ￭" AND T ￭2 ￭.￭ date ￭_￭ order ￭_￭ placed < ￭= "￭ 2010 ￭-￭ 01 ￭-￭ 01 ￭"
+SELECT count ￭(￭ DISTINCT name ￭) FROM projects
+SELECT count ￭( ￭* ￭) FROM postseason AS T ￭1 JOIN team AS T ￭2 ON T ￭1 ￭.￭ team ￭_￭ id ￭_￭ loser = T ￭2 ￭.￭ team ￭_￭ id ￭_￭ br WHERE T ￭2 ￭.￭ name = '￭ Boston Red Stockings ￭' AND T ￭1 ￭.￭ year < 2009 ￭;
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age FROM drivers AS T ￭1 JOIN pitstops AS T ￭2 ON T ￭1 ￭.￭ driverid = T ￭2 ￭.￭ driverid WHERE T ￭2 ￭.￭ name = '￭ Boston Red Stockings ￭' AND T ￭1 ￭.￭ year < 2009
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ trade ￭_￭ name FROM medicine AS T ￭1 JOIN medicine ￭_￭ enzyme ￭_￭ interaction AS T ￭2 ON T ￭2 ￭.￭ medicine ￭_￭ id = T ￭1 ￭.￭ id WHERE T ￭2 ￭.￭ milliseconds > 900 AND T ￭2 ￭.￭ id = T ￭2 ￭.￭ id
+SELECT DISTINCT Name FROM people WHERE Num ￭_￭ of ￭_￭ Audience > 150
+SELECT address ￭_￭ line ￭_￭ 1 , address ￭_￭ line ￭_￭ 2 FROM Course ￭_￭ Authors ￭_￭ and ￭_￭ Tutors WHERE monthly ￭_￭ Tutors < 100
+SELECT fname FROM people WHERE amount ￭_￭ of ￭_￭ birth > 5000 AND payment ￭_￭ method = '￭ Check ￭'
+SELECT count ￭( ￭* ￭) FROM COURSE WHERE Credits > 2
+SELECT count ￭( ￭* ￭) FROM COURSE WHERE Credits > 2
+SELECT count ￭( ￭* ￭) FROM COURSE WHERE Credits > 2
+SELECT T ￭2 ￭.￭ hours FROM files AS T ￭1 JOIN Settlements AS T ￭2 ON T ￭1 ￭.￭ f ￭_￭ id = T ￭2 ￭.￭ f ￭_￭ id WHERE T ￭1 ￭.￭ Total ￭_￭ Points > 10000000
+SELECT T ￭1 ￭.￭ zip ￭_￭ postcode FROM Addresses AS T ￭1 JOIN Student ￭_￭ Addresses AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id WHERE T ￭2 ￭.￭ city = "￭ Damianfort ￭" ￭;
+SELECT Zip ￭_￭ code FROM county WHERE zip ￭_￭ code = "￭ Howard ￭"
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ dept ￭_￭ name FROM course AS T ￭1 JOIN prereq AS T ￭2 ON T ￭1 ￭.￭ course ￭_￭ id = T ￭2 ￭.￭ course ￭_￭ id GROUP BY T ￭2 ￭.￭ dept ￭_￭ name HAVING count ￭( ￭* ￭) > 1
+SELECT dept ￭_￭ name , dept ￭_￭ name FROM course GROUP BY dept ￭_￭ name HAVING count ￭( ￭* ￭) < 1
+SELECT count ￭(￭ DISTINCT dept ￭_￭ name ￭) FROM course WHERE crs ￭_￭ code = '￭ CIS ￭-￭ 220 ￭'
+SELECT count ￭(￭ DISTINCT dept ￭_￭ name ￭) FROM course WHERE dept ￭_￭ name = '￭ Physics ￭'
+SELECT count ￭(￭ DISTINCT name ￭) FROM projects WHERE name = '￭ projects
+SELECT DISTINCT Publisher , COUNT ￭( ￭* ￭) FROM publication GROUP BY Publisher
+SELECT DISTINCT T ￭2 ￭.￭ FROM accounts AS T ￭1 JOIN stock AS T ￭2 ON T ￭1 ￭.￭ DPhone = T ￭2 ￭.￭ stock ￭_￭ id WHERE T ￭1 ￭.￭ num > 20
+SELECT DISTINCT T ￭2 ￭.￭ FROM accounts AS T ￭1 JOIN stock AS T ￭2 ON T ￭1 ￭.￭ DPhone = T ￭2 ￭.￭ stock ￭_￭ id WHERE T ￭1 ￭.￭ num > 20
+SELECT document ￭_￭ name , document ￭_￭ type ￭_￭ description FROM Ref ￭_￭ document ￭_￭ types
+SELECT document ￭_￭ name , document ￭_￭ type ￭_￭ description FROM Ref ￭_￭ document ￭_￭ types
+SELECT T ￭1 ￭.￭ title , T ￭1 ￭.￭ rID FROM course AS T ￭1 JOIN prereq AS T ￭2 ON T ￭1 ￭.￭ course ￭_￭ id = T ￭2 ￭.￭ course ￭_￭ id GROUP BY T ￭2 ￭.￭ course ￭_￭ id HAVING count ￭( ￭* ￭) > 1
+SELECT T ￭1 ￭.￭ course ￭_￭ id , T ￭1 ￭.￭ course ￭_￭ name FROM Courses AS T ￭1 JOIN Student ￭_￭ Course ￭_￭ Enrolment AS T ￭2 ON T ￭1 ￭.￭ course ￭_￭ id = T ￭2 ￭.￭ course ￭_￭ id GROUP BY T ￭1 ￭.￭ course ￭_￭ id HAVING COUNT ￭( ￭* ￭) > 2
+SELECT DISTINCT name FROM races WHERE age < 30 ORDER BY name DESC LIMIT 1
+SELECT DISTINCT PROF ￭_￭ NUM FROM CLASS WHERE CRS ￭_￭ CODE = "￭ ACCT ￭-￭ 211 ￭"
+SELECT semester , YEAR FROM takes WHERE semester = 2010 GROUP BY semester , YEAR HAVING count ￭( ￭* ￭) < ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ driverid , count ￭( ￭* ￭) FROM drivers AS T ￭1 JOIN results AS T ￭2 ON T ￭1 ￭.￭ driverid = T ￭2 ￭.￭ driverid JOIN races AS T ￭3 ON T ￭2 ￭.￭ raceid = T ￭3 ￭.￭ raceid GROUP BY T ￭1 ￭.￭ StuID HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT dept ￭_￭ name FROM department WHERE dept ￭_￭ name LIKE ' ￭%￭ Soisalon ￭% ￭'
+SELECT title FROM film WHERE product ￭_￭ id IN (￭ SELECT film ￭_￭ id FROM PRODUCTS GROUP BY dept ￭_￭ description ￭_￭ description ￭_￭ description ￭_￭ description ￭_￭ description ￭_￭ description LIKE ' ￭%￭ 8 ￭% ￭' ￭)
+SELECT DISTINCT forename , nationality FROM drivers WHERE name LIKE " ￭%￭ Functional ￭% ￭"
+SELECT t ￭1 ￭.￭ fname , t ￭1 ￭.￭ lname FROM student AS t ￭1 JOIN takes AS t ￭2 ON t ￭1 ￭.￭ id = t ￭2 ￭.￭ id WHERE t ￭2 ￭.￭ milliseconds < 100000
+SELECT DISTINCT fname , T ￭1 ￭.￭ lname FROM employee AS T ￭1 JOIN CLASS AS T ￭2 ON T ￭1 ￭.￭ project ￭_￭ id = T ￭2 ￭.￭ project ￭_￭ id WHERE T ￭2 ￭.￭ project ￭_￭ details = '￭ Denesik and Sons Party ￭'
+SELECT Date , Venue FROM debate WHERE basePrice > (￭ SELECT avg ￭(￭ basePrice ￭) FROM projects ￭)
+SELECT T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭2 ￭.￭ friend = '￭ Bob ￭'
+SELECT DISTINCT name FROM projects WHERE project = '￭ Computer Info ￭. Systems ￭'
+SELECT t ￭1 ￭.￭ stuid , t ￭1 ￭.￭ name FROM dorm AS t ￭1 JOIN has ￭_￭ amenity AS t ￭2 ON t ￭1 ￭.￭ dormid = t ￭2 ￭.￭ dormid JOIN dorm ￭_￭ amenity AS t ￭3 ON t ￭2 ￭.￭ amenid = t ￭3 ￭.￭ amenid GROUP BY t ￭1 ￭.￭ dormid HAVING count ￭( ￭* ￭) < ￭= 2
+SELECT T ￭1 ￭.￭ driverid , T ￭1 ￭.￭ name FROM dorm AS T ￭1 JOIN has ￭_￭ amenity AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ amenid GROUP BY T ￭2 ￭.￭ amenid HAVING count ￭( ￭* ￭) > ￭= 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ fname , T ￭1 ￭.￭ lname FROM student AS T ￭1 JOIN enroll AS T ￭2 ON T ￭1 ￭.￭ stu ￭_￭ num = T ￭2 ￭.￭ stu ￭_￭ num GROUP BY T ￭2 ￭.￭ stu ￭_￭ num HAVING count ￭( ￭* ￭) > 2 ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ student ￭_￭ id , T ￭2 ￭.￭ middle ￭_￭ name FROM Student ￭_￭ Course ￭_￭ Enrolment AS T ￭1 JOIN Students AS T ￭2 ON T ￭1 ￭.￭ student ￭_￭ id = T ￭2 ￭.￭ student ￭_￭ id GROUP BY T ￭1 ￭.￭ student ￭_￭ id HAVING COUNT ￭( ￭* ￭) < ￭= 2
+SELECT course ￭_￭ id FROM SECTION WHERE semester = '￭ Fall ￭' AND YEAR = 2009 EXCEPT SELECT course ￭_￭ name FROM SECTION WHERE semester = '￭ Spring ￭' AND YEAR < 2010
+SELECT name FROM student WHERE id IN (￭ SELECT id FROM takes WHERE semester = '￭ Fall ￭' AND YEAR < 2003 ￭)
+SELECT T ￭1 ￭.￭ course ￭_￭ name FROM Courses AS T ￭1 JOIN Student ￭_￭ Course ￭_￭ Enrolment AS T ￭2 ON T ￭1 ￭.￭ course ￭_￭ id = T ￭2 ￭.￭ course ￭_￭ id WHERE T ￭2 ￭.￭ course ￭_￭ name = "￭ advanced database ￭"
+SELECT T ￭1 ￭.￭ stu ￭_￭ fname FROM student AS T ￭1 JOIN enroll AS T ￭2 ON T ￭1 ￭.￭ stu ￭_￭ num = T ￭2 ￭.￭ stu ￭_￭ num JOIN CLASS AS T ￭3 ON T ￭2 ￭.￭ class ￭_￭ code = T ￭3 ￭.￭ class ￭_￭ code JOIN course AS T ￭4 ON T ￭3 ￭.￭ crs ￭_￭ code = T ￭4 ￭.￭ crs ￭_￭ code JOIN department AS T ￭5 ON T ￭5 ￭.￭ dept ￭_￭ code = T ￭4 ￭.￭ dept ￭_￭ code WHERE T ￭4 ￭.￭ dept ￭_￭ name = '￭ Accounting ￭'
+SELECT T ￭1 ￭.￭ course ￭_￭ name FROM Courses AS T ￭1 JOIN Student ￭_￭ Course ￭_￭ Enrolment AS T ￭2 ON T ￭1 ￭.￭ course ￭_￭ id = T ￭2 ￭.￭ course ￭_￭ id GROUP BY T ￭1 ￭.￭ course ￭_￭ name HAVING COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ course ￭_￭ name FROM Courses AS T ￭1 JOIN Student ￭_￭ Course ￭_￭ Enrolment AS T ￭2 ON T ￭1 ￭.￭ course ￭_￭ id = T ￭2 ￭.￭ course ￭_￭ id GROUP BY T ￭1 ￭.￭ course ￭_￭ name HAVING COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT DISTINCT T ￭1 ￭.￭ customer ￭_￭ name , T ￭1 ￭.￭ customer ￭_￭ address FROM customers AS T ￭1 JOIN customer ￭_￭ orders AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id WHERE T ￭2 ￭.￭ city ￭_￭ code = '￭ New ￭' EXCEPT SELECT T ￭1 ￭.￭ customer ￭_￭ name , T ￭1 ￭.￭ customer ￭_￭ address FROM Customers AS T ￭1 JOIN Customer ￭_￭ orders AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id WHERE T ￭2 ￭.￭ order ￭_￭ status ￭_￭ code = "￭ Pending ￭"
+SELECT DISTINCT T ￭1 ￭.￭ Store ￭_￭ Phone , T ￭1 ￭.￭ total FROM Addresses AS T ￭1 JOIN Performers AS T ￭2 ON T ￭1 ￭.￭ Address ￭_￭ ID = T ￭2 ￭.￭ Address ￭_￭ ID WHERE T ￭2 ￭.￭ Id EXCEPT SELECT T ￭1 ￭.￭ ￭1 ￭.￭ grant ￭_￭ id FROM STUDENT AS T ￭1 JOIN TRANSACTIONS AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id WHERE T ￭2 ￭.￭ city ￭_￭ code ! ￭= "￭ PIT ￭"
+SELECT T ￭1 ￭.￭ course ￭_￭ name , T ￭1 ￭.￭ prereq ￭_￭ id FROM Course ￭_￭ Authors ￭_￭ and ￭_￭ Tutors AS T ￭1 JOIN Courses AS T ￭2 ON T ￭1 ￭.￭ author ￭_￭ id = T ￭2 ￭.￭ author ￭_￭ id GROUP BY T ￭2 ￭.￭ course ￭_￭ id HAVING Count ￭( ￭* ￭) > ￭= 2
+SELECT T ￭1 ￭.￭ title , T ￭1 ￭.￭ credits , T ￭1 ￭.￭ dept ￭_￭ name FROM course AS T ￭1 JOIN prereq AS T ￭2 ON T ￭1 ￭.￭ course ￭_￭ id = T ￭2 ￭.￭ course ￭_￭ id GROUP BY T ￭2 ￭.￭ course ￭_￭ id HAVING count ￭( ￭* ￭) > 1
+SELECT T ￭1 ￭.￭ first ￭_￭ name , T ￭1 ￭.￭ last ￭_￭ name FROM Students AS T ￭1 JOIN Subjects AS T ￭2 ON T ￭1 ￭.￭ subject ￭_￭ id = T ￭2 ￭.￭ subject ￭_￭ id WHERE T ￭2 ￭.￭ subject ￭_￭ name = "￭ Computer Science ￭"
+SELECT T ￭1 ￭.￭ stu ￭_￭ fname FROM student AS T ￭1 JOIN enroll AS T ￭2 ON T ￭1 ￭.￭ stu ￭_￭ num = T ￭2 ￭.￭ stu ￭_￭ num WHERE T ￭2 ￭.￭ enroll ￭_￭ grade = '￭ C ￭'
+SELECT T ￭1 ￭.￭ first ￭_￭ name , T ￭1 ￭.￭ last ￭_￭ name FROM student AS T ￭1 JOIN Students AS T ￭2 ON T ￭1 ￭.￭ student ￭_￭ id = T ￭2 ￭.￭ student ￭_￭ id
+SELECT T ￭2 ￭.￭ Fname , T ￭2 ￭.￭ Lname FROM Sportsinfo AS T ￭1 JOIN Student AS T ￭2 ON T ￭1 ￭.￭ StuID = T ￭2 ￭.￭ StuID
+SELECT first ￭_￭ name , last ￭_￭ name FROM employees ORDER BY hire ￭_￭ date ASC LIMIT 1 ￭;
+SELECT T ￭1 ￭.￭ emp ￭_￭ fname , T ￭2 ￭.￭ prof ￭_￭ office FROM employee AS T ￭1 JOIN professor AS T ￭2 ON T ￭1 ￭.￭ emp ￭_￭ num = T ￭2 ￭.￭ emp ￭_￭ num ORDER BY T ￭2 ￭.￭ emp ￭_￭ fname , T ￭2 ￭.￭ emp ￭_￭ lname ASC LIMIT 1
+SELECT DISTINCT T ￭1 ￭.￭ first ￭_￭ name FROM people AS T ￭1 JOIN invoices AS T ￭2 ON T ￭2 ￭.￭ customer ￭_￭ id = T ￭1 ￭.￭ address ￭_￭ id WHERE T ￭2 ￭.￭ first ￭_￭ name = "￭ Carole ￭" AND T ￭2 ￭.￭ last ￭_￭ name = "￭ Bernhard ￭"
+SELECT Fname , Lname FROM Student WHERE Sex = '￭ M ￭'
+SELECT T ￭1 ￭.￭ student ￭_￭ id , T ￭2 ￭.￭ first ￭_￭ name FROM Student ￭_￭ Addresses AS T ￭1 JOIN Students AS T ￭2 ON T ￭1 ￭.￭ student ￭_￭ id = T ￭2 ￭.￭ student ￭_￭ id GROUP BY T ￭1 ￭.￭ student ￭_￭ id
+SELECT T ￭1 ￭.￭ address ￭_￭ line ￭_￭ 1 , T ￭2 ￭.￭ author ￭_￭ id FROM Addresses AS T ￭1 JOIN Students AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id GROUP BY T ￭1 ￭.￭ address ￭_￭ id ORDER BY AVG ￭(￭ monthly ￭_￭ rental ￭) DESC LIMIT 1
+SELECT DISTINCT date ￭_￭ of ￭_￭ notes FROM Assessment ￭_￭ Notes
+SELECT avg ￭(￭ T ￭2 ￭.￭ rating ￭) FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID
+SELECT first ￭_￭ name , last ￭_￭ name , hire ￭_￭ date FROM employees ORDER BY department ￭_￭ id ASC LIMIT 1 ￭;
+SELECT T ￭1 ￭.￭ claim ￭_￭ id , T ￭1 ￭.￭ date ￭_￭ claim ￭_￭ made , T ￭1 ￭.￭ Date ￭_￭ Claim ￭_￭ Settled FROM Claims AS T ￭1 JOIN Settlements AS T ￭2 ON T ￭1 ￭.￭ Claim ￭_￭ id = T ￭2 ￭.￭ Claim ￭_￭ id ORDER BY T ￭1 ￭.￭ Date ￭_￭ Claim ￭_￭ Made ASC LIMIT 1
+SELECT count ￭( ￭* ￭) FROM review
+SELECT count ￭( ￭* ￭) FROM review
+SELECT DISTINCT instrument FROM Instruments
+SELECT date ￭_￭ from FROM Residents ORDER BY date ￭_￭ in ￭_￭ Billion ASC LIMIT 1
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ courses ￭_￭ id FROM Student ￭_￭ Course ￭_￭ Enrolment AS T ￭1 JOIN Student ￭_￭ Tests ￭_￭ Taken AS T ￭2 ON T ￭1 ￭.￭ registration ￭_￭ id = T ￭2 ￭.￭ registration ￭_￭ id GROUP BY T ￭2 ￭.￭ course ￭_￭ id
+SELECT T ￭2 ￭.￭ firstname , T ￭2 ￭.￭ lastname , count ￭( ￭* ￭) FROM list AS T ￭1 JOIN teachers AS T ￭2 ON T ￭1 ￭.￭ classroom = T ￭2 ￭.￭ classroom GROUP BY T ￭2 ￭.￭ firstname , T ￭2 ￭.￭ lastname
+SELECT T ￭2 ￭.￭ name , T ￭2 ￭.￭ city , T ￭2 ￭.￭ src ￭_￭ apid FROM address AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ branch ￭_￭ id = T ￭2 ￭.￭ branch ￭_￭ id GROUP BY T ￭1 ￭.￭ cinema ￭_￭ id ORDER BY count ￭( ￭* ￭) ASC LIMIT 1
+SELECT T ￭2 ￭.￭ first ￭_￭ name , T ￭2 ￭.￭ last ￭_￭ name , T ￭2 ￭.￭ department ￭_￭ name FROM employees AS T ￭1 JOIN departments AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id GROUP BY T ￭2 ￭.￭ department ￭_￭ id ORDER BY count ￭( ￭* ￭) ASC LIMIT 1
+SELECT course ￭_￭ name , course ￭_￭ id FROM student WHERE semester = '￭ Fall ￭' INTERSECT SELECT course ￭_￭ id FROM takes WHERE semester = '￭ Spring ￭' AND YEAR = 2010
+SELECT course ￭_￭ id FROM course ￭_￭ stores WHERE dept ￭_￭ name = "￭ Accounting ￭" INTERSECT SELECT StuID FROM Sportsinfo WHERE crs ￭_￭ code = "￭ managing ￭"
+SELECT count ￭(￭ DISTINCT student ￭_￭ id ￭) FROM Students ￭_￭ addresses
+SELECT DISTINCT T ￭1 ￭.￭ address ￭_￭ line ￭_￭ 1 FROM Course ￭_￭ Authors ￭_￭ and ￭_￭ Tutors AS T ￭1 JOIN Courses AS T ￭2 ON T ￭1 ￭.￭ author ￭_￭ id = T ￭2 ￭.￭ author ￭_￭ id WHERE T ￭2 ￭.￭ course ￭_￭ name = "￭ operating system ￭"
+SELECT DISTINCT label FROM Albums ORDER BY name DESC LIMIT 1
+SELECT other ￭_￭ details FROM Residents ￭_￭ Drafts ORDER BY document ￭_￭ id DESC
+SELECT count ￭( ￭* ￭) FROM Financial ￭_￭ transactions
+SELECT t ￭2 ￭.￭ section ￭_￭ title FROM university AS t ￭1 JOIN basketball ￭_￭ match AS t ￭2 ON t ￭1 ￭.￭ school ￭_￭ id = t ￭2 ￭.￭ school ￭_￭ id WHERE team ￭_￭ name = '￭ Clemson ￭'
+SELECT T ￭1 ￭.￭ stu ￭_￭ fname FROM student AS T ￭1 JOIN enroll AS T ￭2 ON T ￭1 ￭.￭ stu ￭_￭ num = T ￭2 ￭.￭ stu ￭_￭ num JOIN CLASS AS T ￭3 ON T ￭2 ￭.￭ class ￭_￭ code = T ￭3 ￭.￭ class ￭_￭ code JOIN course AS T ￭4 ON T ￭3 ￭.￭ crs ￭_￭ code = T ￭4 ￭.￭ crs ￭_￭ code JOIN department AS T ￭5 ON T ￭5 ￭.￭ dept ￭_￭ code = T ￭4 ￭.￭ dept ￭_￭ code WHERE T ￭5 ￭.￭ dept ￭_￭ name = '￭ Accounting ￭' OR T ￭1 ￭.￭ stu ￭_￭ fname = '￭ New York ￭'
+SELECT T ￭2 ￭.￭ cell ￭_￭ mobile ￭_￭ number FROM Student ￭_￭ Addresses AS T ￭1 JOIN Students AS T ￭2 ON T ￭1 ￭.￭ student ￭_￭ id = T ￭2 ￭.￭ student ￭_￭ id WHERE T ￭1 ￭.￭ city ￭_￭ code = "￭ 660 Shea Crescent ￭" OR T ￭2 ￭.￭ last ￭_￭ name = "￭ Smith ￭"
+SELECT title FROM albums ORDER BY title ￭;
+SELECT title FROM item ORDER BY age
+SELECT director FROM Movie WHERE title ! ￭= '￭ Avatar ￭'
+SELECT T ￭1 ￭.￭ title FROM item AS T ￭1 JOIN review AS T ￭2 ON T ￭1 ￭.￭ i ￭_￭ id = T ￭2 ￭.￭ i ￭_￭ id WHERE T ￭2 ￭.￭ rating = '￭ Order ￭'
+SELECT count ￭( ￭* ￭) FROM papers
+SELECT count ￭( ￭* ￭) FROM papers
+SELECT title , director FROM Movie ORDER BY director , title
+SELECT director , director FROM Movie ORDER BY director , title
+SELECT T ￭1 ￭.￭ title FROM item AS T ￭1 JOIN review AS T ￭2 ON T ￭1 ￭.￭ i ￭_￭ id = T ￭2 ￭.￭ i ￭_￭ id WHERE T ￭2 ￭.￭ rating = '￭ Order ￭'
+SELECT T ￭1 ￭.￭ title FROM item AS T ￭1 JOIN review AS T ￭2 ON T ￭1 ￭.￭ i ￭_￭ id = T ￭2 ￭.￭ i ￭_￭ id WHERE T ￭2 ￭.￭ rating = '￭ Order ￭' OR T ￭2 ￭.￭ rating < 5
+SELECT T ￭1 ￭.￭ gender , T ￭1 ￭.￭ artist ￭_￭ name FROM artist AS T ￭1 JOIN song AS T ￭2 ON T ￭1 ￭.￭ artist ￭_￭ name = T ￭2 ￭.￭ artist ￭_￭ name WHERE T ￭2 ￭.￭ releasedate LIKE " ￭%￭ Mar ￭% ￭"
+SELECT T ￭1 ￭.￭ Country ￭_￭ name , T ￭1 ￭.￭ country FROM country AS T ￭1 JOIN loan AS T ￭2 ON T ￭1 ￭.￭ Country = T ￭2 ￭.￭ Country GROUP BY T ￭1 ￭.￭ Country ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭3 ￭.￭ name , count ￭(￭ DISTINCT T ￭2 ￭.￭ gradepoint ￭) FROM affected ￭_￭ region AS T ￭1 JOIN region AS T ￭2 ON T ￭1 ￭.￭ region ￭_￭ id = T ￭2 ￭.￭ region ￭_￭ id JOIN dorm AS T ￭3 ON T ￭1 ￭.￭ storm ￭_￭ id = T ￭3 ￭.￭ storm ￭_￭ id WHERE T ￭1 ￭.￭ name = '￭ TV Lounge ￭'
+SELECT count ￭(￭ DISTINCT T ￭2 ￭.￭ camera ￭_￭ lens ￭_￭ id ￭) FROM dorm AS T ￭1 JOIN has ￭_￭ amenity AS T ￭2 ON T ￭1 ￭.￭ dormid = T ￭2 ￭.￭ dormid JOIN dorm ￭_￭ amenity AS T ￭3 ON T ￭2 ￭.￭ amenid = T ￭3 ￭.￭ amenid WHERE T ￭3 ￭.￭ amenity ￭_￭ name = '￭ TV Lounge ￭'
+SELECT t ￭3 ￭.￭ born ￭_￭ state FROM customers AS t ￭1 JOIN customer ￭_￭ addresses AS t ￭2 ON t ￭1 ￭.￭ customer ￭_￭ id = t ￭2 ￭.￭ customer ￭_￭ id JOIN addresses AS t ￭3 ON t ￭2 ￭.￭ address ￭_￭ id = t ￭3 ￭.￭ address ￭_￭ id WHERE t ￭1 ￭.￭ customer ￭_￭ name = "￭ sesame ￭"
+SELECT t ￭3 ￭.￭ content FROM customers AS t ￭1 JOIN customer ￭_￭ addresses AS t ￭2 ON t ￭1 ￭.￭ supplier ￭_￭ id = t ￭2 ￭.￭ supplier ￭_￭ id JOIN addresses AS t ￭3 ON t ￭2 ￭.￭ address ￭_￭ id = t ￭3 ￭.￭ address ￭_￭ id WHERE t ￭1 ￭.￭ supplier ￭_￭ name = "￭ supplier ￭_￭ content
+SELECT T ￭1 ￭.￭ dorm ￭_￭ name FROM dorm AS T ￭1 JOIN has ￭_￭ amenity AS T ￭2 ON T ￭1 ￭.￭ dormid = T ￭2 ￭.￭ dormid JOIN dorm ￭_￭ amenity AS T ￭3 ON T ￭2 ￭.￭ amenid = T ￭3 ￭.￭ amenid WHERE T ￭3 ￭.￭ amenity ￭_￭ name = '￭ TV Lounge ￭'
+SELECT T ￭1 ￭.￭ name FROM student AS T ￭1 JOIN has ￭_￭ amenity AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ amenid WHERE T ￭2 ￭.￭ amenity ￭_￭ name = '￭ TV Lounge ￭'
+SELECT count ￭( ￭* ￭) FROM dorm WHERE gender = '￭ female ￭'
+SELECT count ￭( ￭* ￭) FROM files WHERE formats = "￭ mp ￭4 ￭"
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ acc ￭_￭ type , T ￭1 ￭.￭ acc ￭_￭ type FROM customer AS T ￭1 JOIN loan AS T ￭2 ON T ￭1 ￭.￭ cust ￭_￭ id = T ￭2 ￭.￭ cust ￭_￭ id WHERE T ￭2 ￭.￭ loan ￭_￭ type = '￭ activitor ￭' GROUP BY T ￭1 ￭.￭ name ORDER BY count ￭( ￭* ￭) LIMIT 1
+SELECT count ￭( ￭* ￭) , t ￭1 ￭.￭ name FROM inst AS t ￭1 JOIN authorship AS t ￭2 ON t ￭1 ￭.￭ instid = t ￭2 ￭.￭ instid WHERE t ￭2 ￭.￭ name = "￭ University of Pennsylvania ￭"
+SELECT T ￭1 ￭.￭ gender , T ￭1 ￭.￭ artist ￭_￭ name , count ￭( ￭* ￭) FROM artist AS T ￭1 JOIN song AS T ￭2 ON T ￭1 ￭.￭ artist ￭_￭ name = T ￭2 ￭.￭ artist ￭_￭ name WHERE T ￭2 ￭.￭ languages = "￭ bangla ￭" GROUP BY T ￭2 ￭.￭
+SELECT gender , count ￭( ￭* ￭) FROM dorm GROUP BY gender
+SELECT T ￭1 ￭.￭ dorm ￭_￭ name FROM dorm AS T ￭1 JOIN has ￭_￭ amenity AS T ￭2 ON T ￭1 ￭.￭ dormid = T ￭2 ￭.￭ dormid JOIN dorm ￭_￭ amenity AS T ￭3 ON T ￭2 ￭.￭ amenid = T ￭3 ￭.￭ amenid WHERE T ￭3 ￭.￭ amenity ￭_￭ name = '￭ TV Lounge ￭'
+SELECT T ￭3 ￭.￭ name FROM affected ￭_￭ region AS T ￭1 JOIN region AS T ￭2 ON T ￭1 ￭.￭ region ￭_￭ id = T ￭2 ￭.￭ region ￭_￭ id JOIN dorm AS T ￭3 ON T ￭2 ￭.￭ amenid = T ￭3 ￭.￭ amenid WHERE T ￭1 ￭.￭ name = '￭ TV Lounge ￭'
+SELECT T ￭1 ￭.￭ title FROM student AS T ￭1 JOIN lives ￭_￭ in AS T ￭2 ON T ￭1 ￭.￭ stuid = T ￭2 ￭.￭ stuid WHERE T ￭2 ￭.￭ dormid NOT IN (￭ SELECT T ￭2 ￭.￭ dormid FROM dorm AS T ￭3 JOIN has ￭_￭ amenity AS T ￭4 ON T ￭3 ￭.￭ dormid = T ￭4 ￭.￭ dormid JOIN dorm ￭_￭ amenity AS T ￭5 ON T ￭4 ￭.￭ amenid = T ￭5 ￭.￭ amenid WHERE T ￭4 ￭.￭ amenity ￭_￭ name = '￭ TV Lounge ￭' ￭)
+SELECT T ￭1 ￭.￭ title FROM student AS T ￭1 JOIN lives ￭_￭ in AS T ￭2 ON T ￭1 ￭.￭ stuid = T ￭2 ￭.￭ stuid WHERE T ￭2 ￭.￭ dormid NOT IN (￭ SELECT T ￭2 ￭.￭ dormid FROM dorm AS T ￭3 JOIN has ￭_￭ amenity AS T ￭4 ON T ￭3 ￭.￭ dormid = T ￭4 ￭.￭ dormid JOIN dorm ￭_￭ amenity AS T ￭5 ON T ￭4 ￭.￭ amenid = T ￭5 ￭.￭ amenid WHERE T ￭4 ￭.￭ amenity ￭_￭ name = '￭ TV Lounge ￭' ￭)
+SELECT T ￭1 ￭.￭ supplier ￭_￭ name FROM dorm AS T ￭1 JOIN has ￭_￭ amenity AS T ￭2 ON T ￭1 ￭.￭ dormid = T ￭2 ￭.￭ dormid JOIN dorm ￭_￭ amenity AS T ￭3 ON T ￭2 ￭.￭ amenid = T ￭3 ￭.￭ amenid WHERE T ￭3 ￭.￭ amenity ￭_￭ name = '￭ TV Lounge ￭' ORDER BY T ￭1 ￭.￭ amenity ￭_￭ name
+SELECT DISTINCT name FROM instructor ORDER BY name
+SELECT name , max ￭(￭ duration ￭) FROM station ORDER BY YEAR LIMIT 3
+SELECT T ￭1 ￭.￭ title FROM item AS T ￭1 JOIN review AS T ￭2 ON T ￭1 ￭.￭ i ￭_￭ id = T ￭2 ￭.￭ i ￭_￭ id ORDER BY T ￭2 ￭.￭ rating DESC LIMIT 3
+SELECT max ￭(￭ amount ￭_￭ of ￭_￭ transaction ￭) , min ￭(￭ amount ￭) FROM TRANSACTIONS
+SELECT max ￭(￭ amount ￭_￭ of ￭_￭ transaction ￭) , min ￭(￭ amount ￭_￭ in ￭_￭ euros ￭) FROM catalog ￭_￭ contents
+SELECT T ￭1 ￭.￭ Total ￭_￭ Points FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭2 ￭.￭ amenity ￭_￭ name = "￭ TV Lounge ￭"
+SELECT date ￭_￭ from FROM Project ￭_￭ Staff ORDER BY date ￭_￭ from ASC LIMIT 1
+SELECT T ￭1 ￭.￭ Total ￭_￭ Points FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭2 ￭.￭ amenity ￭_￭ name = "￭ TV Lounge ￭"
+SELECT rank FROM captain WHERE rank = '￭ Professor ￭'
+SELECT T ￭1 ￭.￭ Total ￭_￭ Points FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭2 ￭.￭ amenity ￭_￭ name = "￭ TV Lounge ￭"
+SELECT T ￭3 ￭.￭ name FROM affected ￭_￭ region AS T ￭1 JOIN region AS T ￭2 ON T ￭1 ￭.￭ region ￭_￭ id = T ￭2 ￭.￭ region ￭_￭ id JOIN student AS T ￭3 ON T ￭2 ￭.￭ s ￭_￭ id = T ￭3 ￭.￭ id WHERE T ￭1 ￭.￭ dept ￭_￭ name = '￭ Denmark ￭'
+SELECT T ￭3 ￭.￭ name FROM affected ￭_￭ region AS T ￭1 JOIN region AS T ￭2 ON T ￭1 ￭.￭ region ￭_￭ id = T ￭2 ￭.￭ region ￭_￭ id JOIN dorm AS T ￭3 ON T ￭2 ￭.￭ amenid = T ￭3 ￭.￭ amenid WHERE T ￭1 ￭.￭ name = '￭ TV Lounge ￭'
+SELECT T ￭3 ￭.￭ name FROM affected ￭_￭ region AS T ￭1 JOIN region AS T ￭2 ON T ￭1 ￭.￭ region ￭_￭ id = T ￭2 ￭.￭ region ￭_￭ id JOIN dorm AS T ￭3 ON T ￭2 ￭.￭ amenid = T ￭3 ￭.￭ amenid WHERE T ￭1 ￭.￭ name = '￭ TV Lounge ￭'
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ director FROM Movie AS T ￭1 JOIN Movie AS T ￭2 ON T ￭1 ￭.￭ director = T ￭2 ￭.￭ director WHERE T ￭1 ￭.￭ title = '￭ Avatar ￭'
+SELECT directed ￭_￭ by , count ￭( ￭* ￭) FROM film GROUP BY directed ￭_￭ by
+SELECT customer ￭_￭ status ￭_￭ code , code FROM customers ORDER BY customer ￭_￭ address ￭_￭ details ASC LIMIT 1
+SELECT channel ￭_￭ code , contact ￭_￭ number FROM customer ￭_￭ contact ￭_￭ channels ORDER BY document ￭_￭ date DESC LIMIT 1
+SELECT T ￭1 ￭.￭ fault ￭_￭ log ￭_￭ entry ￭_￭ id , T ￭1 ￭.￭ fault ￭_￭ description , T ￭1 ￭.￭ fault ￭_￭ log ￭_￭ entry ￭_￭ datetime FROM Fault ￭_￭ Log AS T ￭1 JOIN Fault ￭_￭ Log ￭_￭ Parts AS T ￭2 ON T ￭1 ￭.￭ fault ￭_￭ log ￭_￭ entry ￭_￭ id = T ￭2 ￭.￭ fault ￭_￭ log ￭_￭ entry ￭_￭ id WHERE T ￭2 ￭.￭ high ￭_￭ degree = '￭ Ph ￭.￭ D ￭. ￭'
+SELECT T ￭1 ￭.￭ title , T ￭1 ￭.￭ film ￭_￭ id , T ￭1 ￭.￭ Hours FROM film AS T ￭1 JOIN Engineer ￭_￭ Visits AS T ￭2 ON T ￭1 ￭.￭ staff ￭_￭ id = T ￭2 ￭.￭ fault ￭_￭ log ￭_￭ entry ￭_￭ id WHERE T ￭2 ￭.￭ Accreditation ￭_￭ type = '￭ Full ￭'
+SELECT DISTINCT T ￭1 ￭.￭ name FROM channel AS T ￭1 JOIN broadcast AS T ￭2 ON T ￭1 ￭.￭ channel ￭_￭ id = T ￭2 ￭.￭ channel ￭_￭ id WHERE T ￭2 ￭.￭ time ￭_￭ of ￭_￭ day = '￭ Morning ￭'
+SELECT T ￭1 ￭.￭ WiFi FROM country AS T ￭1 JOIN match ￭_￭ season AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭2 ￭.￭ Position = "￭ Female ￭"
+SELECT name FROM channel WHERE u ￭_￭ id NOT IN (￭ SELECT u ￭_￭ id FROM review ￭)
+SELECT Title FROM people WHERE POSITION = '￭ 1
+SELECT T ￭2 ￭.￭ name , T ￭2 ￭.￭ title FROM Rating AS T ￭1 JOIN Movie AS T ￭2 ON T ￭1 ￭.￭ mID = T ￭2 ￭.￭ mID WHERE T ￭1 ￭.￭ stars = "￭ director ￭" AND T ￭1 ￭.￭ mID = "￭ director ! ￭= T ￭2 ￭.￭ title
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ age FROM people AS T ￭1 JOIN Movie AS T ￭2 ON T ￭1 ￭.￭ male ￭_￭ id = T ￭2 ￭.￭ people ￭_￭ id WHERE T ￭2 ￭.￭ preferred ￭_￭ foot = "￭ left ￭" AND T ￭2 ￭.￭ overall ￭_￭ rating = "￭ left ￭"
+SELECT name , channel ￭_￭ id FROM channel WHERE OWNER = '￭ CCTV ￭'
+SELECT name , origin FROM channel WHERE OWNER = '￭ CCTV ￭'
+SELECT T ￭1 ￭.￭ country FROM channel AS T ￭1 JOIN broadcast AS T ￭2 ON T ￭1 ￭.￭ channel ￭_￭ id = T ￭2 ￭.￭ channel ￭_￭ id WHERE T ￭2 ￭.￭ time ￭_￭ of ￭_￭ day = '￭ Morning ￭' GROUP BY T ￭1 ￭.￭ country ￭_￭ id HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT T ￭1 ￭.￭ name FROM channel AS T ￭1 JOIN broadcast AS T ￭2 ON T ￭1 ￭.￭ channel ￭_￭ id = T ￭2 ￭.￭ channel ￭_￭ id WHERE T ￭2 ￭.￭ time ￭_￭ of ￭_￭ day = '￭ Morning ￭'
+SELECT customer ￭_￭ details FROM customers EXCEPT SELECT T ￭1 ￭.￭ customer ￭_￭ details FROM customers AS T ￭1 JOIN customer ￭_￭ orders AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id JOIN order ￭_￭ items AS T ￭3 ON T ￭2 ￭.￭ order ￭_￭ id = T ￭3 ￭.￭ order ￭_￭ id JOIN products AS T ￭4 ON T ￭3 ￭.￭ product ￭_￭ id = T ￭4 ￭.￭ product ￭_￭ id WHERE T ￭4 ￭.￭ balance = '￭ Latte ￭'
+SELECT customer ￭_￭ id FROM Accounts WHERE customer ￭_￭ id NOT IN (￭ SELECT customer ￭_￭ id FROM review ￭)
+SELECT director FROM Movie WHERE director ! ￭= "￭ null ￭" GROUP BY director HAVING count ￭( ￭* ￭) = 1
+SELECT name FROM channel WHERE u ￭_￭ id NOT IN (￭ SELECT u ￭_￭ id FROM review ￭)
+SELECT count ￭( ￭* ￭) FROM player
+SELECT count ￭( ￭* ￭) FROM Financial ￭_￭ transactions
+SELECT Player ￭_￭ name FROM player ORDER BY Votes DESC
+SELECT Name FROM people ORDER BY Height DESC
+SELECT T ￭2 ￭.￭ Hardware ￭_￭ Model ￭_￭ name , T ￭2 ￭.￭ Company ￭_￭ name FROM screen ￭_￭ mode AS T ￭1 JOIN phone AS T ￭2 ON T ￭1 ￭.￭ Graphics ￭_￭ mode = T ￭2 ￭.￭ chip ￭_￭ model WHERE T ￭1 ￭.￭ Launch ￭_￭ year = 2002 GROUP BY T ￭1 ￭.￭ StuID ORDER BY T ￭1 ￭.￭ RAM ￭_￭ MiB DESC LIMIT 1 ￭;
+SELECT max ￭(￭ T ￭2 ￭.￭ Weeks ￭_￭ on ￭_￭ Top ￭) , T ￭1 ￭.￭ employee ￭_￭ id FROM film ￭_￭ stores AS T ￭1 JOIN flight AS T ￭2 ON T ￭1 ￭.￭ dept ￭_￭ code = T ￭2 ￭.￭ dept ￭_￭ club ￭_￭ id
+SELECT avg ￭(￭ T ￭2 ￭.￭ rating ￭) FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID
+SELECT avg ￭(￭ T ￭2 ￭.￭ Name ￭) FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID
+SELECT T ￭1 ￭.￭ Total FROM body ￭_￭ builder AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID ORDER BY T ￭2 ￭.￭ Rank DESC LIMIT 1
+SELECT T ￭1 ￭.￭ Total FROM body ￭_￭ builder AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID ORDER BY T ￭2 ￭.￭ Rank ￭_￭ in ￭_￭ Round DESC LIMIT 1
+SELECT Residence FROM player GROUP BY Residence
+SELECT * FROM departments WHERE department ￭_￭ id = '￭ Marketing ￭'
+SELECT T ￭2 ￭.￭ Name FROM entrepreneur AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID
+SELECT T ￭2 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭1 ￭.￭ name = "￭ Bob Fosse ￭"
+SELECT T ￭1 ￭.￭ name FROM player AS T ￭1 JOIN tryout AS T ￭2 ON T ￭1 ￭.￭ player ￭_￭ id = T ￭2 ￭.￭ player ￭_￭ id GROUP BY T ￭1 ￭.￭ player ￭_￭ id HAVING count ￭( ￭* ￭) > 1
+SELECT T ￭1 ￭.￭ name FROM player AS T ￭1 JOIN Player ￭_￭ coach AS T ￭2 ON T ￭1 ￭.￭ Coach ￭_￭ ID = T ￭2 ￭.￭ Coach ￭_￭ ID WHERE T ￭2 ￭.￭ Rank ￭_￭ in ￭_￭ Round > 3
+SELECT T ￭1 ￭.￭ Name FROM company AS T ￭1 JOIN round AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID ORDER BY T ￭2 ￭.￭ Rank ￭_￭ in ￭_￭ Round ASC
+SELECT T ￭1 ￭.￭ Company ￭_￭ name FROM pilot AS T ￭1 JOIN flight AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ company ￭_￭ id ORDER BY T ￭2 ￭.￭ velocity ASC
+SELECT date ￭_￭ of ￭_￭ birth FROM Customers ORDER BY date ￭_￭ birth ￭_￭ birth ￭_￭ birth ￭_￭ birth ￭_￭ date DESC LIMIT 1
+SELECT date ￭_￭ of ￭_￭ birth FROM Customers ORDER BY total ￭_￭ birth ￭_￭ date DESC LIMIT 1
+SELECT T ￭2 ￭.￭ name FROM film AS T ￭1 JOIN LANGUAGE AS T ￭2 ON T ￭1 ￭.￭ language ￭_￭ id = T ￭2 ￭.￭ language ￭_￭ id WHERE T ￭1 ￭.￭ building = '￭ AIRPORT POLLOCK ￭'
+SELECT T ￭1 ￭.￭ Total FROM body ￭_￭ builder AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID ORDER BY T ￭2 ￭.￭ Rank ￭_￭ in ￭_￭ Round DESC LIMIT 1
+SELECT avg ￭(￭ T ￭1 ￭.￭ height ￭) FROM player AS T ￭1 JOIN player ￭_￭ college AS T ￭2 ON T ￭1 ￭.￭ player ￭_￭ id = T ￭2 ￭.￭ player ￭_￭ id JOIN college AS T ￭3 ON T ￭3 ￭.￭ college ￭_￭ id = T ￭2 ￭.￭ college ￭_￭ id WHERE T ￭3 ￭.￭ name ￭_￭ full = '￭ Yale University ￭' ￭;
+SELECT avg ￭(￭ T ￭1 ￭.￭ height ￭) FROM player AS T ￭1 JOIN player ￭_￭ college AS T ￭2 ON T ￭1 ￭.￭ player ￭_￭ id = T ￭2 ￭.￭ player ￭_￭ id JOIN college AS T ￭3 ON T ￭3 ￭.￭ college ￭_￭ id = T ￭2 ￭.￭ college ￭_￭ id WHERE T ￭3 ￭.￭ name ￭_￭ full = '￭ Yale University ￭' ￭;
+SELECT T ￭2 ￭.￭ Player ￭_￭ name FROM club AS T ￭1 JOIN player AS T ￭2 ON T ￭1 ￭.￭ Club ￭_￭ ID = T ￭2 ￭.￭ Club ￭_￭ ID ORDER BY T ￭1 ￭.￭ Votes DESC
+SELECT T ￭3 ￭.￭ Name FROM player ￭_￭ coach AS T ￭1 JOIN coach AS T ￭2 ON T ￭1 ￭.￭ Coach ￭_￭ ID = T ￭2 ￭.￭ Coach ￭_￭ ID JOIN player AS T ￭3 ON T ￭1 ￭.￭ Player ￭_￭ ID = T ￭3 ￭.￭ Player ￭_￭ ID ORDER BY T ￭2 ￭.￭ Votes
+SELECT Nationality , COUNT ￭( ￭* ￭) FROM people GROUP BY Nationality
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name GROUP BY T ￭1 ￭.￭ name
+SELECT Nationality FROM HOST GROUP BY Nationality ORDER BY COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT Nationality FROM journalist GROUP BY Nationality ORDER BY COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT Nationality FROM journalist GROUP BY Nationality HAVING COUNT ￭( ￭* ￭) > 2
+SELECT Nationality FROM journalist GROUP BY Nationality HAVING COUNT ￭( ￭* ￭) > 2
+SELECT Birth ￭_￭ Date , Height , Venue FROM people ORDER BY Height ASC
+SELECT Birth ￭_￭ Date , Name FROM people ORDER BY Height ASC
+SELECT Name FROM people WHERE People ￭_￭ ID NOT IN (￭ SELECT People ￭_￭ ID FROM debate ￭_￭ people ￭)
+SELECT Name FROM people WHERE People ￭_￭ ID NOT IN (￭ SELECT People ￭_￭ ID FROM entrepreneur ￭)
+SELECT Name FROM people WHERE People ￭_￭ ID NOT IN (￭ SELECT People ￭_￭ ID FROM entrepreneur ￭)
+SELECT Name FROM people WHERE People ￭_￭ ID NOT IN (￭ SELECT People ￭_￭ ID FROM employment ￭)
+SELECT count ￭(￭ DISTINCT Nationality ￭) FROM journalist
+SELECT count ￭(￭ DISTINCT Company ￭) FROM entrepreneur
+SELECT count ￭(￭ DISTINCT state ￭) FROM bank
+SELECT name , dates ￭_￭ active , name FROM people
+SELECT T ￭3 ￭.￭ born ￭_￭ state FROM department AS T ￭1 JOIN management AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id JOIN head AS T ￭3 ON T ￭2 ￭.￭ head ￭_￭ id = T ￭3 ￭.￭ head ￭_￭ id WHERE T ￭1 ￭.￭ name = '￭ Treasury ￭'
+SELECT max ￭(￭ salary ￭) , min ￭(￭ salary ￭) FROM instruments WHERE city = "￭ NYC ￭"
+SELECT T ￭2 ￭.￭ date ￭_￭ payment ￭_￭ start ￭_￭ Bookings FROM Addresses AS T ￭1 JOIN Drama ￭_￭ Workshop ￭_￭ Groups AS T ￭2 ON T ￭1 ￭.￭ Address ￭_￭ ID = T ￭2 ￭.￭ Address ￭_￭ ID WHERE T ￭1 ￭.￭ State ￭_￭ County = "￭ Canada ￭"
+SELECT Name FROM people WHERE People ￭_￭ ID NOT IN (￭ SELECT People ￭_￭ ID FROM entrepreneur ￭)
+SELECT DISTINCT T ￭1 ￭.￭ born ￭_￭ state FROM department AS T ￭1 JOIN management AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id WHERE T ￭2 ￭.￭ head ￭_￭ id = '￭ Homeland head ￭'
+SELECT T ￭2 ￭.￭ name , T ￭1 ￭.￭ city , count ￭( ￭* ￭) FROM address AS T ￭1 JOIN manager ￭_￭ addresses AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id GROUP BY T ￭2 ￭.￭ building ￭_￭ id HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT preferred ￭_￭ foot , count ￭( ￭* ￭) FROM Player ￭_￭ Attributes GROUP BY preferred ￭_￭ foot
+SELECT count ￭( ￭* ￭) FROM (￭ SELECT payment ￭_￭ method FROM customers GROUP BY payment ￭_￭ method ￭_￭ code
+SELECT count ￭( ￭* ￭) FROM Projects WHERE mID NOT IN (￭ SELECT mID FROM AssignedTo ￭)
+SELECT city ￭_￭ code FROM Flight GROUP BY city ￭_￭ code ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ Store ￭_￭ Phone , T ￭1 ￭.￭ Store ￭_￭ Email ￭_￭ Address FROM Drama ￭_￭ Workshop ￭_￭ Groups AS T ￭1 JOIN Services AS T ￭2 ON T ￭1 ￭.￭ Workshop ￭_￭ Group ￭_￭ ID = T ￭2 ￭.￭ Workshop ￭_￭ Group ￭_￭ ID WHERE T ￭2 ￭.￭ Product ￭_￭ Name = "￭ film ￭"
+SELECT location ￭_￭ code , address FROM Document ￭_￭ locations WHERE location ￭_￭ code = "￭ x ￭"
+SELECT customer ￭_￭ name FROM customers WHERE customer ￭_￭ address LIKE " ￭%￭ Alex ￭% ￭"
+SELECT name FROM people WHERE height > (￭ SELECT avg ￭(￭ height ￭) FROM people ￭)
+SELECT t ￭1 ￭.￭ name FROM ship AS t ￭1 JOIN captain AS t ￭2 ON t ￭1 ￭.￭ ship ￭_￭ id = t ￭2 ￭.￭ ship ￭_￭ id WHERE t ￭2 ￭.￭ founded > 1880
+SELECT count ￭( ￭* ￭) FROM swimmer WHERE nationality = "￭ Australia ￭"
+SELECT count ￭( ￭* ￭) FROM country
+SELECT sum ￭(￭ city ￭) FROM people GROUP BY country
+SELECT count ￭(￭ DISTINCT city ￭) FROM Person
+SELECT T ￭2 ￭.￭ customer ￭_￭ name FROM mailshot ￭_￭ customers AS T ￭1 JOIN customers AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id WHERE T ￭1 ￭.￭ outcome ￭_￭ code = '￭ Order ￭'
+SELECT clubname FROM club WHERE clublocation = "￭ AKW ￭"
+SELECT address FROM content WHERE city = "￭ London ￭"
+SELECT DISTINCT T ￭1 ￭.￭ region ￭_￭ name FROM region AS T ￭1 JOIN region AS T ￭2 ON T ￭1 ￭.￭ region ￭_￭ id = T ￭2 ￭.￭ region ￭_￭ id JOIN storm AS T ￭3 ON T ￭1 ￭.￭ storm ￭_￭ id = T ￭3 ￭.￭ storm ￭_￭ id WHERE T ￭2 ￭.￭ region ￭_￭ name = "￭ Denmark ￭"
+SELECT T ￭1 ￭.￭ name FROM genres AS T ￭1 JOIN tracks AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ genre ￭_￭ id WHERE T ￭2 ￭.￭ name = "￭ Rock ￭" GROUP BY T ￭1 ￭.￭ name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1 ￭;
+SELECT T ￭2 ￭.￭ name FROM genres AS T ￭1 JOIN tracks AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ genre ￭_￭ id WHERE T ￭1 ￭.￭ name = "￭ Rock ￭" ￭;
+SELECT Lifespan FROM county WHERE County = "￭ ID WHERE County = "￭ Tennis Club ￭"
+SELECT Lifespan FROM representative WHERE State = "￭ New York ￭"
+SELECT T ￭1 ￭.￭ problem ￭_￭ id , T ￭2 ￭.￭ store ￭_￭ name FROM store AS T ￭1 JOIN problem ￭_￭ log AS T ￭2 ON T ￭1 ￭.￭ store ￭_￭ id = T ￭2 ￭.￭ store ￭_￭ id WHERE T ￭2 ￭.￭ problem ￭_￭ id = 1
+SELECT T ￭1 ￭.￭ region ￭_￭ name , T ￭2 ￭.￭ region ￭_￭ name FROM region AS T ￭1 JOIN region AS T ￭2 ON T ￭1 ￭.￭ region ￭_￭ id = T ￭2 ￭.￭ region ￭_￭ id
+SELECT avg ￭(￭ market ￭_￭ value ￭) FROM company WHERE Competition ￭_￭ type = "￭ Tournament ￭"
+SELECT avg ￭(￭ market ￭_￭ degrees ￭) FROM station WHERE LOCATION = "￭ San Jose ￭"
+SELECT country FROM artist GROUP BY country HAVING AVG ￭(￭ country ￭) > 10
+SELECT Name FROM representative WHERE State = "￭ New York ￭" ORDER BY price LIMIT 1
+SELECT sum ￭(￭ city ￭_￭ population ￭) , city ￭_￭ area ￭) FROM county ￭_￭ public ￭_￭ safety ORDER BY city ￭_￭ area DESC LIMIT 1
+SELECT city , GDP FROM city ORDER BY GDP LIMIT 1
+SELECT avg ￭(￭ ￭(￭ ￭(￭ ￭(￭ ￭(￭ ￭(￭ DISTINCT ￭) FROM csu ￭_￭ fees WHERE State = "￭ IL ￭" ￭;
+SELECT avg ￭(￭ DISTINCT bike ￭_￭ id ￭) FROM csu ￭_￭ fees WHERE Competition ￭_￭ type = "￭ Australia ￭"
+SELECT sum ￭(￭ city ￭_￭ population ￭) , city , city , city , country FROM cinema GROUP BY city
+SELECT sum ￭(￭ city ￭) FROM stadium GROUP BY city
+SELECT count ￭( ￭* ￭) FROM city
+SELECT sum ￭(￭ Population ￭) FROM county
+SELECT avg ￭(￭ Nationality ￭) , min ￭(￭ price ￭) FROM ship WHERE Nationality = "￭ United States ￭"
+SELECT sum ￭(￭ t ￭1 ￭.￭ graduate ￭) , min ￭(￭ Years ￭_￭ working ￭) FROM discipline ￭_￭ public ￭_￭ safety AS t ￭1 JOIN Allergy ￭_￭ Type AS t ￭2 ON t ￭1 ￭.￭ County ￭_￭ ID = t ￭2 ￭.￭ Code WHERE t ￭2 ￭.￭ Name = "￭ United States ￭"
+SELECT count ￭(￭ DISTINCT language ￭_￭ id ￭) FROM film
+SELECT count ￭(￭ DISTINCT language ￭_￭ id ￭) FROM film
+SELECT count ￭( ￭* ￭) FROM Financial ￭_￭ transactions
+SELECT count ￭(￭ DISTINCT Governor ￭) FROM party
+SELECT count ￭(￭ DISTINCT language ￭_￭ id ￭) FROM film
+SELECT count ￭(￭ DISTINCT language ￭_￭ id ￭) FROM film
+SELECT count ￭(￭ DISTINCT language ￭_￭ id ￭) FROM country
+SELECT count ￭( ￭* ￭) FROM film WHERE rating = '￭ R ￭'
+SELECT T ￭2 ￭.￭ Name FROM country AS T ￭1 JOIN match ￭_￭ season AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭1 ￭.￭ Country ￭_￭ name = "￭ Indonesia ￭"
+SELECT t ￭1 ￭.￭ customer ￭_￭ name FROM customers AS t ￭1 JOIN customers ￭_￭ policies AS t ￭2 ON t ￭1 ￭.￭ customer ￭_￭ id = t ￭2 ￭.￭ customer ￭_￭ id GROUP BY t ￭1 ￭.￭ customer ￭_￭ name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭2 ￭.￭ name FROM albums AS T ￭1 JOIN tracks AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ album ￭_￭ id GROUP BY T ￭1 ￭.￭ id HAVING count ￭(￭ T ￭1 ￭.￭ id ￭) DESC LIMIT 1 ￭;
+SELECT T ￭2 ￭.￭ name FROM advisor AS T ￭1 JOIN instructor AS T ￭2 ON T ￭1 ￭.￭ i ￭_￭ id = T ￭2 ￭.￭ id GROUP BY T ￭2 ￭.￭ s ￭_￭ id ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT count ￭( ￭* ￭) FROM artist WHERE country = "￭ UK ￭" INTERSECT SELECT country FROM song WHERE languages = "￭ english ￭"
+SELECT count ￭( ￭* ￭) , flag FROM ship WHERE Nationality = "￭ United States ￭"
+SELECT t ￭1 ￭.￭ name FROM ship AS t ￭1 JOIN captain AS t ￭2 ON t ￭1 ￭.￭ ship ￭_￭ id = t ￭2 ￭.￭ ship ￭_￭ id WHERE t ￭2 ￭.￭ Nationality = "￭ United States ￭" INTERSECT SELECT t ￭1 ￭.￭ name FROM ship AS t ￭1 JOIN captain AS t ￭2 ON t ￭1 ￭.￭ ship ￭_￭ id = t ￭2 ￭.￭ ship ￭_￭ id WHERE t ￭2 ￭.￭ Nationality = "￭ United States ￭"
+SELECT t ￭1 ￭.￭ name FROM ship AS t ￭1 JOIN captain AS t ￭2 ON t ￭1 ￭.￭ ship ￭_￭ id = t ￭2 ￭.￭ ship ￭_￭ id WHERE t ￭2 ￭.￭ Nationality = "￭ United States ￭" INTERSECT SELECT t ￭1 ￭.￭ name FROM ship AS t ￭1 JOIN captain AS t ￭2 ON t ￭1 ￭.￭ ship ￭_￭ id = t ￭2 ￭.￭ ship ￭_￭ id WHERE t ￭2 ￭.￭ Nationality = "￭ United States ￭"
+SELECT t ￭1 ￭.￭ artist ￭_￭ name FROM artist AS t ￭1 JOIN song AS t ￭2 ON t ￭1 ￭.￭ artist ￭_￭ name = t ￭2 ￭.￭ artist ￭_￭ name WHERE t ￭2 ￭.￭ languages = "￭ bangla ￭" INTERSECT SELECT t ￭1 ￭.￭ name FROM artist AS t ￭1 JOIN song AS t ￭2 ON t ￭1 ￭.￭ artist ￭_￭ name = t ￭2 ￭.￭ artist ￭_￭ name WHERE t ￭2 ￭.￭ rating = "￭ english ￭"
+SELECT T ￭2 ￭.￭ Delegate , T ￭1 ￭.￭ District FROM country AS T ￭1 JOIN match ￭_￭ season AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭1 ￭.￭ Capital = "￭ Dublin ￭"
+SELECT count ￭(￭ DISTINCT T ￭2 ￭.￭ position ￭) FROM races AS T ￭1 JOIN results AS T ￭2 ON T ￭1 ￭.￭ raceid = T ￭2 ￭.￭ raceid WHERE T ￭1 ￭.￭ name = "￭ Michael ￭"
+SELECT count ￭( ￭* ￭) FROM review
+SELECT DISTINCT T ￭2 ￭.￭ product ￭_￭ id FROM Financial ￭_￭ transactions AS T ￭1 JOIN Accounts AS T ￭2 ON T ￭1 ￭.￭ account ￭_￭ id = T ￭2 ￭.￭ account ￭_￭ id WHERE T ￭1 ￭.￭ account ￭_￭ name = "￭ english ￭" OR T ￭1 ￭.￭ account ￭_￭ name = "￭ english ￭"
+SELECT DISTINCT T ￭1 ￭.￭ region ￭_￭ name FROM region AS T ￭1 JOIN affected ￭_￭ region AS T ￭2 ON T ￭1 ￭.￭ region ￭_￭ id = T ￭2 ￭.￭ region ￭_￭ id
+SELECT country ￭_￭ name FROM country WHERE country = "￭ UK ￭" OR country = "￭ Malaysia ￭"
+SELECT T ￭2 ￭.￭ country FROM city AS T ￭1 JOIN farm ￭_￭ competition AS T ￭2 ON T ￭1 ￭.￭ City ￭_￭ ID = T ￭2 ￭.￭ Host ￭_￭ city ￭_￭ ID WHERE T ￭1 ￭.￭ city ￭_￭ code = "￭ Maryland ￭" OR T ￭1 ￭.￭ District = "￭ Duke ￭"
+SELECT Major FROM STUDENT WHERE Sex = "￭ bangla ￭" GROUP BY major ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭2 ￭.￭ name FROM film AS T ￭1 JOIN LANGUAGE AS T ￭2 ON T ￭1 ￭.￭ language ￭_￭ id = T ￭2 ￭.￭ language ￭_￭ id WHERE T ￭1 ￭.￭ country = '￭ AIRPORT POLLOCK ￭'
+SELECT T ￭1 ￭.￭ country FROM artist AS T ￭1 JOIN song AS T ￭2 ON T ￭1 ￭.￭ artist ￭_￭ name = T ￭2 ￭.￭ artist ￭_￭ name GROUP BY T ￭2 ￭.￭ artist ￭_￭ name HAVING count ￭( ￭* ￭) = 1
+SELECT country FROM artist WHERE country = "￭ UK ￭" ￭;
+SELECT t ￭1 ￭.￭ city FROM city AS t ￭1 JOIN hosting ￭_￭ city AS t ￭2 ON t ￭1 ￭.￭ city ￭_￭ id = t ￭2 ￭.￭ host ￭_￭ city GROUP BY t ￭2 ￭.￭ host ￭_￭ city ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭2 ￭.￭ city FROM Customers AS T ￭1 JOIN Addresses AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id GROUP BY T ￭2 ￭.￭ city ORDER BY count ￭( ￭* ￭) DESC LIMIT 1 ￭;
+SELECT problem ￭_￭ log ￭_￭ id , country FROM basketball ￭_￭ match ORDER BY elevation DESC LIMIT 1
+SELECT id , country FROM representative ORDER BY price DESC LIMIT 1
+SELECT avg ￭(￭ ￭(￭ ￭(￭ T ￭2 ￭.￭ rating ￭) FROM csu ￭_￭ fees AS T ￭1 JOIN campuses AS T ￭2 ON T ￭1 ￭.￭ campus = T ￭2 ￭.￭ artist ￭_￭ id WHERE T ￭1 ￭.￭ gender = "￭ Studio ￭"
+SELECT campus FROM campuses WHERE country ! ￭= "￭ Tournament ￭"
+SELECT count ￭( ￭* ￭) FROM ship WHERE origin ! ￭= '￭ Beijing ￭'
+SELECT count ￭( ￭* ￭) FROM people WHERE country ! ￭= "￭ Canada ￭"
+SELECT T ￭2 ￭.￭ country FROM customer AS T ￭1 JOIN country AS T ￭2 ON T ￭1 ￭.￭ country ￭_￭ id = T ￭2 ￭.￭ country ￭_￭ id GROUP BY T ￭2 ￭.￭ country ￭_￭ id ORDER BY count ￭(￭ T ￭1 ￭.￭ stars ￭) LIMIT 1
+SELECT T ￭2 ￭.￭ country FROM customer AS T ￭1 JOIN country AS T ￭2 ON T ￭1 ￭.￭ country ￭_￭ id = T ￭2 ￭.￭ country ￭_￭ id GROUP BY T ￭2 ￭.￭ country ￭_￭ id ORDER BY count ￭(￭ T ￭1 ￭.￭ stars ￭) LIMIT 1
+SELECT count ￭(￭ DISTINCT T ￭1 ￭.￭ Official ￭_￭ native ￭_￭ language ￭) FROM country AS T ￭1 JOIN match ￭_￭ season AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭2 ￭.￭ Budgeted < (￭ SELECT created ￭_￭ date = "￭ Nokia Corporation ￭" ￭)
+SELECT count ￭(￭ DISTINCT rating ￭) FROM perpetrator
+SELECT T ￭2 ￭.￭ country FROM people AS T ￭1 JOIN perpetrator AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭1 ￭.￭ city = "￭ Canada ￭"
+SELECT T ￭2 ￭.￭ country FROM city AS T ￭1 JOIN country AS T ￭2 ON T ￭1 ￭.￭ country ￭_￭ id = T ￭2 ￭.￭ country ￭_￭ id WHERE T ￭1 ￭.￭ country = '￭ Iceland ￭'
+SELECT T ￭2 ￭.￭ country FROM city AS T ￭1 JOIN roller ￭_￭ coaster AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ ID = T ￭2 ￭.￭ Country ￭_￭ ID WHERE T ￭1 ￭.￭ Population < 100000
+SELECT T ￭2 ￭.￭ country FROM city AS T ￭1 JOIN country AS T ￭2 ON T ￭1 ￭.￭ country ￭_￭ id = T ￭2 ￭.￭ country ￭_￭ id WHERE T ￭1 ￭.￭ age < ￭= 32
+SELECT T ￭2 ￭.￭ country FROM city AS T ￭1 JOIN county ￭_￭ public ￭_￭ safety AS T ￭2 ON T ￭1 ￭.￭ County ￭_￭ ID = T ￭2 ￭.￭ County ￭_￭ ID WHERE T ￭1 ￭.￭ White > 90
+SELECT T ￭2 ￭.￭ country FROM city AS T ￭1 JOIN county ￭_￭ public ￭_￭ safety AS T ￭2 ON T ￭1 ￭.￭ County ￭_￭ ID = T ￭2 ￭.￭ County ￭_￭ ID WHERE T ￭1 ￭.￭ White > 90
+SELECT location ￭_￭ code FROM country WHERE country ￭_￭ id NOT IN (￭ SELECT country ￭_￭ id FROM departments ￭)
+SELECT Name FROM country WHERE Country ￭_￭ ID NOT IN (￭ SELECT Country ￭_￭ ID FROM climber ￭)
+SELECT country ￭_￭ name FROM country WHERE country ￭_￭ id = '￭ USA ￭' AND bats = '￭ R ￭' ￭;
+SELECT Name FROM people WHERE People ￭_￭ ID NOT IN (￭ SELECT People ￭_￭ ID FROM perpetrator ￭)
+SELECT DISTINCT T ￭2 ￭.￭ Pilot ￭_￭ name , T ￭1 ￭.￭ country ￭_￭ name FROM country AS T ￭1 JOIN song AS T ￭2 ON T ￭1 ￭.￭ artist ￭_￭ name = T ￭2 ￭.￭ artist ￭_￭ name WHERE T ￭1 ￭.￭ account ￭_￭ name LIKE " ￭%￭ Mar ￭% ￭"
+SELECT f ￭_￭ id , genre ￭_￭ is FROM competition WHERE languages = "￭ english ￭" EXCEPT SELECT T ￭2 ￭.￭ song ￭_￭ name , T ￭2 ￭.￭ artist ￭_￭ name FROM Apartment ￭_￭ Bookings AS T ￭1 JOIN Apartments AS T ￭2 ON T ￭1 ￭.￭ apt ￭_￭ id = T ￭2 ￭.￭ apt ￭_￭ id
+SELECT Official ￭_￭ Name FROM city WHERE City ￭_￭ ID NOT IN (￭ SELECT Host ￭_￭ city ￭_￭ ID FROM farm ￭_￭ competition ￭)
+SELECT Official ￭_￭ Name FROM city WHERE City ￭_￭ ID NOT IN (￭ SELECT Host ￭_￭ city ￭_￭ ID FROM farm ￭_￭ competition ￭)
+SELECT T ￭2 ￭.￭ Country FROM entrepreneur AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭1 ￭.￭ Country = "￭ China ￭" OR T ￭1 ￭.￭ Country = "￭ Japan ￭"
+SELECT DISTINCT T ￭2 ￭.￭ Official ￭_￭ Name FROM entrepreneur AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID
+SELECT T ￭2 ￭.￭ name , T ￭2 ￭.￭ city , T ￭1 ￭.￭ country FROM store AS T ￭1 JOIN address AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id GROUP BY T ￭2 ￭.￭ country ￭_￭ id ORDER BY count ￭( ￭* ￭) LIMIT 1
+SELECT T ￭2 ￭.￭ name , T ￭2 ￭.￭ city , T ￭1 ￭.￭ country FROM address AS T ￭1 JOIN branch AS T ￭2 ON T ￭1 ￭.￭ branch ￭_￭ id = T ￭2 ￭.￭ branch ￭_￭ id GROUP BY T ￭1 ￭.￭ country ￭_￭ id ORDER BY count ￭( ￭* ￭) LIMIT 1
+SELECT T ￭1 ￭.￭ Leader ￭_￭ Name , T ￭2 ￭.￭ college ￭_￭ id FROM college AS T ￭1 JOIN member AS T ￭2 ON T ￭1 ￭.￭ College ￭_￭ ID = T ￭2 ￭.￭ College ￭_￭ ID GROUP BY T ￭2 ￭.￭ college ￭_￭ id ORDER BY count ￭( ￭* ￭) DESC LIMIT 1 ￭;
+SELECT T ￭2 ￭.￭ born ￭_￭ state FROM department AS T ￭1 JOIN management AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id GROUP BY T ￭2 ￭.￭ department ￭_￭ id ORDER BY count ￭(￭ T ￭1 ￭.￭ name ￭) LIMIT 1
+SELECT T ￭2 ￭.￭ Season , T ￭2 ￭.￭ Player , T ￭1 ￭.￭ Country ￭_￭ name FROM country AS T ￭1 JOIN match ￭_￭ season AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭1 ￭.￭ stars > 3
+SELECT T ￭1 ￭.￭ artist ￭_￭ name , T ￭1 ￭.￭ country ￭_￭ name FROM country AS T ￭1 JOIN song AS T ￭2 ON T ￭1 ￭.￭ artist ￭_￭ name = T ￭2 ￭.￭ artist ￭_￭ name WHERE T ￭2 ￭.￭ languages = "￭ english ￭" GROUP BY T ￭2 ￭.￭ artist ￭_￭ name HAVING count ￭( ￭* ￭) > ￭= 1
+SELECT city , GDP FROM city WHERE city ￭_￭ area > (￭ SELECT avg ￭(￭ city ￭_￭ area ￭) FROM district ￭) GROUP BY city ￭_￭ area ￭)
+SELECT city ￭_￭ code , count ￭( ￭* ￭) FROM city WHERE county ￭_￭ ID = "￭ Republican ￭"
+SELECT sum ￭(￭ enrollment ￭) , min ￭(￭ enrollment ￭) FROM csu ￭_￭ fees GROUP BY title HAVING avg ￭(￭ price ￭) > ￭= 10
+SELECT avg ￭(￭ campusfee ￭) , avg ￭(￭ price ￭) FROM csu ￭_￭ fees WHERE YEAR > 80
+SELECT avg ￭(￭ enrollment ￭) , min ￭(￭ enrollment ￭) FROM university WHERE county = "￭ San Jose ￭"
+SELECT avg ￭(￭ ticket ￭_￭ price ￭) , min ￭(￭ ticket ￭_￭ price ￭) FROM csu ￭_￭ in WHERE transaction ￭_￭ Vote
+SELECT name , country FROM artist ORDER BY elevation DESC LIMIT 5
+SELECT name , LOCATION FROM performance ORDER BY price DESC LIMIT 5
+SELECT Name FROM people ORDER BY Height DESC LIMIT 3
+SELECT T ￭2 ￭.￭ name FROM problems AS T ￭1 JOIN branch AS T ￭2 ON T ￭1 ￭.￭ branch ￭_￭ id = T ￭2 ￭.￭ branch ￭_￭ id GROUP BY T ￭2 ￭.￭ document ￭_￭ id HAVING count ￭( ￭* ￭) = 3
+SELECT Name FROM ship ORDER BY Nationality ASC LIMIT 3
+SELECT T ￭2 ￭.￭ country FROM city AS T ￭1 JOIN country AS T ￭2 ON T ￭1 ￭.￭ country ￭_￭ id = T ￭2 ￭.￭ country ￭_￭ id GROUP BY T ￭2 ￭.￭ country ￭_￭ id ORDER BY count ￭( ￭* ￭) LIMIT 3
+SELECT count ￭( ￭* ￭) FROM country
+SELECT count ￭(￭ DISTINCT country ￭) FROM people
+SELECT T ￭2 ￭.￭ Name , T ￭1 ￭.￭ County FROM city AS T ￭1 JOIN county AS T ￭2 ON T ￭1 ￭.￭ County ￭_￭ id = T ￭2 ￭.￭ District
+SELECT name , LOCATION FROM swimmer
+SELECT avg ￭(￭ T ￭2 ￭.￭ Number ￭_￭ cities ￭) , avg ￭(￭ T ￭1 ￭.￭ Number ￭_￭ of ￭_￭ 2016 ￭) FROM city AS T ￭1 JOIN phone AS T ￭2 ON T ￭1 ￭.￭ City ￭_￭ ID = T ￭2 ￭.￭ Host ￭_￭ ID WHERE T ￭2 ￭.￭ city ￭_￭ code = "￭ New ￭"
+SELECT T ￭2 ￭.￭ country , T ￭1 ￭.￭ Regional ￭_￭ Population FROM city AS T ￭1 JOIN hosting ￭_￭ city AS T ￭2 ON T ￭1 ￭.￭ city ￭_￭ id = T ￭2 ￭.￭ host ￭_￭ city GROUP BY T ￭2 ￭.￭ Host ￭_￭ City HAVING avg ￭(￭ T ￭1 ￭.￭ price ￭) > ￭= 10
+SELECT city ￭_￭ code FROM county ￭_￭ public ￭_￭ safety WHERE City ￭_￭ Population BETWEEN 200000 AND 2000000
+SELECT T ￭1 ￭.￭ city FROM city AS T ￭1 JOIN hosting ￭_￭ city AS T ￭2 ON T ￭1 ￭.￭ city ￭_￭ id = T ￭2 ￭.￭ host ￭_￭ city WHERE T ￭2 ￭.￭ year BETWEEN White < 90 AND T ￭2 ￭.￭ year = 2000
+SELECT T ￭1 ￭.￭ name FROM country AS T ￭1 JOIN roller ￭_￭ coaster AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ ID = T ￭2 ￭.￭ Country ￭_￭ ID WHERE T ￭2 ￭.￭ speed > 60 GROUP BY T ￭1 ￭.￭ artist ￭_￭ name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭2 ￭.￭ name FROM genres AS T ￭1 JOIN tracks AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ genre ￭_￭ id WHERE T ￭1 ￭.￭ name = "￭ Rock ￭" GROUP BY T ￭1 ￭.￭ name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1 ￭;
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ city , T ￭2 ￭.￭ country FROM airports AS T ￭1 JOIN routes AS T ￭2 ON T ￭1 ￭.￭ apid = T ￭2 ￭.￭ dst ￭_￭ apid WHERE T ￭2 ￭.￭ country = '￭ China ￭' GROUP BY T ￭1 ￭.￭ name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT country ￭_￭ name , country , elevation FROM country AS T ￭1 JOIN match ￭_￭ season AS T ￭2 ON T ￭1 ￭.￭ Country ￭_￭ id = T ￭2 ￭.￭ Country WHERE T ￭2 ￭.￭ Position = "￭ New York ￭"
+SELECT country FROM airlines GROUP BY country ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT count ￭( ￭* ￭) FROM people WHERE country = '￭ Russia ￭'
+SELECT country FROM competition WHERE competition ￭_￭ type = '￭ Tournament ￭' GROUP BY country ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT location ￭_￭ code FROM Document ￭_￭ locations WHERE location ￭_￭ code = "￭ x ￭"
+SELECT count ￭( ￭* ￭) FROM review
+SELECT count ￭( ￭* ￭) FROM Financial ￭_￭ transactions
+SELECT Name FROM Products ORDER BY Height ASC
+SELECT DISTINCT name FROM instructor ORDER BY name
+SELECT Name FROM journalist WHERE Nationality ! ￭= "￭ England ￭"
+SELECT Name FROM ship WHERE Nationality ! ￭= "￭ United States ￭"
+SELECT T ￭2 ￭.￭ Name FROM employment AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID ORDER BY T ￭1 ￭.￭ Height ASC
+SELECT T ￭3 ￭.￭ Name FROM debate ￭_￭ people AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ candidate ￭_￭ id = T ￭2 ￭.￭ people ￭_￭ id JOIN people AS T ￭3 ON T ￭1 ￭.￭ journalist ￭_￭ ID = T ￭3 ￭.￭ journalist ￭_￭ ID ORDER BY T ￭2 ￭.￭ Year DESC
+SELECT avg ￭(￭ T ￭1 ￭.￭ attendance ￭) FROM INVESTORS AS T ￭1 JOIN TOURIST ￭_￭ ATTRACTIONS AS T ￭2 ON T ￭1 ￭.￭ investor ￭_￭ id = T ￭2 ￭.￭ investor ￭_￭ id WHERE T ￭2 ￭.￭ YEAR = "￭ Sonoma ￭"
+SELECT avg ￭(￭ T ￭2 ￭.￭ Price ￭) FROM PHOTOS AS T ￭1 JOIN TOURIST ￭_￭ ATTRACTIONS AS T ￭2 ON T ￭1 ￭.￭ Tourist ￭_￭ Attraction ￭_￭ ID = T ￭2 ￭.￭ Tourist ￭_￭ Attraction ￭_￭ ID WHERE T ￭1 ￭.￭ Name = "￭ game ￭1 ￭"
+SELECT Nominee , Award FROM musical WHERE Award ! ￭= "￭ Tony Award ￭"
+SELECT max ￭(￭ market ￭_￭ share ￭) , min ￭(￭ market ￭_￭ share ￭) , max ￭(￭ market ￭_￭ share ￭) FROM browser
+SELECT count ￭(￭ DISTINCT Nationality ￭) FROM journalist
+SELECT count ￭(￭ DISTINCT Nationality ￭) FROM journalist
+SELECT name FROM church ORDER BY year DESC
+SELECT T ￭2 ￭.￭ Name FROM actor AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ actor ￭_￭ id = T ￭2 ￭.￭ host ￭_￭ city ORDER BY T ￭1 ￭.￭ Name DESC
+SELECT T ￭2 ￭.￭ Name FROM COURSE AS T ￭1 JOIN FACULTY AS T ￭2 ON T ￭1 ￭.￭ Instructor = T ￭2 ￭.￭ FacID WHERE T ￭1 ￭.￭ year = (￭ SELECT max ￭(￭ YEAR ￭) FROM Movie ￭)
+SELECT T ￭2 ￭.￭ Name FROM entrepreneur AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID ORDER BY T ￭1 ￭.￭ Weight DESC LIMIT 1
+SELECT T ￭1 ￭.￭ Name , T ￭2 ￭.￭ Name FROM college AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Club ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID
+SELECT T ￭1 ￭.￭ customer ￭_￭ name , T ￭2 ￭.￭ customer ￭_￭ first ￭_￭ name , T ￭2 ￭.￭ customer ￭_￭ last ￭_￭ name FROM Customers ￭_￭ cards AS T ￭1 JOIN Customers AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id
+SELECT T ￭1 ￭.￭ name FROM user ￭_￭ profiles AS T ￭1 JOIN tweets AS T ￭2 ON T ￭1 ￭.￭ uid = T ￭2 ￭.￭ uid GROUP BY T ￭2 ￭.￭ uid HAVING count ￭( ￭* ￭) > 1
+SELECT T ￭2 ￭.￭ name FROM user ￭_￭ profiles AS T ￭1 JOIN follows AS T ￭2 ON T ￭1 ￭.￭ uid = T ￭2 ￭.￭ f ￭1 GROUP BY T ￭2 HAVING count ￭( ￭* ￭) > 1
+SELECT T ￭2 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ friend GROUP BY T ￭2 ￭.￭ name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name GROUP BY T ￭2 ￭.￭ name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ name FROM Projects AS T ￭1 JOIN Project ￭_￭ outcomes AS T ￭2 ON T ￭1 ￭.￭ project ￭_￭ id = T ￭2 ￭.￭ project ￭_￭ id WHERE T ￭2 ￭.￭ founded > 1880 OR T ￭1 ￭.￭ type ￭_￭ code = '￭ Private ￭'
+SELECT T ￭1 ￭.￭ name FROM useracct AS T ￭1 JOIN review AS T ￭2 ON T ￭1 ￭.￭ u ￭_￭ id = T ￭2 ￭.￭ source ￭_￭ u ￭_￭ id WHERE T ￭2 ￭.￭ founded > 1880
+SELECT T ￭2 ￭.￭ Name , COUNT ￭( ￭* ￭) FROM employment AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID GROUP BY T ￭1 ￭.￭ Company ￭_￭ ID
+SELECT T ￭2 ￭.￭ company ￭_￭ name , count ￭( ￭* ￭) FROM Third ￭_￭ Party ￭_￭ Companies AS T ￭1 JOIN Assets AS T ￭2 ON T ￭1 ￭.￭ company ￭_￭ id = T ￭2 ￭.￭ supplier ￭_￭ company ￭_￭ id GROUP BY T ￭1 ￭.￭ company ￭_￭ id
+SELECT gname FROM Plays ￭_￭ games AS T ￭1 JOIN Video ￭_￭ games AS T ￭2 ON T ￭1 ￭.￭ gameid = T ￭2 ￭.￭ gameid GROUP BY T ￭1 ￭.￭ gameid ORDER BY sum ￭(￭ T ￭2 ￭.￭ Height ASC
+SELECT LName FROM STUDENT WHERE Major = 50 ORDER BY Age DESC
+SELECT Industry FROM Companies GROUP BY Industry ORDER BY COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭2 ￭.￭ company ￭_￭ name FROM Third ￭_￭ Party ￭_￭ Companies AS T ￭1 JOIN Maintenance ￭_￭ Contracts AS T ￭2 ON T ￭1 ￭.￭ company ￭_￭ id = T ￭2 ￭.￭ maintenance ￭_￭ contract ￭_￭ company ￭_￭ id GROUP BY T ￭1 ￭.￭ company ￭_￭ id ORDER BY COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT name FROM person EXCEPT SELECT T ￭2 ￭.￭ name FROM Tasks AS T ￭1 JOIN Projects AS T ￭2 ON T ￭1 ￭.￭ project ￭_￭ id = T ￭2 ￭.￭ project ￭_￭ id WHERE T ￭1 ￭.￭ document ￭_￭ id = '￭ Private ￭'
+SELECT Name FROM people WHERE People ￭_￭ ID NOT IN (￭ SELECT People ￭_￭ ID FROM entrepreneur ￭)
+SELECT zip ￭_￭ code FROM weather WHERE max ￭_￭ temperature ￭_￭ f > 10000 INTERSECT SELECT Industry FROM weather WHERE Open ￭_￭ Year < 5
+SELECT T ￭1 ￭.￭ company ￭_￭ name FROM Third ￭_￭ Party ￭_￭ Companies AS T ￭1 JOIN Maintenance ￭_￭ Contracts AS T ￭2 ON T ￭1 ￭.￭ company ￭_￭ id = T ￭2 ￭.￭ maintenance ￭_￭ contract ￭_￭ company ￭_￭ id WHERE T ￭2 ￭.￭ founded > 1880 INTERSECT SELECT T ￭1 ￭.￭ company ￭_￭ name FROM Maintenance ￭_￭ Contracts AS T ￭1 JOIN Maintenance ￭_￭ Contracts AS T ￭2 ON T ￭1 ￭.￭ company ￭_￭ id = T ￭2 ￭.￭ company ￭_￭ id WHERE T ￭2 ￭.￭ founded < ￭= 10
+SELECT count ￭( ￭* ￭) FROM weather WHERE formats = "￭ Banking ￭" OR Party ￭_￭ code = "￭ Conglomerate ￭"
+SELECT count ￭( ￭* ￭) FROM manufacturers AS T ￭1 JOIN manufacturers AS T ￭2 ON T ￭1 ￭.￭ Manufacturer = T ￭2 ￭.￭ code WHERE T ￭2 ￭.￭ name = '￭ Sony ￭' OR T ￭2 ￭.￭ name = '￭ Sony ￭'
+SELECT Name FROM performance WHERE Attendance > 2000
+SELECT founded FROM university WHERE founded > 1850
+SELECT count ￭( ￭* ￭) FROM film
+SELECT count ￭( ￭* ￭) FROM film
+SELECT T ￭1 ￭.￭ title , T ￭1 ￭.￭ film ￭_￭ id FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID
+SELECT T ￭1 ￭.￭ title , T ￭1 ￭.￭ film ￭_￭ id FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID
+SELECT DISTINCT Director FROM film
+SELECT DISTINCT Director FROM film
+SELECT DISTINCT T ￭2 ￭.￭ product ￭_￭ id FROM orders AS T ￭1 JOIN order ￭_￭ items AS T ￭2 ON T ￭1 ￭.￭ order ￭_￭ id = T ￭2 ￭.￭ order ￭_￭ id WHERE T ￭1 ￭.￭ date ￭_￭ order ￭_￭ placed > ￭= "￭ 1975 ￭-￭ 01 ￭-￭ 01 ￭"
+SELECT DISTINCT T ￭2 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID WHERE T ￭1 ￭.￭ Year = 1995
+SELECT DISTINCT title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID WHERE T ￭2 ￭.￭ Year = 1995
+SELECT DISTINCT T ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID WHERE T ￭2 ￭.￭ Year = 1995
+SELECT t ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID ORDER BY high ￭_￭ estimate ASC LIMIT 1
+SELECT DISTINCT label FROM Albums
+SELECT count ￭(￭ DISTINCT T ￭1 ￭.￭ title ￭) FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID WHERE T ￭2 ￭.￭ high ￭_￭ degree = "￭ white ￭" OR T ￭2 ￭.￭ How ￭_￭ to ￭_￭ Get ￭_￭ There = "￭ bus ￭"
+SELECT count ￭(￭ DISTINCT rating ￭) FROM film
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID GROUP BY T ￭1 ￭.￭ high ￭_￭ estimate
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID GROUP BY T ￭1 ￭.￭ high ￭_￭ estimate ORDER BY count ￭( ￭* ￭) ASC
+SELECT DISTINCT YEAR FROM film GROUP BY Category film ￭_￭ id ORDER BY COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID GROUP BY T ￭2 ￭.￭ Film ￭_￭ ID HAVING COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT policy ￭_￭ type ￭_￭ code FROM available ￭_￭ policies GROUP BY policy ￭_￭ type ￭_￭ code HAVING count ￭( ￭* ￭) > 4
+SELECT TYPE FROM film GROUP BY TYPE HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT T ￭1 ￭.￭ product ￭_￭ id , T ￭2 ￭.￭ city , count ￭( ￭* ￭) FROM Addresses AS T ￭1 JOIN Student ￭_￭ Addresses AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id GROUP BY T ￭1 ￭.￭ rID HAVING COUNT ￭(￭ monthly ￭_￭ rental ￭) > ￭= 10
+SELECT T ￭2 ￭.￭ name , count ￭(￭ T ￭1 ￭.￭ rID ￭) FROM schedule AS T ￭1 JOIN Allergy ￭_￭ types AS T ￭2 ON T ￭1 ￭.￭ ResID = T ￭2 ￭.￭ film ￭_￭ id GROUP BY T ￭3 ￭.￭ film ￭_￭ id
+SELECT T ￭1 ￭.￭ title , T ￭1 ￭.￭ film ￭_￭ id , T ￭1 ￭.￭ Hours FROM film AS T ￭1 JOIN Engineer ￭_￭ Visits AS T ￭2 ON T ￭1 ￭.￭ staff ￭_￭ id = T ￭2 ￭.￭ assigned ￭_￭ to ￭_￭ staff ￭_￭ id GROUP BY T ￭1 ￭.￭ film ￭_￭ id ORDER BY count ￭( ￭* ￭) ASC
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ film ￭_￭ id , count ￭( ￭* ￭) FROM film AS T ￭1 JOIN film ￭_￭ actor AS T ￭2 ON T ￭1 ￭.￭ film ￭_￭ id = T ￭2 ￭.￭ film ￭_￭ id GROUP BY T ￭1 ￭.￭ film ￭_￭ id ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT t ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID ORDER BY high ￭_￭ estimate DESC LIMIT 1
+SELECT t ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID GROUP BY T ￭2 ￭.￭ Film ￭_￭ ID HAVING COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID GROUP BY T ￭2 ￭.￭ rID HAVING COUNT ￭( ￭* ￭) > ￭= 3
+SELECT T ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID GROUP BY T ￭2 ￭.￭ rID HAVING COUNT ￭( ￭* ￭) > 1
+SELECT t ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID ORDER BY high ￭_￭ estimate ASC
+SELECT t ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID WHERE T ￭2 ￭.￭ Year = 1995
+SELECT count ￭( ￭* ￭) FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID WHERE T ￭2 ￭.￭ Year = 1995
+SELECT count ￭(￭ DISTINCT name ￭) FROM products
+SELECT StuID FROM Student EXCEPT SELECT StuID FROM Has ￭_￭ allergy
+SELECT StuID FROM Sportsinfo EXCEPT SELECT StuID FROM Rating
+SELECT name FROM scientists EXCEPT SELECT T ￭3 ￭.￭ name FROM Rating AS T ￭1 JOIN Movie AS T ￭2 ON T ￭1 ￭.￭ mID = T ￭2 ￭.￭ mID JOIN Reviewer AS T ￭3 ON T ￭1 ￭.￭ rID = T ￭3 ￭.￭ rID WHERE T ￭2 ￭.￭ title = '￭ Gone with the Wind ￭'
+SELECT Fname FROM STUDENT WHERE StuID NOT IN (￭ SELECT StuID FROM ENROLLED ￭_￭ IN ￭)
+SELECT T ￭1 ￭.￭ title , T ￭1 ￭.￭ film ￭_￭ id FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID GROUP BY T ￭2 ￭.￭ film ￭_￭ id HAVING COUNT ￭( ￭* ￭) = 1
+SELECT T ￭1 ￭.￭ StuID FROM advisor AS T ￭1 JOIN instructor AS T ￭2 ON T ￭1 ￭.￭ i ￭_￭ id = T ￭2 ￭.￭ id JOIN student AS T ￭3 ON T ￭2 ￭.￭ s ￭_￭ id = T ￭3 ￭.￭ id WHERE T ￭3 ￭.￭ dept ￭_￭ name = "￭ Louisville , Kentucky ￭" INTERSECT SELECT T ￭2 ￭.￭ StuID FROM student AS T ￭1 JOIN department AS T ￭2 ON T ￭1 ￭.￭ dept ￭_￭ code = T ￭2 ￭.￭ dept ￭_￭ code WHERE T ￭2 ￭.￭ dept ￭_￭ name = "￭ Airbus A ￭340 ￭-￭ 300 ￭"
+SELECT T ￭2 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ friend WHERE T ￭1 ￭.￭ city = '￭ new york city ￭'
+SELECT t ￭1 ￭.￭ name FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID WHERE T ￭2 ￭.￭ Year = 1995
+SELECT count ￭( ￭* ￭) , T ￭2 ￭.￭ StuID FROM Faculty AS T ￭1 JOIN Student AS T ￭2 ON T ￭1 ￭.￭ FacID = T ￭2 ￭.￭ advisor GROUP BY T ￭1 ￭.￭ StuID
+SELECT T ￭2 ￭.￭ allergytype , count ￭( ￭* ￭) FROM Student AS T ￭1 JOIN Student AS T ￭2 ON T ￭1 ￭.￭ StuID = T ￭2 ￭.￭ StuID GROUP BY T ￭2 ￭.￭ StuID
+SELECT T ￭1 ￭.￭ title , T ￭3 ￭.￭ film ￭_￭ id FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID
+SELECT T ￭1 ￭.￭ title , count ￭( ￭* ￭) FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID GROUP BY T ￭1 ￭.￭ rID
+SELECT t ￭1 ￭.￭ title FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID ORDER BY high ￭_￭ estimate DESC LIMIT 1
+SELECT T ￭1 ￭.￭ course ￭_￭ name FROM Courses AS T ￭1 JOIN Student ￭_￭ Course ￭_￭ Enrolment AS T ￭2 ON T ￭1 ￭.￭ course ￭_￭ id = T ￭2 ￭.￭ course ￭_￭ id GROUP BY T ￭1 ￭.￭ course ￭_￭ name ORDER BY COUNT ￭( ￭* ￭) DESC LIMIT 1
+SELECT T ￭1 ￭.￭ stu ￭_￭ fname FROM student AS T ￭1 JOIN enroll AS T ￭2 ON T ￭1 ￭.￭ stu ￭_￭ num = T ￭2 ￭.￭ stu ￭_￭ num GROUP BY T ￭2 ￭.￭ stu ￭_￭ num HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT T ￭4 ￭.￭ dept ￭_￭ name FROM CLASS AS T ￭1 JOIN enroll AS T ￭2 ON T ￭1 ￭.￭ class ￭_￭ code = T ￭2 ￭.￭ class ￭_￭ code JOIN course AS T ￭3 ON T ￭1 ￭.￭ crs ￭_￭ code = T ￭3 ￭.￭ crs ￭_￭ code JOIN department AS T ￭4 ON T ￭3 ￭.￭ dept ￭_￭ code = T ￭4 ￭.￭ dept ￭_￭ code GROUP BY T ￭3 ￭.￭ dept ￭_￭ code HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT T ￭2 ￭.￭ StuID FROM mailshot ￭_￭ customers AS T ￭1 JOIN Student AS T ￭2 ON T ￭1 ￭.￭ StuID = T ￭2 ￭.￭ StuID WHERE T ￭1 ￭.￭ outcome ￭_￭ code = '￭ gpa ￭' GROUP BY T ￭1 ￭.￭ StuID HAVING count ￭( ￭* ￭) > ￭= 5
+SELECT DISTINCT T ￭1 ￭.￭ title , T ￭1 ￭.￭ film ￭_￭ id FROM film AS T ￭1 JOIN film ￭_￭ actor AS T ￭2 ON T ￭1 ￭.￭ film ￭_￭ id = T ￭2 ￭.￭ film ￭_￭ id GROUP BY T ￭2 ￭.￭ film ￭_￭ id HAVING count ￭( ￭* ￭) > 2
+SELECT count ￭( ￭* ￭) FROM products AS T ￭1 JOIN problems AS T ￭2 ON T ￭1 ￭.￭ product ￭_￭ id = T ￭2 ￭.￭ product ￭_￭ id WHERE T ￭2 ￭.￭ product ￭_￭ name = "￭ voluptatem ￭"
+SELECT count ￭( ￭* ￭) FROM film AS T ￭1 JOIN film ￭_￭ market ￭_￭ estimation AS T ￭2 ON T ￭1 ￭.￭ Film ￭_￭ ID = T ￭2 ￭.￭ Film ￭_￭ ID WHERE T ￭2 ￭.￭ Year = 1995
+SELECT avg ￭(￭ T ￭2 ￭.￭ gradepoint ￭) FROM ENROLLED ￭_￭ IN AS T ￭1 JOIN GRADECONVERSION AS T ￭2 JOIN STUDENT AS T ￭3 ON T ￭1 ￭.￭ Grade = T ￭2 ￭.￭ lettergrade AND T ￭1 ￭.￭ StuID = T ￭3 ￭.￭ StuID WHERE T ￭3 ￭.￭ LName = "￭ Smith ￭"
+SELECT avg ￭(￭ T ￭2 ￭.￭ gradepoint ￭) FROM ENROLLED ￭_￭ IN AS T ￭1 JOIN GRADECONVERSION AS T ￭2 JOIN STUDENT AS T ￭3 ON T ￭1 ￭.￭ Grade = T ￭2 ￭.￭ lettergrade AND T ￭1 ￭.￭ StuID = T ￭3 ￭.￭ StuID WHERE T ￭3 ￭.￭ StuID = "￭ ACCT ￭-￭ 211 ￭"
+SELECT DISTINCT StuID FROM Student EXCEPT SELECT DISTINCT T ￭3 ￭.￭ StuID FROM ENROLLED ￭_￭ IN AS T ￭1 JOIN GRADECONVERSION AS T ￭2 JOIN STUDENT AS T ￭3 ON T ￭1 ￭.￭ Grade = T ￭2 ￭.￭ lettergrade AND T ￭1 ￭.￭ StuID = T ￭3 ￭.￭ StuID WHERE T ￭2 ￭.￭ employee ￭_￭ id = 4
+SELECT ￭(￭ T ￭2 ￭.￭ StuID ￭) FROM ENROLLED ￭_￭ IN AS T ￭1 JOIN GRADECONVERSION AS T ￭2 JOIN STUDENT AS T ￭3 ON T ￭1 ￭.￭ Grade = T ￭2 ￭.￭ lettergrade AND T ￭1 ￭.￭ StuID = T ￭3 ￭.￭ StuID WHERE T ￭3 ￭.￭ onscholarship = '￭ Y ￭'
+SELECT T ￭1 ￭.￭ State ￭_￭ County FROM Addresses AS T ￭1 JOIN Stores AS T ￭2 ON T ￭1 ￭.￭ Address ￭_￭ ID = T ￭2 ￭.￭ Address ￭_￭ ID WHERE T ￭2 ￭.￭ Store ￭_￭ Name = "￭ CA ￭" INTERSECT SELECT T ￭1 ￭.￭ state ￭_￭ province ￭_￭ county = "￭ LA ￭"
+SELECT T ￭1 ￭.￭ State ￭_￭ County FROM Addresses AS T ￭1 JOIN Stores AS T ￭2 ON T ￭1 ￭.￭ Address ￭_￭ ID = T ￭2 ￭.￭ Address ￭_￭ ID WHERE T ￭2 ￭.￭ Store ￭_￭ Name = "￭ CA ￭" INTERSECT SELECT T ￭1 ￭.￭ state ￭_￭ province ￭_￭ county = "￭ Defender ￭"
+SELECT avg ￭(￭ t ￭3 ￭.￭ age ￭) FROM club AS t ￭1 JOIN member ￭_￭ of ￭_￭ club AS t ￭2 ON t ￭1 ￭.￭ clubid = t ￭2 ￭.￭ clubid JOIN student AS t ￭3 ON t ￭2 ￭.￭ stuid = t ￭3 ￭.￭ stuid WHERE t ￭1 ￭.￭ clubname = "￭ Bootup Baltimore ￭"
+SELECT avg ￭(￭ t ￭3 ￭.￭ age ￭) FROM club AS t ￭1 JOIN member ￭_￭ of ￭_￭ club AS t ￭2 ON t ￭1 ￭.￭ clubid = t ￭2 ￭.￭ clubid JOIN student AS t ￭3 ON t ￭2 ￭.￭ stuid = t ￭3 ￭.￭ stuid WHERE t ￭1 ￭.￭ clubname = "￭ Bootup Baltimore ￭"
+SELECT T ￭2 ￭.￭ state ￭_￭ province ￭_￭ county , T ￭2 ￭.￭ state ￭_￭ province ￭_￭ county FROM customer ￭_￭ county AS T ￭1 JOIN addresses AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ address ￭_￭ id WHERE T ￭1 ￭.￭ state ￭_￭ province ￭_￭ county = "￭ Colorado ￭"
+SELECT T ￭3 ￭.￭ cell ￭_￭ mobile ￭_￭ number , T ￭2 ￭.￭ payment ￭_￭ method ￭_￭ code FROM candidates AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ candidate ￭_￭ id = T ￭2 ￭.￭ person ￭_￭ id JOIN course AS T ￭3 ON T ￭2 ￭.￭ course ￭_￭ id = T ￭3 ￭.￭ course ￭_￭ id WHERE T ￭1 ￭.￭ Age = "￭ Text ￭" OR T ￭1 ￭.￭ grant ￭_￭ method ￭_￭ code = "￭ 2016 ￭-￭ P ￭760 ￭" ￭;
+SELECT name FROM Person WHERE cost > 1000
+SELECT name FROM program WHERE LENGTH > 1000
+SELECT fname FROM Student WHERE StuID NOT IN ( SELECT T ￭1 ￭.￭ StuID FROM Plays ￭_￭ games AS T ￭1 JOIN Video ￭_￭ games AS T ￭2 ON T ￭1 ￭.￭ GameID = T ￭2 ￭.￭ GameID WHERE T ￭2 ￭.￭ Gname = "￭ Call of Destiny ￭"
+SELECT fname FROM Student WHERE StuID NOT IN ( SELECT T ￭1 ￭.￭ StuID FROM Plays ￭_￭ games AS T ￭1 JOIN Video ￭_￭ games AS T ￭2 ON T ￭1 ￭.￭ GameID = T ￭2 ￭.￭ GameID WHERE T ￭2 ￭.￭ Gname = "￭ Call of Destiny ￭"
+SELECT T ￭1 ￭.￭ Name , T ￭2 ￭.￭ Name FROM ALBUM AS T ￭1 JOIN ARTIST AS T ￭2 ON T ￭1 ￭.￭ ArtistId = T ￭2 ￭.￭ GenreID WHERE T ￭2 ￭.￭ Name = "￭ Balls to the Wall ￭"
+SELECT FirstName , LastName FROM CUSTOMER WHERE State = "￭ luisg ￭@￭ embraer ￭.￭ com ￭.￭ br ￭"
+SELECT first ￭_￭ name , last ￭_￭ name , hire ￭_￭ date FROM Accounts ORDER BY salary DESC LIMIT 1
+SELECT individual ￭_￭ first ￭_￭ name , individual ￭_￭ middle ￭_￭ name , individual ￭_￭ last ￭_￭ name FROM song ORDER BY rating ￭_￭ in ￭_￭ percent ￭_￭ percent DESC LIMIT 1
+SELECT T ￭1 ￭.￭ customer ￭_￭ id FROM Customers AS T ￭1 JOIN Customer ￭_￭ Policies AS T ￭2 ON T ￭1 ￭.￭ Customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id GROUP BY T ￭1 ￭.￭ customer ￭_￭ id HAVING count ￭( ￭* ￭) > ￭= 2
+SELECT T ￭2 ￭.￭ firstname , T ￭2 ￭.￭ lastname FROM Performance AS T ￭1 JOIN Band AS T ￭2 ON T ￭1 ￭.￭ bandmate = T ￭2 ￭.￭ id JOIN Songs AS T ￭3 ON T ￭3 ￭.￭ SongId = T ￭1 ￭.￭ SongId GROUP BY firstname HAVING COUNT ￭( ￭* ￭) > 1
+SELECT T ￭2 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭1 ￭.￭ name = '￭ Bob ￭'
+SELECT clubname FROM club
+SELECT order ￭_￭ id , count ￭( ￭* ￭) FROM Order ￭_￭ items GROUP BY order ￭_￭ id
+SELECT T ￭2 ￭.￭ name , T ￭2 ￭.￭ friend FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ friend GROUP BY T ￭2 ￭.￭ name ORDER BY count ￭( ￭* ￭) DESC LIMIT 1
+SELECT product ￭_￭ description FROM products ORDER BY product ￭_￭ price DESC LIMIT 1
+SELECT sum ￭(￭ product ￭_￭ cost ￭) FROM procedures
+SELECT product ￭_￭ id , max ￭(￭ resolution ￭) , min ￭(￭ stars ￭) FROM Financial ￭_￭ transactions
+SELECT f ￭_￭ id , genre ￭_￭ is FROM Rooms ORDER BY total ￭_￭ percent DESC LIMIT 1 ￭;
+SELECT T ￭2 ￭.￭ service ￭_￭ id FROM first ￭_￭ notification ￭_￭ of ￭_￭ loss AS T ￭1 JOIN services AS T ￭2 ON T ￭1 ￭.￭ service ￭_￭ id = T ￭2 ￭.￭ service ￭_￭ id GROUP BY T ￭1 ￭.￭ service ￭_￭ id HAVING count ￭( ￭* ￭) > 2
+SELECT T ￭2 ￭.￭ Party , T ￭1 ￭.￭ Location FROM operate ￭_￭ company AS T ￭1 JOIN flight AS t ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ company ￭_￭ id GROUP BY T ￭1 ￭.￭ cmi ￭_￭ cross ￭_￭ ref ￭_￭ id HAVING count ￭( ￭* ￭) > 1
+SELECT first ￭_￭ name FROM procedures WHERE cost < 5000
+SELECT T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭2 ￭.￭ friend = '￭ Bob ￭'
+SELECT T ￭1 ￭.￭ name , T ￭1 ￭.￭ gender FROM drivers AS T ￭1 JOIN bridge AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ architect ￭_￭ id GROUP BY T ￭1 ￭.￭ id HAVING count ￭( ￭* ￭) = 2
+SELECT T ￭2 ￭.￭ first ￭_￭ name , T ￭2 ￭.￭ last ￭_￭ name FROM employees AS T ￭1 JOIN customers AS T ￭2 ON T ￭1 ￭.￭ id = T ￭2 ￭.￭ support ￭_￭ rep ￭_￭ id
+SELECT product ￭_￭ type ￭_￭ code , MAX ￭(￭ product ￭_￭ price ￭) FROM products
+SELECT product ￭_￭ type ￭_￭ code , product ￭_￭ description FROM ref ￭_￭ product ￭_￭ categories
+SELECT first ￭_￭ name , last ￭_￭ name , hire ￭_￭ date FROM employees AS T ￭1 JOIN customers AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id GROUP BY T ￭1 ￭.￭ department ￭_￭ id
+SELECT T ￭1 ￭.￭ first ￭_￭ name , T ￭1 ￭.￭ last ￭_￭ name , T ￭1 ￭.￭ department ￭_￭ name , T ￭1 ￭.￭ city FROM employees AS T ￭1 JOIN departments AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id GROUP BY T ￭3 ￭.￭ department ￭_￭ name
+SELECT DISTINCT fname , Fname FROM person WHERE first ￭_￭ name = "￭ last ￭_￭ name = "￭ Instructor ￭"
+SELECT DISTINCT fname , name FROM instructor
+SELECT T ￭1 ￭.￭ Name , T ￭1 ￭.￭ Date , T ￭2 ￭.￭ Claim ￭_￭ Settled FROM Tourist ￭_￭ in AS T ￭1 JOIN Projects AS T ￭2 ON T ￭1 ￭.￭ project ￭_￭ id = T ￭2 ￭.￭ project ￭_￭ id
+SELECT T ￭1 ￭.￭ Name , T ￭2 ￭.￭ Description FROM PHOTOS AS T ￭1 JOIN TOURIST ￭_￭ ATTRACTIONS AS T ￭2 ON T ￭1 ￭.￭ Tourist ￭_￭ Attraction ￭_￭ ID = T ￭2 ￭.￭ Tourist ￭_￭ Attraction ￭_￭ ID WHERE T ￭2 ￭.￭ Name = "￭ game ￭1 ￭"
+SELECT T ￭1 ￭.￭ first ￭_￭ name , T ￭1 ￭.￭ last ￭_￭ name FROM Addresses AS T ￭1 JOIN Staff AS T ￭2 ON T ￭1 ￭.￭ address ￭_￭ id = T ￭2 ￭.￭ staff ￭_￭ address ￭_￭ id WHERE T ￭2 ￭.￭ first ￭_￭ name = "￭ Janessa ￭" AND T ￭2 ￭.￭ last ￭_￭ name = "￭ Sawayn ￭" ￭;
+SELECT t ￭1 ￭.￭ fname , t ￭1 ￭.￭ lname FROM customers AS t ￭1 JOIN customers ￭_￭ policies AS t ￭2 ON t ￭1 ￭.￭ customer ￭_￭ id = t ￭2 ￭.￭ customer ￭_￭ id WHERE t ￭2 ￭.￭ order ￭_￭ status ￭_￭ code = "￭ New policy ￭"
+SELECT name , headquarter , founder FROM manufacturers
+SELECT T ￭2 ￭.￭ date ￭_￭ order ￭_￭ placed FROM orders AS T ￭1 JOIN customers AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id WHERE T ￭1 ￭.￭ booked ￭_￭ count = '￭ 3452 ￭'
+SELECT name FROM Person WHERE gender = '￭ male ￭' AND age = (￭ SELECT max ￭(￭ age ￭) FROM person WHERE gender = '￭ male ￭' )
+SELECT LName FROM Student WHERE age = (￭ SELECT min ￭(￭ age ￭) FROM Student ￭)
+SELECT t ￭1 ￭.￭ email ￭_￭ address FROM customers AS t ￭1 JOIN customer ￭_￭ addresses AS t ￭2 ON t ￭1 ￭.￭ customer ￭_￭ id = t ￭2 ￭.￭ customer ￭_￭ id WHERE t ￭2 ￭.￭ state ￭_￭ province ￭_￭ county = "￭ Colorado ￭"
+SELECT email ￭_￭ address FROM addresses WHERE state ￭_￭ province ￭_￭ county = "￭ Colorado ￭"
+SELECT name , CLASS , date FROM race
+SELECT departure ￭_￭ date , arrival ￭_￭ date FROM movie
+SELECT count ￭( ￭* ￭) FROM products
+SELECT count ￭( ￭* ￭) FROM products WHERE name = "￭ ￭1 ￭.￭ name = "￭ John Corporation ￭"
+SELECT count ￭(￭ DISTINCT Artist ￭_￭ ID ￭) FROM volume
+SELECT count ￭( ￭* ￭) FROM claims ￭_￭ processing ￭_￭ stages
+SELECT city ￭_￭ code , city ￭_￭ code FROM addresses WHERE city ￭_￭ code = "￭ BAL ￭" UNION SELECT address ￭_￭ number FROM addresses WHERE city ￭_￭ code = "￭ PIT ￭"
+SELECT state ￭_￭ province ￭_￭ county , count ￭( ￭* ￭) FROM addresses WHERE state ￭_￭ province ￭_￭ county = "￭ Colorado ￭"
+SELECT customer ￭_￭ name , customer ￭_￭ phone ￭_￭ email ￭_￭ address FROM customers WHERE customer ￭_￭ address LIKE " ￭%￭ t ￭% ￭"
+SELECT email ￭_￭ address , email ￭_￭ address FROM customers WHERE first ￭_￭ name LIKE " ￭%￭ WY ￭% ￭" AND payment ￭_￭ method ￭_￭ code LIKE "￭ Credit Card ￭"
+SELECT count ￭( ￭* ￭) FROM Person WHERE age < 25
+SELECT count ￭(￭ DISTINCT name ￭) FROM Person WHERE age < 30
+SELECT sum ￭(￭ YEAR ￭) FROM Movie
+SELECT T ￭2 ￭.￭ MAX ￭(￭ T ￭1 ￭.￭ cost ￭) FROM GENRE AS T ￭1 JOIN TRACK AS T ￭2 ON T ￭1 ￭.￭ GenreId = T ￭2 ￭.￭ GenreId WHERE T ￭1 ￭.￭ Name = "￭ Rock ￭"
+SELECT count ￭( ￭* ￭) FROM products WHERE name NOT IN (￭ SELECT t ￭1 ￭.￭ name FROM furniture AS t ￭1 JOIN furniture ￭_￭ manufacte AS t ￭2 ON t ￭1 ￭.￭ Furniture ￭_￭ ID = t ￭2 ￭.￭ Furniture ￭_￭ ID WHERE t ￭2 ￭.￭ hours ￭_￭ in ￭_￭ Dollar = (￭ SELECT engineer ￭_￭ id WHERE t ￭2 ￭.￭ name = "￭ John Anthony ￭" ￭)
+SELECT count ￭( ￭* ￭) FROM list WHERE Pen and 3452
+SELECT count ￭( ￭* ￭) FROM products WHERE product ￭_￭ category ￭_￭ code NOT IN (￭ SELECT product ￭_￭ id FROM products ￭)
+SELECT count ￭( ￭* ￭) FROM products WHERE product ￭_￭ details ! ￭= "￭ Latte ￭"
+SELECT count ￭( ￭* ￭) FROM ARTIST WHERE artistid NOT IN ￭(￭ SELECT artistid FROM ALBUM ￭)
+SELECT count ￭( ￭* ￭) FROM Companies WHERE country ￭_￭ id NOT IN (￭ SELECT country ￭_￭ id FROM Accounts ￭)
+SELECT T ￭1 ￭.￭ fname , T ￭1 ￭.￭ age FROM Student AS T ￭1 JOIN loan AS T ￭2 ON T ￭1 ￭.￭ StuID = T ￭2 ￭.￭ StuID WHERE T ￭2 ￭.￭ decision = '￭ yes ￭'
+SELECT , , age FROM Student WHERE StuID NOT IN (￭ SELECT T ￭1 ￭.￭ StuID FROM Plays ￭_￭ games AS T ￭1 JOIN Video ￭_￭ games AS T ￭2 ON T ￭1 ￭.￭ GameID = T ￭2 ￭.￭ GameID WHERE T ￭2 ￭.￭ loan ￭_￭ type = "￭ San Francisco ￭" ￭)
+SELECT avg ￭(￭ T ￭2 ￭.￭ Age ￭) FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID
+SELECT avg ￭(￭ T ￭2 ￭.￭ Age ￭) FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID
+SELECT max ￭(￭ Age ￭) FROM STUDENT
+SELECT name FROM Person WHERE age = (￭ SELECT max ￭(￭ age ￭) FROM person ￭)
+SELECT T ￭1 ￭.￭ member ￭_￭ name , T ￭1 ￭.￭ customer ￭_￭ phone FROM Students AS T ￭1 JOIN Student ￭_￭ Course ￭_￭ Authors ￭_￭ and ￭_￭ Tutors AS T ￭2 ON T ￭1 ￭.￭ author ￭_￭ id = T ￭2 ￭.￭ author ￭_￭ id GROUP BY T ￭2 ￭.￭ author ￭_￭ id
+SELECT T ￭2 ￭.￭ Hometown , COUNT ￭( ￭* ￭) FROM gymnast AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ Gymnast ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID GROUP BY T ￭2 ￭.￭ Hometown
+SELECT Product ￭_￭ Name FROM PRODUCTS GROUP BY Product ￭_￭ Name HAVING AVG ￭(￭ Product ￭_￭ Price ￭) = 1000000
+SELECT T ￭1 ￭.￭ Name FROM GENRE AS T ￭1 JOIN TRACK AS T ￭2 ON T ￭1 ￭.￭ GenreId = T ￭2 ￭.￭ GenreId WHERE T ￭1 ￭.￭ Price = (￭ SELECT max ￭(￭ Price ￭) FROM products ￭)
+SELECT TIME , LOCATION FROM Student
+SELECT TIME , LOCATION FROM Student
+SELECT T ￭2 ￭.￭ guest ￭_￭ first ￭_￭ name , T ￭1 ￭.￭ guest ￭_￭ last ￭_￭ name FROM Accounts AS T ￭1 JOIN Customers AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id
+SELECT DISTINCT T ￭3 ￭.￭ characteristic ￭_￭ name , T ￭3 ￭.￭ characteristic ￭_￭ data ￭_￭ type FROM department AS T ￭1 JOIN management AS T ￭2 ON T ￭1 ￭.￭ department ￭_￭ id = T ￭2 ￭.￭ department ￭_￭ id JOIN CHARACTERISTICS AS T ￭3 ON T ￭2 ￭.￭ characteristic ￭_￭ id = T ￭3 ￭.￭ characteristic ￭_￭ id WHERE T ￭1 ￭.￭ product ￭_￭ name = "￭ sesame ￭"
+SELECT fname , lname FROM Faculty ORDER BY rental ￭_￭ rate ASC LIMIT 1
+SELECT T ￭1 ￭.￭ first ￭_￭ name , T ￭1 ￭.￭ last ￭_￭ name FROM Customers AS T ￭1 JOIN Accounts AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id
+SELECT count ￭( ￭* ￭) FROM artist WHERE country = "￭ Bangladesh ￭"
+SELECT count ￭( ￭* ￭) FROM enzyme
+SELECT Name FROM player ORDER BY age ASC
+SELECT Name FROM player ORDER BY Name ASC
+SELECT Birth ￭_￭ Place , Age FROM people
+SELECT T ￭2 ￭.￭ Birth ￭_￭ Date , T ￭2 ￭.￭ Birth ￭_￭ Place FROM people AS T ￭1 JOIN people AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID
+SELECT name FROM artist WHERE country ! ￭= "￭ null ￭" GROUP BY name HAVING count ￭( ￭* ￭) < ￭= 3
+SELECT name FROM artist WHERE country ! ￭= "￭ null ￭" GROUP BY name HAVING count ￭( ￭* ￭) < ￭= 3
+SELECT catalog ￭_￭ entry ￭_￭ name FROM catalog ￭_￭ contents WHERE preferred ￭_￭ foot = "￭ working ￭" OR width > 5
+SELECT DISTINCT T ￭1 ￭.￭ Name FROM people AS T ￭1 JOIN perpetrator AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭2 ￭.￭ Country = "￭ United States ￭" OR T ￭2 ￭.￭ Name = "￭ Duke ￭"
+SELECT dept ￭_￭ name FROM student GROUP BY dept ￭_￭ name HAVING avg ￭(￭ T ￭2 ￭.￭ stu ￭_￭ gpa ￭) = 1
+SELECT T ￭1 ￭.￭ customer ￭_￭ name FROM customers AS T ￭1 JOIN orders AS T ￭2 ON T ￭1 ￭.￭ customer ￭_￭ id = T ￭2 ￭.￭ customer ￭_￭ id JOIN order ￭_￭ items AS T ￭3 ON T ￭2 ￭.￭ order ￭_￭ id = T ￭3 ￭.￭ order ￭_￭ id JOIN products AS T ￭4 ON T ￭3 ￭.￭ product ￭_￭ id = T ￭4 ￭.￭ product ￭_￭ id WHERE T ￭4 ￭.￭ product ￭_￭ name = '￭ Latte ￭'
+SELECT count ￭( ￭* ￭) , T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name GROUP BY T ￭1 ￭.￭ name
+SELECT count ￭( ￭* ￭) , avg ￭(￭ age ￭) , city ￭_￭ code FROM people GROUP BY city ￭_￭ code
+SELECT Tourist ￭_￭ Attraction ￭_￭ ID FROM Tourist ￭_￭ Attractions GROUP BY Tourist ￭_￭ Attraction ￭_￭ ID HAVING COUNT ￭( ￭* ￭) = 1
+SELECT Name FROM musical WHERE Industry = "￭ TD Garden ￭" OR Competition ￭_￭ Code = "￭ Bell Centre ￭"
+SELECT avg ￭(￭ age ￭) , job FROM Person GROUP BY gender
+SELECT max ￭(￭ Event ￭_￭ Attendance ￭) , min ￭(￭ Event ￭_￭ Attendance ￭) FROM cinema
+SELECT T ￭3 ￭.￭ title , T ￭3 ￭.￭ Title FROM Performance AS T ￭1 JOIN Band AS T ￭2 ON T ￭1 ￭.￭ bandmate = T ￭2 ￭.￭ id JOIN Songs AS T ￭3 ON T ￭3 ￭.￭ SongId = T ￭1 ￭.￭ SongId WHERE T ￭2 ￭.￭ firstname = "￭ Le Pop ￭"
+SELECT title , instrument FROM vocals AS T ￭1 JOIN songs AS T ￭2 ON T ￭1 ￭.￭ songid = T ￭2 ￭.￭ songid
+SELECT DISTINCT T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭2 ￭.￭ rating = '￭ Bob ￭'
+SELECT T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭2 ￭.￭ year = 2016 GROUP BY T ￭2 ￭.￭ name HAVING avg ￭(￭ T ￭2 ￭.￭ rating ￭) > 8
+SELECT DISTINCT T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭2 ￭.￭ friend = '￭ Bob ￭'
+SELECT T ￭1 ￭.￭ name FROM Person AS T ￭1 JOIN PersonFriend AS T ￭2 ON T ￭1 ￭.￭ name = T ￭2 ￭.￭ name WHERE T ￭2 ￭.￭ friend = '￭ Bob ￭'
+SELECT T ￭1 ￭.￭ Name , sum ￭(￭ T ￭2 ￭.￭ Price ￭) FROM artist AS T ￭1 JOIN song AS T ￭2 ON T ￭1 ￭.￭ artist ￭_￭ name = T ￭2 ￭.￭ artist ￭_￭ name WHERE T ￭2 ￭.￭ year = 2004 GROUP BY T ￭2 ￭.￭ Name
+SELECT sum ￭(￭ T ￭1 ￭.￭ sales ￭) , T ￭2 ￭.￭ title FROM journal AS T ￭1 JOIN journal ￭_￭ committee AS T ￭2 ON T ￭1 ￭.￭ journal ￭_￭ ID = T ￭2 ￭.￭ journal ￭_￭ ID GROUP BY T ￭2 ￭.￭ work ￭_￭ type
+SELECT name FROM artist WHERE country ! ￭= "￭ null ￭" GROUP BY name HAVING count ￭( ￭* ￭) < ￭= 3
+SELECT name FROM people WHERE ssn NOT IN (￭ SELECT scientist FROM person WHERE card ￭_￭ id = '￭ Austin ￭' ￭)
+SELECT T ￭1 ￭.￭ Name FROM people AS T ￭1 JOIN perpetrator AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭2 ￭.￭ Height > 3 INTERSECT SELECT T ￭1 ￭.￭ 84
+SELECT T ￭1 ￭.￭ Name FROM people AS T ￭1 JOIN perpetrator AS T ￭2 ON T ￭1 ￭.￭ People ￭_￭ ID = T ￭2 ￭.￭ People ￭_￭ ID WHERE T ￭2 ￭.￭ Height > 3 ￭.￭ 84
+SELECT count ￭( ￭* ￭) FROM HOTELS
+SELECT T ￭1 ￭.￭ Name FROM Tourist ￭_￭ Attractions AS T ￭1 JOIN Tourist ￭_￭ Attraction ￭_￭ Features AS T ￭2 ON T ￭1 ￭.￭ tourist ￭_￭ attraction ￭_￭ id = T ￭2 ￭.￭ tourist ￭_￭ attraction ￭_￭ id JOIN Features AS T ￭3 ON T ￭2 ￭.￭ Feature ￭_￭ ID = T ￭3 ￭.￭ Feature ￭_￭ ID WHERE T ￭3 ￭.￭ feature ￭_￭ Details = '￭ park ￭' ￭;
+SELECT Customer ￭_￭ Event ￭_￭ ID FROM Customer ￭_￭ Orders WHERE Customer ￭_￭ Name = "￭ ORDER BY ITEMS ￭_￭ Points DESC
+SELECT T ￭1 ￭.￭ Name FROM Apartments AS T ￭1 JOIN View ￭_￭ Unit ￭_￭ Status AS T ￭2 ON T ￭1 ￭.￭ apt ￭_￭ id = T ￭2 ￭.￭ apt ￭_￭ id WHERE T ￭2 ￭.￭ bathroom ￭_￭ count > 2 OR T ￭2 ￭.￭ bedroom ￭_￭ count < 2

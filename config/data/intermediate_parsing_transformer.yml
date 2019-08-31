@@ -1,42 +1,56 @@
-model_dir: dual_transformer/
+model_dir: intermediate_parsing_transformer/
 
 data:
-  source_vocabulary_1: data/dual_transformer/src-vocab.txt
-  source_vocabulary_2: data/dual_transformer/skt-vocab.txt
-  source_vocabulary_3: data/dual_transformer/src-vocab.txt
-  source_vocabulary_4: data/dual_transformer/skt-vocab.txt
-  target_vocabulary: data/dual_transformer/tgt-vocab.txt
+  source_tokenization: config/tokenization/aggressive.yml
+  target_tokenization: config/tokenization/aggressive.yml
+  source_vocabulary_1: data/intermediate_parsing_transformer/tbl-vocab.txt
+  source_vocabulary_2: data/intermediate_parsing_transformer/col-vocab.txt
+  source_vocabulary_3: data/intermediate_parsing_transformer/src-vocab.txt
+  source_vocabulary_4: data/intermediate_parsing_transformer/skt-vocab.txt
+  target_vocabulary: data/intermediate_parsing_transformer/tgt-vocab.txt
   train_features_file:
-    - data/dual_transformer/src-train.txt
-    - data/dual_transformer/skt-train.txt
-    - data/dual_transformer/src-train.txt
-    - data/dual_transformer/skt-train.txt
-  train_labels_file: data/dual_transformer/tgt-train.txt
+    - data/intermediate_parsing_transformer/tbl-train.txt
+    - data/intermediate_parsing_transformer/col-train.txt
+    - data/intermediate_parsing_transformer/src-train.txt
+    - data/intermediate_parsing_transformer/skt-train.txt
+  train_labels_file: data/intermediate_parsing_transformer/tgt-train.txt
   eval_features_file:
-    - data/dual_transformer/src-val.txt
-    - data/dual_transformer/skt-val.txt
-    - data/dual_transformer/src-train.txt
-    - data/dual_transformer/skt-train.txt
-  eval_labels_file: data/dual_transformer/tgt-val.txt
+    - data/intermediate_parsing_transformer/tbl-val.txt
+    - data/intermediate_parsing_transformer/col-val.txt
+    - data/intermediate_parsing_transformer/src-train.txt
+    - data/intermediate_parsing_transformer/skt-train.txt
+  eval_labels_file: data/intermediate_parsing_transformer/tgt-val.txt
 
 train:
   batch_type: tokens
-  batch_size: 512
+  batch_size: 1024
   steps: 56000
   bucket_width: 1
   sample_buffer_size: 500000
   save_summary_steps: 100
 
 params:
-  optimizer: AdamOptimizer
+  average_loss_in_time: True
+  optimizer: LazyAdamOptimizer
+  optimizer_params: 
+    beta1: 0.9
+    beta2: 0.998
   learning_rate: 1.0 # The scale constant.
   clip_gradients: null
   decay_step_duration: 8 # 1 decay step is 8 training steps.
   decay_type: noam_decay_v2
   decay_params:
-    model_dim: 256
+    model_dim: 128
     warmup_steps: 2000 # (= 16000 training steps).
   start_decay_steps: 0
+
+beam_width: 5
+length_penalty: 0.2
+coverage_penalty: 0.2
+replace_unknown_target: true
+
+
+
 
 eval:
   # (optional) The batch size to use (default: 32).
@@ -53,11 +67,13 @@ eval:
   # Available evaluators: sacreBLEU, BLEU, BLEU-detok, ROUGE
   external_evaluators: 
     - sacreBLEU
-    - ROUGE 
+    - BLEU
+    - BLEU-detok
+
 
   # (optional) Model exporter(s) to use during the training and evaluation loop:
   # last, final, best, or null (default: last).
-  exporters: last
+  exporters: best
 
 score:
   # (optional) The batch size to use (default: 64).

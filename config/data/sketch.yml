@@ -23,3 +23,9 @@ params:
     model_dim: 256
     warmup_steps: 2000 # (= 16000 training steps).
   start_decay_steps: 0
+beam_width: 5
+length_penalty: 0.2
+coverage_penalty: 0.2
+replace_unknown_target: true
+infer:
+  batch_size: 1

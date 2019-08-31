@@ -18,9 +18,8 @@ class BlindPosition(PositionEncoder):
     batch_size = tf.shape(positions)[0]
     positions = tf.cast(positions, tf.float32)
 
-
-    log_timescale_increment = math.log(10000) / (depth / 2 - 1)
-    inv_timescales = tf.exp(tf.range(0. / 2, dtype=tf.float32) * -log_timescale_increment)
+    log_timescale_increment = math.log(1) / (depth / 2 - 1)
+    inv_timescales = tf.exp(tf.range(depth / 2, dtype=tf.float32) * -log_timescale_increment)
     inv_timescales = tf.reshape(tf.tile(inv_timescales, [batch_size]), [batch_size, -1])
     scaled_time = tf.expand_dims(positions, -1) * tf.expand_dims(inv_timescales, 1)
     encoding = tf.concat([scaled_time, scaled_time], axis=2)
@@ -193,7 +192,7 @@ class MultiSourceTransformer(CustomTransformer):
       dropout=0.1,
       attention_dropout=0.1,
       relu_dropout=0.1,
-      share_encoders=True)
+      share_encoders=False)
 
   def auto_config(self, num_devices=1):
     config = super(MultiSourceTransformer, self).auto_config(num_devices=num_devices)

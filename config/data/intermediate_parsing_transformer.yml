@@ -1,8 +1,6 @@
 model_dir: intermediate_parsing_transformer/
 
 data:
-  source_tokenization: config/tokenization/aggressive.yml
-  target_tokenization: config/tokenization/aggressive.yml
   source_vocabulary_1: data/intermediate_parsing_transformer/tbl-vocab.txt
   source_vocabulary_2: data/intermediate_parsing_transformer/col-vocab.txt
   source_vocabulary_3: data/intermediate_parsing_transformer/src-vocab.txt
@@ -40,7 +38,7 @@ params:
   decay_step_duration: 8 # 1 decay step is 8 training steps.
   decay_type: noam_decay_v2
   decay_params:
-    model_dim: 128
+    model_dim: 256
     warmup_steps: 2000 # (= 16000 training steps).
   start_decay_steps: 0
 

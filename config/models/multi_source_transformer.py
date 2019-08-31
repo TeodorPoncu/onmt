@@ -2,14 +2,29 @@
 
 import tensorflow as tf
 import opennmt as onmt
+import math
 
 from opennmt.models.sequence_to_sequence import SequenceToSequence, EmbeddingsSharingLevel
 from opennmt.encoders.encoder import ParallelEncoder
 from opennmt.encoders.self_attention_encoder import SelfAttentionEncoder
 from opennmt.decoders.self_attention_decoder import SelfAttentionDecoder
 from opennmt.layers.position import SinusoidalPositionEncoder
-from opennmt.layers.position import PositionEmbedder
+from opennmt.layers.position import PositionEmbedder, PositionEncoder
 from opennmt.utils.misc import merge_dict
+
+class BlindPosition(PositionEncoder):
+
+  def encode(self, positions, depth, dtype=tf.float32):
+    batch_size = tf.shape(positions)[0]
+    positions = tf.cast(positions, tf.float32)
+
+
+    log_timescale_increment = math.log(10000) / (depth / 2 - 1)
+    inv_timescales = tf.exp(tf.range(0. / 2, dtype=tf.float32) * -log_timescale_increment)
+    inv_timescales = tf.reshape(tf.tile(inv_timescales, [batch_size]), [batch_size, -1])
+    scaled_time = tf.expand_dims(positions, -1) * tf.expand_dims(inv_timescales, 1)
+    encoding = tf.concat([scaled_time, scaled_time], axis=2)
+    return tf.cast(encoding, dtype)
 
 
 class CustomTransformer(SequenceToSequence):
@@ -72,9 +87,10 @@ class CustomTransformer(SequenceToSequence):
             dropout=dropout,
             attention_dropout=attention_dropout,
             relu_dropout=relu_dropout,
-            position_encoder=PositionEmbedder(maximum_position=0))
+            position_encoder=BlindPosition())
          for _ in range(2)]
-    encoders.append([
+    print("Len is " + str(len(encoders)))
+    encoders += ([
         SelfAttentionEncoder(
             num_layers,
             num_units=num_units,
@@ -84,8 +100,9 @@ class CustomTransformer(SequenceToSequence):
             attention_dropout=attention_dropout,
             relu_dropout=relu_dropout,
             position_encoder=position_encoder)
-        for _ in range(source_inputter.num_outputs - 2)]
+        for _ in range(2)]
     )
+    print("Len is " + str(len(encoders)))
     if len(encoders) > 1:
       encoder = ParallelEncoder(
           encoders,
@@ -160,10 +177,10 @@ class MultiSourceTransformer(CustomTransformer):
           onmt.inputters.WordEmbedder(
               vocabulary_file_key="source_vocabulary_2",
               embedding_size=256),
-            onmt.inputters.WordEmbedder(
+          onmt.inputters.WordEmbedder(
               vocabulary_file_key="source_vocabulary_3",
               embedding_size=256),
-        onmt.inputters.WordEmbedder(
+          onmt.inputters.WordEmbedder(
               vocabulary_file_key="source_vocabulary_4",
               embedding_size=256)]),
       target_inputter=onmt.inputters.WordEmbedder(

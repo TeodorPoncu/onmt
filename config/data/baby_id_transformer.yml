@@ -1,6 +1,7 @@
 model_dir: id_transformer/
 
 data:
+  source_tokenization: config/tokenization/aggressive.yml
   source_words_vocabulary: data/id_transformer/src-vocab.txt
   target_words_vocabulary: data/id_transformer/tgt-vocab.txt
   train_features_file: data/id_transformer/src-train.txt

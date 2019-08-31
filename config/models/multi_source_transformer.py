@@ -186,11 +186,11 @@ class MultiSourceTransformer(CustomTransformer):
           vocabulary_file_key="target_vocabulary",
           embedding_size=256),
       num_layers=4,
-      num_units=256,
+      num_units=512,
       num_heads=6,
       ffn_inner_dim=512,
-      dropout=0.1,
-      attention_dropout=0.1,
+      dropout=0.2,
+      attention_dropout=0.2,
       relu_dropout=0.1,
       share_encoders=False)
 

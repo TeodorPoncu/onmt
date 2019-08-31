@@ -1,6 +1,8 @@
 model_dir: intermediate_parsing_transformer/
 
 data:
+  source_tokenization: config/tokenization/aggressive.yml
+  target_tokenization: config/tokenization/aggressive.yml
   source_vocabulary_1: data/intermediate_parsing_transformer/tbl-vocab.txt
   source_vocabulary_2: data/intermediate_parsing_transformer/col-vocab.txt
   source_vocabulary_3: data/intermediate_parsing_transformer/src-vocab.txt

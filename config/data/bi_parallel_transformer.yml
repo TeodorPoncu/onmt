@@ -1,18 +1,22 @@
 model_dir: dual_transformer/
 
 data:
-  source_tokenization: config/tokenization/aggressive.yml
-  target_tokenization: config/tokenization/aggressive.yml
   source_vocabulary_1: data/dual_transformer/src-vocab.txt
   source_vocabulary_2: data/dual_transformer/skt-vocab.txt
+  source_vocabulary_3: data/dual_transformer/src-vocab.txt
+  source_vocabulary_4: data/dual_transformer/skt-vocab.txt
   target_vocabulary: data/dual_transformer/tgt-vocab.txt
   train_features_file:
+    - data/dual_transformer/src-train.txt
+    - data/dual_transformer/skt-train.txt
     - data/dual_transformer/src-train.txt
     - data/dual_transformer/skt-train.txt
   train_labels_file: data/dual_transformer/tgt-train.txt
   eval_features_file:
     - data/dual_transformer/src-val.txt
     - data/dual_transformer/skt-val.txt
+    - data/dual_transformer/src-train.txt
+    - data/dual_transformer/skt-train.txt
   eval_labels_file: data/dual_transformer/tgt-val.txt
 
 train:
@@ -44,7 +48,7 @@ eval:
   # (optional) Evaluate every this many seconds (default: 18000).
   eval_delay: 600
   # (optional) Save evaluation predictions in model_dir/eval/.
-  save_eval_predictions: false
+  save_eval_predictions: true
   # (optional) Evalutator or list of evaluators that are called on the saved evaluation predictions.
   # Available evaluators: sacreBLEU, BLEU, BLEU-detok, ROUGE
   external_evaluators: 

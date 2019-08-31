@@ -27,5 +27,6 @@ def model():
         decoder=onmt.decoders.SelfAttentionDecoder(
             num_layers=4,
             num_units=256,
+        
         )
     )

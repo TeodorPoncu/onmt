@@ -19,6 +19,12 @@ class DualSourceTransformer(onmt.models.Transformer):
               embedding_size=256),
           onmt.inputters.WordEmbedder(
               vocabulary_file_key="source_vocabulary_2",
+              embedding_size=256),
+            onmt.inputters.WordEmbedder(
+              vocabulary_file_key="source_vocabulary_3",
+              embedding_size=256),
+        onmt.inputters.WordEmbedder(
+              vocabulary_file_key="source_vocabulary_4",
               embedding_size=256)]),
       target_inputter=onmt.inputters.WordEmbedder(
           vocabulary_file_key="target_vocabulary",

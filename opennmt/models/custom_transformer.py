@@ -11,7 +11,7 @@ from opennmt.layers.position import PositionEmbedder
 from opennmt.utils.misc import merge_dict
 
 
-class Transformer(SequenceToSequence):
+class CustomTransformer(SequenceToSequence):
   """Attention-based sequence-to-sequence model as described in
   https://arxiv.org/abs/1706.03762.
   """

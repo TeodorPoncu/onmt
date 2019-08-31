@@ -9,10 +9,10 @@ import opennmt as onmt
 from opennmt.utils import misc
 
 
-class DualSourceTransformer(onmt.models.Transformer):
+class MultiSourceTransformer(onmt.models.CustomTransformer):
 
   def __init__(self):
-    super(DualSourceTransformer, self).__init__(
+    super(MultiSourceTransformer, self).__init__(
       source_inputter=onmt.inputters.ParallelInputter([
           onmt.inputters.WordEmbedder(
               vocabulary_file_key="source_vocabulary_1",
@@ -48,4 +48,4 @@ class DualSourceTransformer(onmt.models.Transformer):
     })
 
 
-model = DualSourceTransformer
+model = MultiSourceTransformer

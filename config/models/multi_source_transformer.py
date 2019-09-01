@@ -189,8 +189,8 @@ class MultiSourceTransformer(CustomTransformer):
       num_units=512,
       num_heads=8,
       ffn_inner_dim=1024,
-      dropout=0.2,
-      attention_dropout=0.2,
+      dropout=0.1,
+      attention_dropout=0.1,
       relu_dropout=0.1,
       share_encoders=False)
 

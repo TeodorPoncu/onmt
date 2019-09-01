@@ -1,12 +1,14 @@
 model_dir: sketch/
 
 data:
+  source_tokenization: config/tokenization/aggressive.yml
+  target_tokenization: config/tokenization/aggressive.yml
   source_words_vocabulary: data/sketch/src-vocab.txt
-  target_words_vocabulary: data/sketch/tgt-vocab.txt
+  target_words_vocabulary: data/sketch/skt-vocab.txt
   train_features_file: data/sketch/src-train.txt
-  train_labels_file: data/sketch/tgt-train.txt
+  train_labels_file: data/sketch/skt-train.txt
   eval_features_file: data/sketch/src-val.txt
-  eval_labels_file: data/sketch/tgt-val.txt
+  eval_labels_file: data/sketch/skt-val.txt
 train:
   batch_type: tokens
   batch_size: 1024

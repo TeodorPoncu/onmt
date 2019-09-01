@@ -10,7 +10,7 @@ def model():
         ),
         target_inputter=onmt.inputters.WordEmbedder(
             vocabulary_file_key="target_words_vocabulary",
-            embedding_size=256,
+            embedding_size=50,
             dropout=0.1
         ),
         num_layers=4,

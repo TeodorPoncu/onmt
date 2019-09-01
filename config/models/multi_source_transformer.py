@@ -172,23 +172,23 @@ class MultiSourceTransformer(CustomTransformer):
       source_inputter=onmt.inputters.ParallelInputter([
           onmt.inputters.WordEmbedder(
               vocabulary_file_key="source_vocabulary_1",
-              embedding_size=512),
+              embedding_size=256),
           onmt.inputters.WordEmbedder(
               vocabulary_file_key="source_vocabulary_2",
-              embedding_size=512),
+              embedding_size=256),
           onmt.inputters.WordEmbedder(
               vocabulary_file_key="source_vocabulary_3",
-              embedding_size=512),
+              embedding_size=256),
           onmt.inputters.WordEmbedder(
               vocabulary_file_key="source_vocabulary_4",
-              embedding_size=512)]),
+              embedding_size=256)]),
       target_inputter=onmt.inputters.WordEmbedder(
           vocabulary_file_key="target_vocabulary",
-          embedding_size=512),
+          embedding_size=256),
       num_layers=4,
-      num_units=256,
+      num_units=512,
       num_heads=8,
-      ffn_inner_dim=512,
+      ffn_inner_dim=1024,
       dropout=0.2,
       attention_dropout=0.2,
       relu_dropout=0.1,

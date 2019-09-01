@@ -17,8 +17,8 @@ data:
   eval_features_file:
     - data/intermediate_parsing_transformer/tbl-val.txt
     - data/intermediate_parsing_transformer/col-val.txt
-    - data/intermediate_parsing_transformer/src-train.txt
-    - data/intermediate_parsing_transformer/skt-train.txt
+    - data/intermediate_parsing_transformer/src-val.txt
+    - data/intermediate_parsing_transformer/skt-val.txt
   eval_labels_file: data/intermediate_parsing_transformer/tgt-val.txt
 
 train:
